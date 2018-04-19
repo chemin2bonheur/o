@@ -3,3 +3,12 @@
 1.0.2:
     - 'Created table grcote7_movies_'
     - builder_table_create_grcote7_movies_.php
+1.0.3:
+    - 'Updated table grcote7_movies_'
+    - builder_table_update_grcote7_movies_.php
+1.0.4:
+    - 'Created table grcote7_movies_genres'
+    - builder_table_create_grcote7_movies_genres.php
+1.0.5:
+    - 'Created table grcote7_movies_movies_genres'
+    - builder_table_create_grcote7_movies_movies_genres.php
