@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  jeu. 19 avr. 2018 à 15:30
+-- Généré le :  jeu. 19 avr. 2018 à 16:11
 -- Version du serveur :  5.7.18
 -- Version de PHP :  7.1.7
 
@@ -41,7 +41,8 @@ CREATE TABLE `backend_access_log` (
 --
 
 INSERT INTO `backend_access_log` (`id`, `user_id`, `ip_address`, `created_at`, `updated_at`) VALUES
-(1, 1, '127.0.0.1', '2018-04-18 09:54:31', '2018-04-18 09:54:31');
+(1, 1, '127.0.0.1', '2018-04-18 09:54:31', '2018-04-18 09:54:31'),
+(2, 1, '127.0.0.1', '2018-04-19 12:01:22', '2018-04-19 12:01:22');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,7 @@ CREATE TABLE `backend_users` (
 --
 
 INSERT INTO `backend_users` (`id`, `first_name`, `last_name`, `login`, `email`, `password`, `activation_code`, `persist_code`, `reset_password_code`, `permissions`, `is_activated`, `role_id`, `activated_at`, `last_login`, `created_at`, `updated_at`, `is_superuser`) VALUES
-(1, 'Admin', 'Person', 'admin', 'admin@domain.tld', '$2y$10$XfrZnduzmCpdcl1DwxSWYe/mYDBXvYRh8vNAdW.AqQV1wucQdHW8a', NULL, '$2y$10$DyTLgut3Cz/eQc5EL3iOP.eHEZ.4ROyhP6VLvYg4gph7D5kfW5SrC', NULL, '', 1, 2, NULL, '2018-04-18 09:54:29', '2018-04-18 09:53:43', '2018-04-18 09:54:29', 1);
+(1, 'Admin', 'Person', 'admin', 'admin@domain.tld', '$2y$10$XfrZnduzmCpdcl1DwxSWYe/mYDBXvYRh8vNAdW.AqQV1wucQdHW8a', NULL, '$2y$10$WNXxwJWq9wPiAmw/M6aKFeNH85fVlLupc5nfeRE5e/EIOj2yl90vS', NULL, '', 1, 2, NULL, '2018-04-19 12:01:22', '2018-04-18 09:53:43', '2018-04-19 12:01:22', 1);
 
 -- --------------------------------------------------------
 
@@ -630,7 +631,8 @@ INSERT INTO `system_plugin_history` (`id`, `code`, `type`, `version`, `detail`, 
 (63, 'RainLab.Builder', 'comment', '1.0.19', 'Added a feature allowing to add all database columns to a list definition. Added max length validation for database table and column names.', '2018-04-19 10:25:16'),
 (64, 'RainLab.Builder', 'comment', '1.0.20', 'Fixes a bug where form the builder could trigger the \"current.hasAttribute is not a function\" error.', '2018-04-19 10:25:16'),
 (65, 'RainLab.Builder', 'comment', '1.0.21', 'Back-end navigation sort order updated.', '2018-04-19 10:25:16'),
-(66, 'RainLab.Builder', 'comment', '1.0.22', 'Added scopeValue property to the RecordList component.', '2018-04-19 10:25:16');
+(66, 'RainLab.Builder', 'comment', '1.0.22', 'Added scopeValue property to the RecordList component.', '2018-04-19 10:25:16'),
+(67, 'Grcote7.Movies', 'comment', '1.0.1', 'Initialize plugin.', '2018-04-19 12:10:47');
 
 -- --------------------------------------------------------
 
@@ -654,7 +656,8 @@ CREATE TABLE `system_plugin_versions` (
 INSERT INTO `system_plugin_versions` (`id`, `code`, `version`, `created_at`, `is_disabled`, `is_frozen`) VALUES
 (1, 'October.Demo', '1.0.1', '2018-04-18 09:53:42', 0, 0),
 (2, 'RainLab.Blog', '1.2.19', '2018-04-18 10:53:36', 0, 0),
-(3, 'RainLab.Builder', '1.0.22', '2018-04-19 10:25:16', 0, 0);
+(3, 'RainLab.Builder', '1.0.22', '2018-04-19 10:25:16', 0, 0),
+(4, 'Grcote7.Movies', '1.0.1', '2018-04-19 12:10:47', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -708,7 +711,7 @@ CREATE TABLE `system_settings` (
 --
 
 INSERT INTO `system_settings` (`id`, `item`, `value`) VALUES
-(1, 'rainlab_builder_settings', '{\"author_name\":\"grcote7\",\"author_namespace\":\"Grcote7\"}'),
+(1, 'rainlab_builder_settings', '{\"author_name\":\"Grcote7\",\"author_namespace\":\"Grcote7\"}'),
 (2, 'system_log_settings', '{\"log_events\":\"1\",\"log_requests\":\"1\",\"log_theme\":\"1\"}');
 
 --
@@ -936,7 +939,7 @@ ALTER TABLE `system_settings`
 -- AUTO_INCREMENT pour la table `backend_access_log`
 --
 ALTER TABLE `backend_access_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `backend_users`
@@ -1056,13 +1059,13 @@ ALTER TABLE `system_parameters`
 -- AUTO_INCREMENT pour la table `system_plugin_history`
 --
 ALTER TABLE `system_plugin_history`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT pour la table `system_plugin_versions`
 --
 ALTER TABLE `system_plugin_versions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `system_request_logs`

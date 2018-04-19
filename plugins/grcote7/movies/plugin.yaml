@@ -1,0 +1,6 @@
+plugin:
+    name: 'grcote7.movies::lang.plugin.name'
+    description: 'grcote7.movies::lang.plugin.description'
+    author: Grcote7
+    icon: oc-icon-video-camera
+    homepage: ''
