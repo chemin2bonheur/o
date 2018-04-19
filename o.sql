@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  jeu. 19 avr. 2018 à 16:29
+-- Généré le :  jeu. 19 avr. 2018 à 16:34
 -- Version du serveur :  5.7.18
 -- Version de PHP :  7.1.7
 
@@ -271,7 +271,7 @@ CREATE TABLE `grcote7_movies_` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` text COLLATE utf8mb4_unicode_ci,
-  `year` int(11) NOT NULL
+  `year` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------

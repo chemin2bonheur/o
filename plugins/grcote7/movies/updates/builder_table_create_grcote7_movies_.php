@@ -13,7 +13,7 @@ class BuilderTableCreateGrcote7Movies extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
-            $table->integer('year');
+            $table->integer('year')->nullable();
         });
     }
     
