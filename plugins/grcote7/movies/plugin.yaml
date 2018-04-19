@@ -7,5 +7,5 @@ plugin:
 navigation:
     main-menu-item:
         label: 'grcote7.movies::lang.plugin.name'
-        url: /
+        url: grcote7/movies/movies
         icon: icon-video-camera

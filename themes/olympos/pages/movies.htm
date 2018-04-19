@@ -1,0 +1,16 @@
+title = "Movies"
+url = "/movies"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Grcote7\Movies\Models\Movie"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}
