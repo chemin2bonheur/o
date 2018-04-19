@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  jeu. 19 avr. 2018 à 16:11
+-- Généré le :  jeu. 19 avr. 2018 à 16:29
 -- Version du serveur :  5.7.18
 -- Version de PHP :  7.1.7
 
@@ -259,6 +259,19 @@ CREATE TABLE `failed_jobs` (
   `payload` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `exception` longtext COLLATE utf8mb4_unicode_ci,
   `failed_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `grcote7_movies_`
+--
+
+CREATE TABLE `grcote7_movies_` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `year` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -632,7 +645,9 @@ INSERT INTO `system_plugin_history` (`id`, `code`, `type`, `version`, `detail`, 
 (64, 'RainLab.Builder', 'comment', '1.0.20', 'Fixes a bug where form the builder could trigger the \"current.hasAttribute is not a function\" error.', '2018-04-19 10:25:16'),
 (65, 'RainLab.Builder', 'comment', '1.0.21', 'Back-end navigation sort order updated.', '2018-04-19 10:25:16'),
 (66, 'RainLab.Builder', 'comment', '1.0.22', 'Added scopeValue property to the RecordList component.', '2018-04-19 10:25:16'),
-(67, 'Grcote7.Movies', 'comment', '1.0.1', 'Initialize plugin.', '2018-04-19 12:10:47');
+(67, 'Grcote7.Movies', 'comment', '1.0.1', 'Initialize plugin.', '2018-04-19 12:10:47'),
+(68, 'Grcote7.Movies', 'script', '1.0.2', 'builder_table_create_grcote7_movies_.php', '2018-04-19 12:27:59'),
+(69, 'Grcote7.Movies', 'comment', '1.0.2', 'Created table grcote7_movies_', '2018-04-19 12:27:59');
 
 -- --------------------------------------------------------
 
@@ -657,7 +672,7 @@ INSERT INTO `system_plugin_versions` (`id`, `code`, `version`, `created_at`, `is
 (1, 'October.Demo', '1.0.1', '2018-04-18 09:53:42', 0, 0),
 (2, 'RainLab.Blog', '1.2.19', '2018-04-18 10:53:36', 0, 0),
 (3, 'RainLab.Builder', '1.0.22', '2018-04-19 10:25:16', 0, 0),
-(4, 'Grcote7.Movies', '1.0.1', '2018-04-19 12:10:47', 0, 0);
+(4, 'Grcote7.Movies', '1.0.2', '2018-04-19 12:27:59', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -809,6 +824,12 @@ ALTER TABLE `deferred_bindings`
 -- Index pour la table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `grcote7_movies_`
+--
+ALTER TABLE `grcote7_movies_`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -996,6 +1017,12 @@ ALTER TABLE `failed_jobs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT pour la table `grcote7_movies_`
+--
+ALTER TABLE `grcote7_movies_`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT pour la table `jobs`
 --
 ALTER TABLE `jobs`
@@ -1059,7 +1086,7 @@ ALTER TABLE `system_parameters`
 -- AUTO_INCREMENT pour la table `system_plugin_history`
 --
 ALTER TABLE `system_plugin_history`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT pour la table `system_plugin_versions`
