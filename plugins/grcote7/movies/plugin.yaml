@@ -4,3 +4,8 @@ plugin:
     author: Grcote7
     icon: oc-icon-video-camera
     homepage: ''
+navigation:
+    main-menu-item:
+        label: 'grcote7.movies::lang.plugin.name'
+        url: /
+        icon: icon-video-camera
