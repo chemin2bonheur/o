@@ -25,4 +25,15 @@ class Genre extends Model
      * @var string The database table used by the model.
      */
     public $table = 'grcote7_movies_genres';
+
+
+
+    public $belongsToMany = [
+    'movies' => [
+      'Grcote7\Movies\Models\Movie',
+      'table' => 'grcote7_movies_movies_genres',
+      'order' => 'name'
+    ]
+  ];
+
 }
