@@ -31,7 +31,7 @@ fields:
         span: auto
         type: fileupload
     movie_gallery:
-        label: 'Movie Gallery'
+        label: 'Movie Galerie'
         mode: image
         imageWidth: '80'
         imageHeight: '80'
