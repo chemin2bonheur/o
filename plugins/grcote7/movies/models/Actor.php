@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Movie extends Model {
+class Actor extends Model {
   use \October\Rain\Database\Traits\Validation;
 
   /*
@@ -23,30 +23,19 @@ class Movie extends Model {
   /**
    * @var string The database table used by the model.
    */
-  public $table = 'grcote7_movies_';
+  public $table = 'grcote7_movies_actors';
 
-//  protected $jsonable = ['actors'];
-
-  /* Relations */
 
   public $belongsToMany = [
-    'genres' => [
-      'Grcote7\Movies\Models\Genre',
-      'table' => 'grcote7_movies_movies_genres',
-      'order' => 'genre_title'
-    ],
-    'actors' => [
-      'Grcote7\Movies\Models\Actor',
+    'movies' => [
+      'Grcote7\Movies\Models\Movie',
       'table' => 'grcote7_movies_actors_movies',
       'order' => 'name'
     ]
   ];
 
-  public $attachOne = [
-    'poster' => 'System\Models\File'
-  ];
+  public function getFullNameAttribute() {
+    return $this->name . ' ' . $this->lastname;
+  }
 
-  public $attachMany = [
-    'movie_gallery' => 'System\Models\File'
-  ];
 }

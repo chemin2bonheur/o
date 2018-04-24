@@ -4,7 +4,7 @@ fields:
         span: full
         type: text
     description:
-        label: 'grcote7.movies::lang.plugin.description'
+        label: Description
         size: ''
         span: full
         type: richeditor
@@ -48,17 +48,6 @@ fields:
         span: auto
         type: relation
     actors:
-        label: Acteur
-        prompt: 'Add new item'
-        span: auto
-        type: repeater
-        form:
-            fields:
-                actor_name:
-                    label: 'Actor Name'
-                    span: auto
-                    type: text
-                actor_age:
-                    label: 'Actor Age'
-                    span: auto
-                    type: text
+        label: Actors
+        span: left
+        type: Grcote7\Movies\Formwidgets\Actorbox

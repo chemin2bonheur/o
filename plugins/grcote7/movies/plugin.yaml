@@ -14,3 +14,7 @@ navigation:
                 label: Genres
                 url: grcote7/movies/genres
                 icon: icon-tag
+            side-menu-item2:
+                label: Actors
+                url: grcote7/movies/actors
+                icon: icon-user
