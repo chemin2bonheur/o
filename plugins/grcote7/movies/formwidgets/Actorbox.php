@@ -40,6 +40,12 @@ class ActorBox extends FormWidgetBase {
 
   public function getSaveValue($actors) {
 
+    // get values
+    // compare values
+    // save to model
+    // create new array
+    // dd($actors); // Visible dans console ds Network -> record (save dans backup - Inception) puis cf dans preview
+
     $newArray = [];
 
     foreach ($actors as $actorID) {
