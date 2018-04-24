@@ -2,8 +2,21 @@ title = "Homepage"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[actors]
 ==
 <h2>This is our homepage ! Yay !</h2>
+
+{% set actors = actors.actors %}
+
+<h3>Actors list</h3>
+
+<ul>
+  {% for actor in actors%}
+  <li>{{actor.name}} {{actor.lastname}}</li>
+  {% endfor %}
+</ul>
+
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur dolorum facere quos sed! Est incidunt
   laboriosam quia tempore voluptates! Corporis debitis ea earum eveniet incidunt magni nam quia tempore!</p>
@@ -12,10 +25,7 @@ is_hidden = 0
 <p>Ab accusantium aliquid aperiam at, atque delectus et ex explicabo iusto laboriosam maxime modi neque omnis
   quibusdamquis, ratione repellat repellendus sint sit soluta tempore velit veritatis voluptates? Laborum,
   voluptate.</p>
-<p>Libero, molestias omnis optio provident quia quisquam quod unde vero? Ad architecto iste odio officia quia!</p>
-<p>Animi architecto at est explicabo maiores, quibusdam repellat? Alias dolor error, exercitationem odio odit officia
-  optio placeat quod similique voluptates! Explicabo ipsa minus natus necessitatibus neque nihil odio, ratione
-  delectus, doloribus et fugit quae sapiente velit veritatis! Cum, ex, voluptatum! Suscipit, tempore?</p><p>Blanditiis
+<p>Blanditiis
   dolorem doloremque neque obcaecati porro quam repudiandae sint tempore velit? Alias magni praesentium reiciendis
   sapiente. Accusamus, animi delectus dolorem enim exercitationem illum laborum nihil similique sint voluptatem.
-  Cupiditate, optio!</p>
+  Cupiditate, option!</p>
