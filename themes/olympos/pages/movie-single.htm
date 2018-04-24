@@ -32,13 +32,13 @@ notFoundMessage = "Record not found"
 {{ record.description|raw }}
 
 <ul class="gallery clearfix">
-    {% for image in record.movie_gallery %}
-    <li>
-        <a href="{{image.path}}">
-            <img src="{{image.thumb(80,80,{'mode':'crop'}) }}">
-        </a>
-    </li>
-    {% endfor %}
+  {% for image in record.movie_gallery %}
+  <li>
+    <a href="{{image.path}}">
+      <img src="{{image.thumb(80,80,{'mode':'crop'}) }}">
+    </a>
+  </li>
+  {% endfor %}
 </ul>
 
 {% else %}

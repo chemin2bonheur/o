@@ -297,6 +297,10 @@ a {
   text-decoration: underline;
 }
 
+h2 {
+  margin-top: 10px;
+}
+
 .main-footer {
   background: #efefef;
   padding: 20px 0;
