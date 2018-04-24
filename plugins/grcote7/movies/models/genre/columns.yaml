@@ -1,6 +1,6 @@
 columns:
     genre_title:
-        label: Title
+        label: Titre
         type: text
         searchable: true
         sortable: true

@@ -1,6 +1,6 @@
 fields:
     genre_title:
-        label: Title
+        label: Titre
         span: left
         type: text
     slug:
