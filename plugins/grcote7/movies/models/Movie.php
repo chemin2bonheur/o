@@ -25,6 +25,7 @@ class Movie extends Model {
    */
   public $table = 'grcote7_movies_';
 
+  protected $jsonable = ['actors'];
 
   /* Relations */
 
@@ -36,10 +37,10 @@ class Movie extends Model {
     ]
   ];
 
-  public $attachOne  = [
+  public $attachOne = [
     'poster' => 'System\Models\File'
   ];
-  
+
   public $attachMany = [
     'movie_gallery' => 'System\Models\File'
   ];
