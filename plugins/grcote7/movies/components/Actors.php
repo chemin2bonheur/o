@@ -20,7 +20,6 @@ class Actors extends ComponentBase {
         'title'             => 'Number of Actors',
         'description'       => 'How many actors do you want to display?',
         'default'           => 0,
-        'type'              => 'string',
         'validationPattern' => '^[0-9]+$',
         'validationMessage' => 'Only numbers allowed'
       ],
