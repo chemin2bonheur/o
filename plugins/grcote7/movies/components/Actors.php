@@ -14,6 +14,19 @@ class Actors extends ComponentBase {
     ];
   }
 
+  public function defineProperties() {
+    return [
+      'results' => [
+        'title'             => 'Number of Actors',
+        'description'       => 'How many actors do you want to display?',
+        'default'           => 0,
+        'type'              => 'string',
+        'validationPattern' => '^[0-9]+$',
+        'validationMessage' => 'Only numbers allowed'
+      ]
+    ];
+  }
+
   public function onRun() {
     $this->actors = $this->loadActors();
   }

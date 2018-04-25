@@ -1,23 +1,28 @@
 /* =======================================================================
 ## ++ Globals
 ========================================================================== */
-html{
-    font-size: 100%;
+html {
+  font-size: 100%;
 }
 
-body{
-    -webkit-font-smoothing: antialiased;
-    background: #fff;
-    color: #566b78;
+body {
+  -webkit-font-smoothing: antialiased;
+  //background: #fff;
+  background: cornsilk;
+  color: #566b78;
 }
 
-.container{
-    max-width: 40em;
-    margin:0 auto;
+.container {
+  max-width: 40em;
+  margin: 0 auto;
 }
 
-*{
-    box-sizing:border-box;
+#layout-content {
+  margin: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -30,49 +35,53 @@ a {
 |--------------------------------------------------------------------------
 */
 
-.gallery{
-    padding:20px 15px;
-    background: #efefef;
-    border:1px solid #ccc;
-    border-radius:3px;
-    li{
-        float: left;
-        margin:5px;
-    }
+.gallery {
+  padding: 20px 15px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  li {
+    float: left;
+    margin: 5px;
+  }
 
-    img, a{
-        display: block;
-    }
+  img, a {
+    display: block;
+  }
 }
-
 
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
 
 /* float clearing for IE6 */
-* html .clearfix{
- height: 1%;
- overflow: visible;
+* html .clearfix {
+  height: 1%;
+  overflow: visible;
 }
 
 /* float clearing for IE7 */
-*+html .clearfix{
- min-height: 1%;
+* + html .clearfix {
+  min-height: 1%;
 }
 
 /* float clearing for everyone else */
-.clearfix:after{
- clear: both;
- content: ".";
- display: block;
- height: 0;
- visibility: hidden;
- font-size: 0;
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
 }
 
-.clr{clear:both;}
-.clr{content:"test";}
+.clr {
+  clear: both;
+}
+
+.clr {
+  content: "test";
+}
 
 
 
