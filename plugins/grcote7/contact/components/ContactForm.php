@@ -31,7 +31,7 @@ class ContactForm extends ComponentBase {
     $rules = [
       'name'    => 'required|min:3',
       'email'   => 'required|email',
-      'message' => 'required|min:5'
+      'content' => 'required|min:5'
     ];
 
     $validator = Validator::make($data, $rules);
