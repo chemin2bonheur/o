@@ -16,7 +16,7 @@ return [
   |
   */
 
-  'driver'     => env('MAIL_DRIVER', 'mail'),
+  'driver'     => env('MAIL_DRIVER', 'smtp'),
 
   /*
   |--------------------------------------------------------------------------
@@ -40,10 +40,10 @@ return [
   | This is the SMTP port used by your application to deliver e-mails to
   | users of the application. Like the host we have set this value to
   | stay compatible with the Mailgun e-mail application by default.
-  |
+  |//465
   */
 
-  'port'       => env('MAIL_PORT', 465),
+  'port'       => env('MAIL_PORT', 587),
 
   /*
   |--------------------------------------------------------------------------
@@ -114,6 +114,11 @@ return [
 
   //  'sendmail'   => '/usr/sbin/sendmail -bs',
   'sendmail'   => 'C:/laragon/bin/sendmail/sendmail.exe',
+
+  'to'         => [
+    'address' => 'grcote7@gmail.com',
+    'name'    => 'catch all emails'
+  ],
 
 
   'stream'     => [

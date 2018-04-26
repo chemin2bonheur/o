@@ -6,7 +6,7 @@ class Plugin extends PluginBase {
   public function registerComponents() {
     return [
       'Grcote7\Contact\Components\ContactForm' => 'contactform',
-      'Grcote7\Contact\Components\SendOneMail'    => 'sendonemail'
+      'Grcote7\Contact\Components\SendOneMail' => 'sendonemail'
     ];
   }
 
