@@ -1,0 +1,11 @@
+name: Movies
+modelClass: momo\Movies\Models\Movie
+form: $/momo/movies/models/movie/fields.yaml
+defaultRedirect: momo/movies/movies
+create:
+    redirect: 'momo/movies/movies/update/:id'
+    redirectClose: momo/movies/movies
+update:
+    redirect: momo/movies/movies
+    redirectClose: momo/movies/movies
+preview: {  }

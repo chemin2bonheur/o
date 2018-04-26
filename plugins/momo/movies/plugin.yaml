@@ -1,0 +1,11 @@
+plugin:
+    name: 'momo.movies::lang.plugin.name'
+    description: 'momo.movies::lang.plugin.description'
+    author: momo
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: momo/movies/movies
+        icon: icon-video-camera

@@ -1,8 +1,8 @@
 var elixir = require('laravel-elixir');
 require('laravel-elixir-livereload');
 
-elixir.config.assetsPath = 'themes/olympos/assets/';
-elixir.config.publicPath = 'themes/olympos/assets/compiled/';
+elixir.config.assetsPath = 'themes/momo/assets/';
+elixir.config.publicPath = 'themes/momo/assets/compiled/';
 
 elixir(function (mix) {
 
@@ -14,9 +14,9 @@ elixir(function (mix) {
     ]);
 
     mix.livereload([
-        'themes/olympos/assets/compiled/css/style.css',
-        'themes/olympos/**/*.htm',
-        'themes/olympos/assets/compiled/js/*.js'
+        'themes/momo/assets/compiled/css/style.css',
+        'themes/momo/**/*.htm',
+        'themes/momo/assets/compiled/js/*.js'
     ]);
 
 });
