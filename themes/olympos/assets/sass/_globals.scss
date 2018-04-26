@@ -47,6 +47,44 @@ a {
   }
 }
 
+/*
+|--------------------------------------------------------------------------
+| Form
+|--------------------------------------------------------------------------
+*/
+
+form {
+  margin-top: 20px;
+
+  input, textarea {
+    width: 97%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #444;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  button {
+    border: none;
+    background: #E41C4E;
+    padding: 10px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
@@ -80,8 +118,37 @@ a {
   content: "test";
 }
 
+.flash {
+  padding: 20px;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: none;
 
+  &.active {
+    display: block;
+  }
 
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  text-align: center;
 
+  &.error {
+    background: red;
+  }
 
+  &.success {
+    background: limegreen;
+  }
+}
 
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}

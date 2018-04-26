@@ -1,0 +1,20 @@
+subject = Message from my own contact from"
+==
+
+Hi {{ name }},
+
+Good news! User {{ email }} just send a message from contact form.
+
+{{ content }}
+
+This message was sent using no formatting (plain text)
+==
+
+<p>Hi {{ name }},</p>
+
+<h2>Good news!</h2>
+<p>User <strong>{{ email }}</strong> just send a message from contact form.</p>
+<hr>
+{{ content }}
+
+<p>This email was sent using formatting (HTML)</p>

@@ -1,0 +1,31 @@
+<form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
+
+  {#
+  <div class="red" data-validate-error>
+    <p data-message></p>
+  </div>
+  #}
+
+  <div class="flash error">
+    Ooops. Something went wrong, please check the required fields.
+  </div>
+  <div class="flash success">
+    Your message has been send. Thank you.
+  </div>
+
+
+  <label>Your name</label>
+  <span data-validate-for="name" class="red">Your name is required !!!</span>
+  <input name="name" value="Li"/>
+
+  <label for="email">Your email</label>
+  <span data-validate-for="email" class="red">Your name is required !!!</span>
+  <input type="email" name="email" value="GrCOTE7@GMail.com">
+
+  <label>Your message</label>
+  <span data-validate-for="message" class="red"></span>
+  <textarea name="message">Mon message.</textarea>
+
+  <button data-attach-loading type="submit">Send</button>
+
+</form>

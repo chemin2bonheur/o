@@ -1,0 +1,26 @@
+<!--{% for message in errorMsgs %}-->
+<!--<div class="container red">{{ message }}</div>-->
+<!--{% endfor %}-->
+
+
+<script type="text/javascript">
+
+  $('.red').remove();
+
+  var errors = {
+  {
+    fieldMsgs | json_encode() | raw
+  }
+  }
+  ;
+  console.log(errors);
+
+  $.each(errors, function (name, msg) {
+    if (name == 'message') {
+      $('<div class="red">' + msg + '</div>').insertBefore($('textarea[name=' + name + ']'));
+    }
+    else
+      $('<div class="red">' + msg + '</div>').insertBefore($('input[name=' + name + ']'));
+  });
+
+</script>
