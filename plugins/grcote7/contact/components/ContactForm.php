@@ -23,39 +23,34 @@ class ContactForm extends ComponentBase {
 
   public function onSend() {
 
-    // Fonctionne en local
-    //    mail('grcote7@gmail.com', 'Sujet', 'contenu');
+    $data = post();
 
-    /*
-        $data = post();
+    $rules = [
+      'name'    => 'required|min:3',
+      'email'   => 'required|email',
+      'message' => 'required|min:5'
+    ];
 
-        $rules = [
-          'name'    => 'required|min:3',
-          'email'   => 'required|email',
-          'message' => 'required|min:5'
-        ];
+    $validator = Validator::make($data, $rules);
 
-        $validator = Validator::make($data, $rules);
+    if ($validator->fails()) {
+      throw new ValidationException($validator);
+    } else {
+      $vars = [
+        'name'    => Input::get('name'),
+        'email'   => Input::get('email'),
+        'content' => Input::get('content')
+      ];
+      Flash::success('Jobs done!');
 
-        if ($validator->fails()) {
-          throw new ValidationException($validator);
-        }
-        else {
-          $vars = [
-            'name'    => Input::get('name'),
-            'email'   => Input::get('email'),
-            'content' => Input::get('content')
-          ];
-          Flash::success('Jobs done!');
+      // Envoi de l'email en réel
 
-          // Envoi de l'email en réel
+      Mail::send('grcote7.contact::mail.message', $vars, function ($message) {
 
-          Mail::send('grcote7.contact::mail.message', $vars, function ($message) {
+        $message->to('grcote7@gmail.com', 'Lionel COTE');
+        $message->subject('New message from my contact form.');
+      });
+    }
 
-            $message->to('grcote7@gmail.com', 'Lionel COTE');
-            $message->subject('New message from my contact form.');
-          });
-        }
-    */
   }
 }
