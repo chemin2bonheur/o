@@ -20,6 +20,9 @@ class ContactForm extends ComponentBase {
     ];
   }
 
+  public function onRun() {
+    $this->addCss('assets/css/style.css');
+  }
 
   public function onSend() {
 

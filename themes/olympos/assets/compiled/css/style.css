@@ -228,43 +228,6 @@ a {
   display: block;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Form
-|--------------------------------------------------------------------------
-*/
-form {
-  margin-top: 20px;
-}
-
-form input, form textarea {
-  width: 97%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  margin-bottom: 40px;
-  font-size: 16px;
-  color: #444;
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-form textarea {
-  height: 200px;
-}
-
-form button {
-  border: none;
-  background: #E41C4E;
-  padding: 10px 40px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-}
-
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
