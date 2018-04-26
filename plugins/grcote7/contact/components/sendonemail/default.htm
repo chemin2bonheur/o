@@ -1,0 +1,16 @@
+{% set mavar = __SELF__.mavar %}
+
+<h1>Send One Mail</h1>
+
+<p>Test de mail() avec swift</p>
+
+{#
+Ma var = {{ mavar }}
+#}
+
+{% for unevar in mavar %}
+{{ unevar }}<br>
+{% endfor %}
+<hr>
+{{mavar[2]}}
+

@@ -2,29 +2,44 @@
 
 
 use Mail;
-use Input;
-use October\Rain\Support\Facades\Flash;
 use ValidationException;
 use Redirect;
 use Validator;
 use Cms\Classes\ComponentBase;
 
 
-class ContactForm extends ComponentBase {
+class SendOneMail extends ComponentBase {
+
+  public $mavar;
 
   public function componentDetails() {
 
     return [
-      'name'        => 'Contact Form',
-      'description' => 'Simple contact form'
+      'name'        => 'Send One Mail',
+      'description' => 'Simple sending of one email'
     ];
   }
 
 
-  public function onSend() {
+  public function onRun() {
+
+    $this->mavar = [123, 'abc', 789];
+    $params = [
+      'name'    => 'Lionel',
+      'email'   => 'mon@email.com',
+      'content' => 'Du contenu ici....'
+    ];
+//    Mail::rawTo('grcote7@gmail.com', 'Hello friend'); //Ok
+    Mail::sendTo('grcote7@gmail.com', 'grcote7.contact::mail.message',
+                 $params);
 
     // Fonctionne en local
-    //    mail('grcote7@gmail.com', 'Sujet', 'contenu');
+//    mail('grcote7@gmail.com', 'Sujet', 'contenu');
+
+//    $this->mavar = 123456;
+
+//    return $this->maVar;
+
 
     /*
         $data = post();
