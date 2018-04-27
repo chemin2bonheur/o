@@ -47,6 +47,59 @@ a {
   }
 }
 
+/*
+|--------------------------------------------------------------------------
+| Form
+|--------------------------------------------------------------------------
+*/
+
+form {
+  margin-top: 20px;
+
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #444;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form button {
+  border: none;
+  background: #E41C4E;
+  padding: 15px 40px 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  transition: 7s;
+}
+
+form button:hover {
+  color: #550000;
+  background-color: tomato;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
