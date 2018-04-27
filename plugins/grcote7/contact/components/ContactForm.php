@@ -34,6 +34,25 @@ class ContactForm extends ComponentBase {
       'content' => 'required|min:5'
     ];
 
+    /*
+     * Exemple de personnalisation d'un validator
+     public function boot()
+    {
+        Validator::extend('bigger', function($attribute, $value, $parameters, $validator) {
+            $min_field = $parameters[0];
+            $data = $validator->getData();
+            $min_value = $data[$min_field];
+            return $value > $min_value;
+        });
+    }
+
+    public $rules = [
+        'min' => 'required',
+        'max' => 'required|bigger:min'
+    ];
+     *
+     */
+
     $validator = Validator::make($data, $rules);
 
     if ($validator->fails()) {
