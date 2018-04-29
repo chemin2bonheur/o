@@ -1,3 +1,4 @@
+==
 <header class="main-header">
 
   <div class="container clearfix">
@@ -16,7 +17,7 @@
         <li class="{% if this.page.id == 'login' %} active {% endif %}"><a href="{{ 'login'|page }}">Login</a>
         </li>
         {% else %}
-        <li class="{% if this.page.id == 'login' %} active {% endif %}"><a>Profile</a></li>
+        <li class="{% if this.page.id == 'login' %} active {% endif %}"><a href="{{ 'login'|page }}">Profile</a></li>
         <li><a data-request="onLogout" data-request-data="redirect: '/'">Sign
           out</a>
         </li>
