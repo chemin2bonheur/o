@@ -6,7 +6,14 @@ is_hidden = 0
 [actors]
 results = 0
 sortOrder = "name asc"
+
+[siteSearchInclude]
 ==
+<form action="{{ 'search' | page }}" method="get">
+  <input name="q" type="text" placeholder="What are you looking for?" autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+
 {% component 'actors' %}
 
 <h2>This is our homepage ! Yay !</h2>
