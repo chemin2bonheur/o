@@ -56,6 +56,13 @@ class ContactForm extends ComponentBase {
     $validator = Validator::make($data, $rules);
 
     if ($validator->fails()) {
+      /*
+            return [
+              '#result' => $this->renderPartial('contactform::messages', [
+                'fieldMsgs' => $validator->messages(),
+              ])
+            ];
+      */
       throw new ValidationException($validator);
     } else {
       $vars = [
