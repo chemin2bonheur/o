@@ -197,6 +197,8 @@ body {
 .container {
   max-width: 40em;
   margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 * {
@@ -306,6 +308,13 @@ a {
 
 .main-footer h3 {
   margin: 0;
+}
+
+.mainmomo {
+  border: 1px solid red;
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
