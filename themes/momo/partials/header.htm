@@ -6,8 +6,8 @@
 
         <nav class="main-nav">
             <ul>
-                <li><a href="{{'homepage'|page}}">Home</a></li>
-                <li><a href="{{'movies'|page}}">Movies</a></li>
+                <li class = "{% if this.page.id == 'homepage' %} active {% endif %}"><a href="{{'homepage'|page}}">Home</a></li>
+                <li class = "{% if this.page.id == 'movies' %} active {% endif %}"><a href ="{{'movies'|page}}">Movies</a></li>
             </ul>
         </nav>
 
