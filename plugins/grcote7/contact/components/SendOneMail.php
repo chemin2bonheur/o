@@ -1,10 +1,6 @@
 <?php namespace Grcote7\Contact\Components;
 
-
 use Mail;
-use ValidationException;
-use Redirect;
-use Validator;
 use Cms\Classes\ComponentBase;
 
 
