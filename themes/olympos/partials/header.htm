@@ -11,9 +11,11 @@
         <li class="{% if this.page.id == 'add-actors' %} active {% endif %}"><a href="{{ 'add-actors'|page }}">Add
           actors</a></li>
         <li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contact</a>
-        <li class="{% if this.page.id == 'test' %} active {% endif %}"><a href="{{ 'test'|page }}">Test</a>
+        </li>
+        <li class="{% if this.page.id == 'test' %} active {% endif %}"><a href="{{ 'test'|page }}">Test</a></li>
+        <li><a href="about">About</a></li>
 
-          {% if not user %}
+        {% if not user %}
         <li class="{% if this.page.id == 'login' %} active {% endif %}"><a href="{{ 'login'|page }}">Login</a>
         </li>
         {% else %}
