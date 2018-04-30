@@ -2,41 +2,38 @@ title = "Movie single"
 url = "/movies/movie/:slug"
 layout = "default"
 is_hidden = 0
-
-[builderDetails]
-modelClass = "Grcote7\Movies\Models\Movie"
-identifierValue = "{{ :slug }}"
-modelKeyColumn = "slug"
-displayColumn = "name"
-notFoundMessage = "Record not found"
 ==
-{% set record = builderDetails.record %}
-{% set displayColumn = builderDetails.displayColumn %}
-{% set notFoundMessage = builderDetails.notFoundMessage %}
+<?php
+use Grcote7\Movies\Models\Movie;
+function onStart(){
+$this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
+//dd($this['movie']);
+}
+?>
+==
+{% if movie %}
 
-{% if record %}
+<h2>{{ movie.name }}</h2>
 
-<h2>{{ record.name }}</h2>
+<img src="{{movie.poster.thumb(200,auto) }}">
 
-<img src="{{record.poster.thumb(200,auto) }}">
-
-<h4>{{ record.year }}</h4>
+<h4>{{ movie.year }}</h4>
 
 <h3>Genres</h3>
-{% for genre in record.genres %}
+{% for genre in movie.genres %}
 <a href="/genres/{{ genre.slug }}">{{genre.genre_title}}</a><br>
 {% endfor %}
 
 <h3>Acteurs</h3>
-{% for actor in record.actors %}
+{% for actor in movie.actors %}
 {{actor.name}} {{actor.lastname}}<br>
 {% endfor%}
 
 <h3>Description</h3>
-{{ record.description|raw }}
+{{ movie.description|raw }}
 
 <ul class="gallery clearfix">
-  {% for image in record.movie_gallery %}
+  {% for image in movie.movie_gallery %}
   <li>
     <a href="{{image.path}}">
       <img src="{{image.thumb(80,80,{'mode':'crop'}) }}">
@@ -46,5 +43,5 @@ notFoundMessage = "Record not found"
 </ul>
 
 {% else %}
-{{ notFoundMessage }}
+No movie found
 {% endif %}
