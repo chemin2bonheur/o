@@ -1,9 +1,22 @@
 name: 'Header menu'
 items:
     -
-        title: 'All pages'
-        type: all-static-pages
+        title: Homepage
+        type: cms-page
         code: ''
+        reference: homepage
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'All pages'
+        nesting: ''
+        type: all-static-pages
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
         replace: '1'
         viewBag:
             isHidden: '0'
