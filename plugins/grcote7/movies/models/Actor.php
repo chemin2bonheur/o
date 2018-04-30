@@ -25,6 +25,7 @@ class Actor extends Model {
    */
   public $table = 'grcote7_movies_actors';
 
+  protected $fillable = ['name', 'lastname'];
 
   public $belongsToMany = [
     'movies' => [
