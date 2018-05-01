@@ -31,7 +31,7 @@ class SendOneMail extends ComponentBase {
 
 //    Mail::rawTo('grcote7@gmail.com', 'Hello friend');
 
-//    Mail::sendTo('grcote7@gmail.com', 'grcote7.contact::mail.message', $params);
+// Mail::sendTo('grcote7@gmail.com', 'grcote7.contact::mail.message', $params);
 
     $this->mavar [] = 'Script éxécuté !';
 
