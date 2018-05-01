@@ -27,9 +27,9 @@ class SendOneMail extends ComponentBase {
       'content' => 'Du contenu ici....'
     ];
 
-//    mail('grcote7@gmail.com', 'Sujet', 'contenu');
+// mail('grcote7@gmail.com', 'Sujet', 'contenu');
 
-//    Mail::rawTo('grcote7@gmail.com', 'Hello friend');
+// Mail::rawTo('grcote7@gmail.com', 'Hello friend');
 
 // Mail::sendTo('grcote7@gmail.com', 'grcote7.contact::mail.message', $params);
 
