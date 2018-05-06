@@ -1,19 +1,23 @@
 {
   "name": "o",
   "version": "1.0.0",
-  "description": "<p align=\"center\">     <img src=\"https://github.com/octobercms/october/blob/master/themes/demo/assets/images/october.png?raw=true\" alt=\"October\" width=\"25%\" height=\"25%\" /> </p>",
+  "description": "Laravel Elixir",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chemin2bonheur/o.git"
   },
-  "author": "",
+  "author": "LC",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chemin2bonheur/o/issues"
@@ -21,6 +25,7 @@
   "homepage": "https://github.com/chemin2bonheur/o#readme",
   "devDependencies": {
     "laravel-elixir": "^6.0.0-18",
-    "laravel-elixir-livereload": "^1.1.6"
+    "laravel-elixir-livereload": "^1.1.6",
+    "laravel-mix": "^0.10.0"
   }
 }
