@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => 'mysql',
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,9 +56,9 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => 3306,
-            'database'  => 'o',
-            'username'  => 'root',
-            'password'  => '',
+            'database'  => env('DB_DATABASE', 'smtp'),
+            'username'  => env('DB_USERNAME', 'smtp'),
+            'password'  => env('DB_PASSWORD', 'smtp'),
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
