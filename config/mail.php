@@ -85,7 +85,7 @@ return [
   |
   */
 
-  'username'   => env('MAIL_USERNAME', 'grcote7@gmail.com'),
+  'username'   => env('MAIL_USERNAME', 'votre@email.com'),
 
 
   /*
@@ -116,7 +116,7 @@ return [
   'sendmail'   => 'C:/laragon/bin/sendmail/sendmail.exe',
 
   'to'         => [
-    'address' => 'grcote7@gmail.com',
+    'address' => env('MAIL_USERNAME', 'votre@email.com'),
     'name'    => 'catch all emails'
   ],
 
