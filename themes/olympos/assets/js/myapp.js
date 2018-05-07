@@ -14,6 +14,7 @@ $(document).tooltip({
  * Auto hide navbar
  */
 jQuery(document).ready(function($){
+    
     var $header = $('.navbar-autohide'),
         scrolling = false,
         previousTop = 0,
@@ -50,5 +51,4 @@ jQuery(document).ready(function($){
         scrolling = false
     }
 
-    $('#testli').html('Ok par jQ');
 });
