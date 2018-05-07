@@ -21,6 +21,8 @@ $this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
   <button type="submit">Search</button>
 </form>
 
+<p id="testli">Ok 1234</p>
+
 <ul class="movie-list">
   {% for movie in movies %}
   <li>

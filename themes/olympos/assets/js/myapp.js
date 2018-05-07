@@ -49,4 +49,6 @@ jQuery(document).ready(function($){
         previousTop = currentTop
         scrolling = false
     }
+
+    $('#testli').html('Ok par jQ');
 });

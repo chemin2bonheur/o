@@ -13,8 +13,10 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('./themes/olympos/assets/');
 
+mix.js('./themes/olympos/assets/js/myapp.js',  
+    'dist/js/all.js')
 
-mix.js('./themes/olympos/assets/js/app.js', 'dist/js')
+
    .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
@@ -22,9 +24,9 @@ mix.browserSync({
     host: 'o',
     notify: true,
     files: [
-    	"./themes/olympos/assets/dist/css/*.css",
+    	"./themes/olympos/assets/dist/css/style.css",
      	"./themes/olympos/**/*.htm",
-     	"./themes/olympos/assets/dist/js/*.js"
+     	"./themes/olympos/assets/dist/js/all.js"
      ]
 })
 

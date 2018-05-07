@@ -29,7 +29,12 @@ security = "all"
 {% partial "footer" %}
 
 <!-- Scripts -->
-<script src="{{ 'assets/dist/js/all.js'|theme }}"></script>
+<script src="{{ 
+  [
+    'assets/js/jquery.js',
+    'assets/dist/js/all.js'
+  ]
+  |theme }}"></script>
 {% framework extras %}
 {% scripts %}
 
