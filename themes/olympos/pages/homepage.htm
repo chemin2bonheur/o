@@ -12,9 +12,8 @@ sortOrder = "id asc"
 <?php
 use Grcote7\Movies\Models\Movie;
 function onStart(){
-$this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
-$this->addCss('assets/sass/homepage.scss');
-$this->addJs('assets/js/homepage.js');
+  $this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
+  $this->addCss('assets/sass/homepage.scss');
 }
 ?>
 ==

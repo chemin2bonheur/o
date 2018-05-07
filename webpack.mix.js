@@ -13,8 +13,8 @@ let mix = require('laravel-mix');
 
 mix.setPublicPath('./themes/olympos/assets/');
 
-mix.js('./themes/olympos/assets/js/*.js',  
-    'dist/js/all.js')
+mix.js('./themes/olympos/assets/js/app.js',  
+    'dist/js')
 
 
    .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');

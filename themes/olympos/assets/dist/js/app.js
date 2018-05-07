@@ -63,22 +63,99 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__homepage_js__ = __webpack_require__(7);
+
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__homepage_js__["a" /* default */])();
+
+/*
+
+ * Application
+ */
+
+/*
+
+$(document).tooltip({
+    selector: "[data-toggle=tooltip]"
+})
+
+*/
+
+/*
+ * Auto hide navbar
+ */
+jQuery(document).ready(function ($) {
+
+    var $header = $('.navbar-autohide'),
+        scrolling = false,
+        previousTop = 0,
+        currentTop = 0,
+        scrollDelta = 10,
+        scrollOffset = 150;
+
+    $(window).on('scroll', function () {
+        if (!scrolling) {
+            scrolling = true;
+
+            if (!window.requestAnimationFrame) {
+                setTimeout(autoHideHeader, 250);
+            } else {
+                requestAnimationFrame(autoHideHeader);
+            }
+        }
+    });
+
+    function autoHideHeader() {
+        var currentTop = $(window).scrollTop();
+
+        // Scrolling up
+        if (previousTop - currentTop > scrollDelta) {
+            $header.removeClass('is-hidden');
+        } else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+            // Scrolling down
+            $header.addClass('is-hidden');
+        }
+
+        previousTop = currentTop;
+        scrolling = false;
+    }
+});
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\laragon\\www\\o\\themes\\olympos\\assets\\js\\*.js\""); }());
-module.exports = __webpack_require__(0);
+__webpack_require__(0);
+module.exports = __webpack_require__(1);
 
+
+/***/ }),
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = ajoutParImport;
+function ajoutParImport() {
+  $('#testli').html('Ok posé par un fichier importé en jQ chargé que pour la homepage.');
+}
 
 /***/ })
 /******/ ]);

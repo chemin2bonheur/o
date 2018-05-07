@@ -1,4 +1,8 @@
+import ajoutParImport from './homepage.js';
+ajoutParImport(); 
+
 /*
+
  * Application
  */
 

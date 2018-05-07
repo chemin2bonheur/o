@@ -1,1 +1,3 @@
-$('#testli').html('Ok posé ensuite par jQ chargé que pour la homepage.');
+export default function ajoutParImport() { 
+  $('#testli').html('Ok posé par un fichier importé en jQ chargé que pour la homepage.');
+}
