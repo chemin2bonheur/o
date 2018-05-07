@@ -1,5 +1,4 @@
 <?php
-
 use Grcote7\Movies\Models\Actor;
 use Grcote7\Movies\Models\Genre;
 use Grcote7\Movies\Models\Movie;
@@ -25,7 +24,7 @@ Route::get('seed-actors', function () {
 });
 
 
-Route::get('/populate-movies', function () {
+Route::get('populate-movies', function () {
 
   $faker = Faker\Factory::create();
 
@@ -39,9 +38,21 @@ Route::get('/populate-movies', function () {
     $movie->genres = $genres;
 
     $movie->created_at = $faker->date($format = 'Y-m-d H:i:s', $max = 'now');
-    $movie->published  = $faker->boolean($chanceOfGettingTrue = 50);
+    $movie->published = $faker->boolean($chanceOfGettingTrue = 50);
     $movie->save();
   }
 
   return $movies;
+});
+
+
+Route::get('sitemap.xml', function () {
+  $movies = Movie::all();
+  $genres = Genre::all();
+
+  return Response::view('grcote7.movies::sitemap', [
+    'movies' => $movies,
+    'genres' => $genres
+  ])
+    ->header('Content-Type', 'text/xml');
 });
