@@ -1,17 +1,14 @@
-import ajoutParImport from './homepage.js';
-ajoutParImport(); 
+import ajoutParImport from './homepagemsg.js';
+ajoutParImport();
 
 /*
-
  * Application
  */
 
 /*
-
 $(document).tooltip({
     selector: "[data-toggle=tooltip]"
 })
-
 */
 
 /*

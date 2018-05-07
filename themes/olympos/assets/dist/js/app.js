@@ -72,21 +72,18 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__homepage_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__homepagemsg_js__ = __webpack_require__(6);
 
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__homepage_js__["a" /* default */])();
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__homepagemsg_js__["a" /* default */])();
 
 /*
-
  * Application
  */
 
 /*
-
 $(document).tooltip({
     selector: "[data-toggle=tooltip]"
 })
-
 */
 
 /*
@@ -147,14 +144,15 @@ module.exports = __webpack_require__(1);
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = ajoutParImport;
 function ajoutParImport() {
-  $('#testli').html('Ok posé par un fichier importé en jQ chargé que pour la homepage.');
+            $('#testlihp').html('Ok posé par un fichier importé en jQ.');
+            $('#testlihp').css('border', '1px solid red').css('border-radius', '4px').css('padding', '5px 10px').css('background-color', '#fff');
+            $('#testlihp').append(' <span style="font-size:.8em; font-style:italic; color:red">(Et chargé par webpack.)</span>');
 }
 
 /***/ })

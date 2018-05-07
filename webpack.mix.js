@@ -15,9 +15,7 @@ mix.setPublicPath('./themes/olympos/assets/');
 
 mix.js('./themes/olympos/assets/js/app.js',  
     'dist/js')
-
-
-   .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');
+    .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
     proxy: 'o',

@@ -14,7 +14,9 @@ use Grcote7\Movies\Models\Movie;
 function onStart(){
   $this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
   $this->addCss('assets/sass/homepage.scss');
+  $this->addJs('assets/js/homepage.js');
 }
+
 ?>
 ==
 <form action="{{ 'search' | page }}" method="get">
@@ -22,7 +24,7 @@ function onStart(){
   <button type="submit">Search</button>
 </form>
 
-<p id="testli">Ok 1234</p>
+<p id="testlihp">Ok 1234</p>
 
 <ul class="movie-list">
   {% for movie in movies %}
