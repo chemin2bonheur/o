@@ -1,12 +1,12 @@
 title = "Movie single"
-url = "/movies/movie/:slug"
+url = "/movie/:id"
 layout = "default"
 is_hidden = 0
 
 [builderDetails]
-modelClass = "Grcote7\Movies\Models\Movie"
-identifierValue = "{{ :slug }}"
-modelKeyColumn = "slug"
+modelClass = "momo\Movies\Models\Movie"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
