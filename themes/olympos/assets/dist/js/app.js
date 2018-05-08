@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -72,7 +72,7 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__homepagemsg_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__homepagemsg_js__ = __webpack_require__(2);
 
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__homepagemsg_js__["a" /* default */])();
 
@@ -134,17 +134,6 @@ jQuery(document).ready(function ($) {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(0);
-module.exports = __webpack_require__(1);
-
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -154,6 +143,14 @@ function ajoutParImport() {
             $('#testlihp').css('border', '1px solid red').css('border-radius', '4px').css('padding', '5px 10px').css('background-color', '#fff');
             $('#testlihp').append(' <span style="font-size:.8em; font-style:italic; color:red">(Et chargé par webpack.)</span>');
 }
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0);
+module.exports = __webpack_require__(1);
+
 
 /***/ })
 /******/ ]);
