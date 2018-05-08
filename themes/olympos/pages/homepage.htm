@@ -13,8 +13,8 @@ sortOrder = "id asc"
 use Grcote7\Movies\Models\Movie;
 function onStart(){
   $this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
-  $this->addCss('assets/sass/homepage.scss');
-  $this->addJs('assets/js/homepage.js');
+$this->addCss('assets/sass/homepage.scss');
+$this->addJs('assets/js/homepage.js');
 }
 
 ?>
@@ -28,7 +28,7 @@ function onStart(){
 
 <ul class="movie-list">
   {% for movie in movies %}
-  <li>
+  <li class="ui segment stacked">
     {# Use spaceless tag to remove spaces inside the A tag. #}
     <h3>
       {% spaceless %}
