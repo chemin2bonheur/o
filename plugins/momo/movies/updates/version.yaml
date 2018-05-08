@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table momo_movies_'
     - builder_table_create_momo_movies_.php
+1.0.3:
+    - 'Updated table momo_movies_'
+    - builder_table_update_momo_movies_.php

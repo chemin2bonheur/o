@@ -1,5 +1,5 @@
 title = "Movies"
-url = "/movies"
+url = "/movies/:page?"
 layout = "default"
 is_hidden = 0
 
@@ -10,8 +10,9 @@ scopeValue = "{{ :scope }}"
 displayColumn = "name"
 noRecordsMessage = "No records found"
 detailsPage = "movie-single"
-detailsKeyColumn = "id"
-detailsUrlParameter = "id"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+recordsPerPage = 1
 pageNumber = "{{ :page }}"
 ==
 {% set records = builderList.records %}

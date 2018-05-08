@@ -1,12 +1,12 @@
 title = "Movie single"
-url = "/movie/:id"
+url = "/movies/:slug"
 layout = "default"
 is_hidden = 0
 
 [builderDetails]
 modelClass = "momo\Movies\Models\Movie"
-identifierValue = "{{ :id }}"
-modelKeyColumn = "id"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
