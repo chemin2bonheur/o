@@ -25,4 +25,11 @@ class Movie extends Model
      * @var string The database table used by the model.
      */
     public $table = 'momo_movies_';
+
+
+    /*RELATIONS */
+
+    public $attachOne = [
+        'poster' => 'opt/models/file'
+    ];
 }
