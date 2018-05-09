@@ -12,7 +12,14 @@
   <label for="lastname">Actor last name</label>
   <input type="text" name="lastname" value="Wayne">
 
-  <input type="file" name="actorimage">
+  <label>Actor Image</label>
+  <input type="file" name="actorimage" accept=" " image/*" data-request="onImageUpload" data-request-files
+  data-request-flash>
+
+  <div id="imageResult">No image to preview</div>
+
+  <br><br>
+
 
 
   <button type="submit">Save Actor</button>
