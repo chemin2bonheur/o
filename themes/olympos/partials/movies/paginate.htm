@@ -2,10 +2,10 @@
 <hr>
 <select class="ui fluid dropdown" name="Filter[page]">
   {% for i in 1..pages %}
-  {% if i == page %}
-  <option value="{{ i }}" selected>{{ i }}</option>
-  {% else %}
-  <option value="{{ i }}">{{ i }}</option>
-  {% endif %}
+    {% if i == page %}
+      <option value="{{ i }}" selected>{{ i }}</option>
+    {% else %}
+      <option value="{{ i }}">{{ i }}</option>
+    {% endif %}
   {% endfor %}
 </select>

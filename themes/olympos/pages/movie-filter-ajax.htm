@@ -50,9 +50,14 @@ is_hidden = 0
     
     <div class="five wide column">
 
-        {{ form_ajax('onFilterMovies', { update:
-         { 'movies/movies': '#partialMovies',  'movies/paginate': '#partialPaginate'}
-          }) }}
+        {{ form_ajax('onFilterMovies',
+            { update:
+                { 
+                'movies/movies': '#partialMovies',
+                'movies/paginate': '#partialPaginate'
+                }
+            }
+        ) }}
           
             <div id="MoviesFilter" class="movies-filter ui form">
                 <div class="ui segment vertical">
