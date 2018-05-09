@@ -51,4 +51,67 @@ class Movie extends Model {
   public $attachMany = [
     'movie_gallery' => 'System\Models\File'
   ];
+
+  public static $allowedSortingOptions = [
+    'name asc' => 'Name - asc',
+    'name desc' => 'Name - desc',
+    'year desc' => 'Year - desc',
+    'year asc' => 'Year - asc',
+  ];
+
+  public function scopeListFrontEnd($query, $options = []) {
+
+    extract(array_merge([
+                          'page'    => 1,
+                          'perPage' => 3,
+                          'sort'    => 'created_at desc',
+                          'genres'  => 'null',
+                          'year'    => ''
+                        ], $options));
+
+    if (!is_array($sort)) {
+      $sort = [$sort];
+    }
+
+    foreach ($sort as $_sort) {
+      if (in_array($_sort, array_keys(self::$allowedSortingOptions))) {
+        $parts = explode(' ', $_sort);
+
+        if (count($parts) < 2) {
+          array_push($parts, 'desc');
+        };
+
+        list($sortField, $sortDirection) = $parts;
+
+        $query->orderBy($sortField, $sortDirection);
+
+      }
+    }
+
+    if ($genres !== "null") {
+
+      if (!is_array($genres)) {
+        $genres = [$genres];
+      }
+
+      foreach ($genres as $genre) {
+        $query->whereHas('genres', function ($q) use ($genre) {
+          $q->where('id', '=', $genre);
+        });
+      }
+    }
+
+    $lastPage = $query->paginate($perPage, $page)->lastPage();
+
+    if ($lastPage < $page) {
+      $page = 1;
+    }
+
+    if ($year) {
+      $query->where('year', '=', $year);
+    }
+
+    return $query->paginate($perPage, $page);
+  }
+
 }

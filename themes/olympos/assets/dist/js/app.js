@@ -86,11 +86,11 @@ $(document).tooltip({
 })
 */
 
-/*
- * Auto hide navbar
- */
 jQuery(document).ready(function ($) {
 
+    /*
+     * Auto hide navbar
+     */
     var $header = $('.navbar-autohide'),
         scrolling = false,
         previousTop = 0,
@@ -125,6 +125,15 @@ jQuery(document).ready(function ($) {
         scrolling = false;
     }
 });
+
+(function ($) {
+
+    $('#maCase').html('<strong>Salut</strong> le Monde !');
+    $('#MoviesFilter').on('change', 'input, select', function () {
+        var $form = $(this).closest('form');
+        $form.request();
+    });
+})(jQuery);
 
 /***/ }),
 /* 1 */
