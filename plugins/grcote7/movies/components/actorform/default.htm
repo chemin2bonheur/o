@@ -1,4 +1,4 @@
-<form method="POST" action="{{ url('add-actors') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+<form data-request="onSubmit" data-request-files data-request-flash>
 
   <input type="hidden" name="_handler" value="onSave">
 
@@ -6,16 +6,8 @@
 
   {{ form_sessionKey() }}
 
-  {% flash success %}
-  <div class="flash success">{{ message }}</div>
-  {% endflash %}
-
-  {% flash success %}
-  <p>{{ message }}</p>
-  {% endflash %}
-
   <label>Actor name</label>
-  <input type="text" name="name" value="John"/>
+  <input type="text" name="name" value="aaJohn"/>
 
   <label for="lastname">Actor last name</label>
   <input type="text" name="lastname" value="Wayne">

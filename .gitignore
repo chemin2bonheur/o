@@ -19,6 +19,4 @@ composer.lock
 # for netbeans
 nbproject
 
-config/mail.php
-
 node_modules/

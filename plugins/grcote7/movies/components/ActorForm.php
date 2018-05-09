@@ -22,7 +22,7 @@ class ActorForm extends ComponentBase {
     $this->addCss('assets/css/style.css');
   }
 
-  public function onSave() {
+  public function onSubmit() {
 
     $actor = new Actor();
     $actor->name = Input::get('name');
@@ -31,7 +31,6 @@ class ActorForm extends ComponentBase {
     $actor->save();
 
     Flash::success('Actor added!');
-    return Redirect::back();
 
   }
 }
