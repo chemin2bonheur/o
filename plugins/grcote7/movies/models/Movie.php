@@ -53,10 +53,10 @@ class Movie extends Model {
   ];
 
   public static $allowedSortingOptions = [
-    'name asc' => 'Name - asc',
-    'name desc' => 'Name - desc',
-    'year desc' => 'Year - desc',
-    'year asc' => 'Year - asc',
+    'name asc' => 'Name - Asc',
+    'name desc' => 'Name - Desc',
+    'year asc' => 'Year - Asc',
+    'year desc' => 'Year - Desc'
   ];
 
   public function scopeListFrontEnd($query, $options = []) {
