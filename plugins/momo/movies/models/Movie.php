@@ -30,6 +30,6 @@ class Movie extends Model
     /*RELATIONS */
 
     public $attachOne = [
-        'poster' => 'opt/models/file'
+        'poster' => 'system/models/file'
     ];
 }
