@@ -1,0 +1,4 @@
+title: Tutos
+modelClass: Grcote7\Tutos\Models\Tuto
+toolbar:
+    buttons: reorder_toolbar

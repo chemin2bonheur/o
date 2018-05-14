@@ -1,0 +1,25 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    author:
+        label: Author
+        span: auto
+        type: text
+    url:
+        label: URL
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: richeditor
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text

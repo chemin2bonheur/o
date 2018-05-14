@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table grcote7_tutos_courses'
+    - builder_table_create_grcote7_tutos_courses.php
+1.0.3:
+    - 'Created table grcote7_tutos_tutos'
+    - builder_table_create_grcote7_tutos_tutos.php
+1.0.4:
+    - 'Updated table grcote7_tutos_courses'
+    - builder_table_update_grcote7_tutos_courses.php
+1.0.5:
+    - 'Updated table grcote7_tutos_courses'
+    - builder_table_update_grcote7_tutos_courses_2.php
+1.0.6:
+    - 'Created table grcote7_tutos_categories'
+    - builder_table_create_grcote7_tutos_categories.php
+1.0.7:
+    - 'Created table grcote7_tutos_tutos_categories'
+    - builder_table_create_grcote7_tutos_tutos_categories.php
+1.0.8:
+    - 'Updated table grcote7_tutos_tutos'
+    - builder_table_update_grcote7_tutos_tutos.php
+1.0.9:
+    - 'Updated table grcote7_tutos_tutos'
+    - builder_table_update_grcote7_tutos_tutos_2.php

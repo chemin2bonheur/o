@@ -1,0 +1,10 @@
+name: Tutos
+form: $/grcote7/tutos/models/tuto/fields.yaml
+modelClass: Grcote7\Tutos\Models\Tuto
+defaultRedirect: grcote7/tutos/tutos
+create:
+    redirect: 'grcote7/tutos/tutos/update/:id'
+    redirectClose: grcote7/tutos/tutos
+update:
+    redirect: grcote7/tutos/tutos
+    redirectClose: grcote7/tutos/tutos

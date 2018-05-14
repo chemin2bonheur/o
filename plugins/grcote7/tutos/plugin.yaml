@@ -1,0 +1,11 @@
+plugin:
+    name: 'grcote7.tutos::lang.plugin.name'
+    description: 'grcote7.tutos::lang.plugin.description'
+    author: Grcote7
+    icon: oc-icon-graduation-cap
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'grcote7.tutos::lang.plugin.name'
+        url: grcote7/tutos/tutos
+        icon: icon-graduation-cap

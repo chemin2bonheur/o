@@ -2,17 +2,16 @@
 <header class="main-header">
 
   <div class="container clearfix">
-    <h1 class="logo">O Movies</h1>
+    <h1 class="logo">O Tutos</h1>
 
     <mav class="main-nav">
       <ul>
         <li class="{% if this.page.id == 'homepage' %} active {% endif %}"><a href="{{ 'homepage'|page }}">Home</a></li>
+
         <li class="{% if this.page.id == 'movies' %} active {% endif %}"><a href="{{ 'movies'|page }}">Movies</a></li>
-        <li class="{% if this.page.id == 'add-actors' %} active {% endif %}"><a href="{{ 'add-actors'|page }}">Add
-          actors</a></li>
-        <li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contact</a>
-        </li>
+
         <li class="{% if this.page.id == 'tutos' %} active {% endif %}"><a href="{{ 'tutos'|page }}">Tutos</a></li>
+
         <li class="{% if this.page.id == 'test' %} active {% endif %}"><a href="{{ 'test'|page }}">Test</a></li>
         <li><a href="about">About</a></li>
 
