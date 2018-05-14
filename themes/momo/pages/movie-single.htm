@@ -23,9 +23,9 @@ notFoundMessage = "Record not found"
 <h4>{{ record.year }}</h4>
 
 <h3>Genres</h3>
-{% for genre in record.genres %}
-{{genre.genre_title}}</br>
-{% endfor %}
+    {% for genre in record.genres %}
+    {{genre.genre_title}}</br>
+    {% endfor %}
 
 
 <h3>Description</h3>

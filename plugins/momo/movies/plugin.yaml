@@ -9,3 +9,8 @@ navigation:
         label: Movies
         url: momo/movies/movies
         icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: momo/movies/genres
+                icon: icon-tag

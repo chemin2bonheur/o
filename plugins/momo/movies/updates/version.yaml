@@ -6,3 +6,12 @@
 1.0.3:
     - 'Updated table momo_movies_'
     - builder_table_update_momo_movies_.php
+1.0.4:
+    - 'Created table momo_movies_genres'
+    - builder_table_create_momo_movies_genres.php
+1.0.5:
+    - 'Created table momo_movies_movies_genres'
+    - builder_table_create_momo_movies_movies_genres.php
+1.0.6:
+    - 'Updated table momo_movies_movies_genres'
+    - builder_table_update_momo_movies_movies_genres.php

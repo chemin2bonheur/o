@@ -1,0 +1,10 @@
+name: Genres
+form: $/momo/movies/models/genre/fields.yaml
+modelClass: momo\Movies\Models\Genre
+defaultRedirect: momo/movies/genres
+create:
+    redirect: 'momo/movies/genres/update/:id'
+    redirectClose: momo/movies/genres
+update:
+    redirect: momo/movies/genres
+    redirectClose: momo/movies/genres
