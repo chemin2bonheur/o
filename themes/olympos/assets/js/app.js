@@ -6,63 +6,62 @@ ajoutParImport();
  */
 
 /*
-$(document).tooltip({
-    selector: "[data-toggle=tooltip]"
-})
-*/
+ $(document).tooltip({
+ selector: "[data-toggle=tooltip]"
+ })
+ */
 
-jQuery(document).ready(function($){
-    
-    /*
-     * Auto hide navbar
-     */
-    var $header = $('.navbar-autohide'),
-        scrolling = false,
-        previousTop = 0,
-        currentTop = 0,
-        scrollDelta = 10,
-        scrollOffset = 150
+jQuery(document).ready(function ($) {
 
-    $(window).on('scroll', function(){
-        if (!scrolling) {
-            scrolling = true
+  /*
+   * Auto hide navbar
+   */
+  var $header = $('.navbar-autohide'),
+    scrolling = false,
+    previousTop = 0,
+    currentTop = 0,
+    scrollDelta = 10,
+    scrollOffset = 150
 
-            if (!window.requestAnimationFrame) {
-                setTimeout(autoHideHeader, 250)
-            }
-            else {
-                requestAnimationFrame(autoHideHeader)
-            }
-        }
-    })
+  $(window).on('scroll', function () {
+    if (!scrolling) {
+      scrolling = true
 
-    function autoHideHeader() {
-        var currentTop = $(window).scrollTop()
-
-        // Scrolling up
-        if (previousTop - currentTop > scrollDelta) {
-            $header.removeClass('is-hidden')
-        }
-        else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
-            // Scrolling down
-            $header.addClass('is-hidden')
-        }
-
-        previousTop = currentTop
-        scrolling = false
+      if (!window.requestAnimationFrame) {
+        setTimeout(autoHideHeader, 250)
+      }
+      else {
+        requestAnimationFrame(autoHideHeader)
+      }
     }
+  })
+
+  function autoHideHeader() {
+    var currentTop = $(window).scrollTop()
+
+    // Scrolling up
+    if (previousTop - currentTop > scrollDelta) {
+      $header.removeClass('is-hidden')
+    }
+    else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+      // Scrolling down
+      $header.addClass('is-hidden')
+    }
+
+    previousTop = currentTop
+    scrolling = false
+  }
 
 });
 
 
-(function($){
+(function ($) {
 
-    $('#maCase').html('<strong>Salut</strong> le Monde !');
-    $('#MoviesFilter').on('change','input, select', function(){
-        var $form = $(this).closest('form');
-        $form.request();
-    })
-
+  $('#maCase').html('<strong>Salut</strong> le Monde !');
+  $('#MoviesFilter').on('change', 'input, select', function () {
+    var $form = $(this).closest('form');
+    $form.request();
+  })
 
 })(jQuery);
 

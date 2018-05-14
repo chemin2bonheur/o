@@ -3,4 +3,18 @@ url = "/tutos"
 layout = "tutos"
 is_hidden = 0
 ==
+<?php
+use Grcote7\Tutos\Models\Tuto;
+function onStart(){
+$this['tutos'] = Tuto::all();
+}
+?>
+==
 <h1>Tutos</h1>
+<ul>
+  {% for tuto in tutos %}
+  <li class="ui segment stacked"><h3>{{ tuto.id }} - <a href="tutos/tuto/{{tuto.slug}}">{{ tuto.title }}</a></h3>
+    <a href="{{tuto.url}}" target="_blank">{{ tuto.author }}</a>
+  </li>
+  {% endfor %}
+</ul>

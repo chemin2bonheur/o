@@ -1,0 +1,29 @@
+title = "Tuto single"
+url = "/tutos/tuto/:slug"
+layout = "tutos"
+is_hidden = 0
+==
+<?php
+use Grcote7\Tutos\Models\Tuto;
+function onStart(){
+$this['tuto'] = Tuto::where('slug','=',$this->param('slug'))->first();
+//dd($this['tuto']);
+$this->addJs('assets/js/accordion.min.js');
+$this->addJs('assets/js/actionaccordion.js');
+}
+?>
+==
+{% if tuto %}
+<br>
+<h1 class="ui segment stacked">{{ tuto.title }}</h1>
+
+<div class="ui accordion">
+  <div class="title"><i class="dropdown icon"></i>Description</div>
+  <div class="content">
+    <p class="transition">{{ tuto.description|raw }}</p>
+  </div>
+</div>
+
+{% else %}
+No tuto found
+{% endif %}
