@@ -1,0 +1,44 @@
+fields:
+    id:
+        label: Id
+        span: auto
+        disabled: 1
+        trigger:
+            action: disable
+            field: number1
+            condition: ''
+        preset:
+            field: id
+            type: ''
+        type: number
+    title:
+        label: Title
+        span: auto
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: auto
+        type: richeditor
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    duration:
+        label: Duration
+        mode: time
+        span: auto
+        type: datepicker
+    url:
+        label: URL
+        span: auto
+        type: text
+    tuto_id:
+        label: 'Tuto ID'
+        span: auto
+        nameFrom: title
+        descriptionFrom: title
+        type: relation

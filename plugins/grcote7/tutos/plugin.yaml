@@ -9,3 +9,8 @@ navigation:
         label: 'grcote7.tutos::lang.plugin.name'
         url: grcote7/tutos/tutos
         icon: icon-graduation-cap
+        sideMenu:
+            side-menu-item:
+                label: Courses
+                url: grcote7/tutos/courses
+                icon: icon-folder-open

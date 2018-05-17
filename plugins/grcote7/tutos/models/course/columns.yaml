@@ -1,0 +1,19 @@
+columns:
+    id:
+        label: Id
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    duration:
+        label: Duration
+        type: time
+        sortable: true
+    tuto_id:
+        label: 'Tuto ID'
+        type: number
+        sortable: true

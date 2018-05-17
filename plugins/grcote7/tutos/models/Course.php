@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Tuto extends Model {
+class Course extends Model {
   use \October\Rain\Database\Traits\Validation;
 
   /*
@@ -23,13 +23,9 @@ class Tuto extends Model {
   /**
    * @var string The database table used by the model.
    */
-  public $table = 'grcote7_tutos_tutos';
+  public $table = 'grcote7_tutos_courses';
 
-  public $hasMany = [
-    'courses' => [
-      'Grcote7\Tutos\Models\Tuto',
-      'order' => 'id desc'
-    ]
+  public $belongsTo = [
+    'tutos' => 'Grcote7\Tutos\Models\Tuto'
   ];
-
 }

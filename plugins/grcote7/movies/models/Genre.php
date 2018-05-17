@@ -26,8 +26,6 @@ class Genre extends Model
      */
     public $table = 'grcote7_movies_genres';
 
-
-
     public $belongsToMany = [
     'movies' => [
       'Grcote7\Movies\Models\Movie',

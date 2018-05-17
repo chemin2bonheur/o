@@ -1,0 +1,10 @@
+name: Courses
+form: $/grcote7/tutos/models/course/fields.yaml
+modelClass: Grcote7\Tutos\Models\Course
+defaultRedirect: grcote7/tutos/courses
+create:
+    redirect: 'grcote7/tutos/courses/update/:id'
+    redirectClose: grcote7/tutos/courses
+update:
+    redirect: grcote7/tutos/courses
+    redirectClose: grcote7/tutos/courses

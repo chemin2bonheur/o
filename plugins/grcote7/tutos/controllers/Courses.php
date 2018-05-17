@@ -3,10 +3,10 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Tutos extends Controller
+class Courses extends Controller
 {
     public $implement = [
-        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'
+        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController',        'Backend\Behaviors\ReorderController'    
     ];
     
     public $listConfig = 'config_list.yaml';
@@ -16,6 +16,6 @@ class Tutos extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Grcote7.Tutos', 'main-menu-item');
+        BackendMenu::setContext('Grcote7.Tutos', 'main-menu-item', 'side-menu-item');
     }
 }
