@@ -1,6 +1,6 @@
 title = "Blog"
 url = "/blog"
-layout = "default"
+layout = "tutos"
 is_hidden = 0
 
 [blogPosts]
@@ -11,4 +11,8 @@ sortOrder = "published_at desc"
 categoryPage = 404
 postPage = "blog-post"
 ==
+<h1>Welcome to {{ this.theme.site_name }} (Version {{ this.theme.site_color }}) !</h1>
+
+{% content 'welcomeBlog.htm' visitor='dear lector' %}
+
 {% component 'blogPosts' %}

@@ -3,3 +3,11 @@ description: 'New starter theme'
 author: Ivan
 homepage: 'http:://Watch-learn.com'
 code: ''
+form:
+    fields:
+        site_name:
+            label: Olympos Tuto
+            comment: My version of Olympos to learn October
+            default: O Tutos
+        site_color:
+            default: tomato / cornsilk

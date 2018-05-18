@@ -13,6 +13,10 @@
         <li class="{% if this.page.id == 'tutos' %} active {% endif %}"><a href="{{ 'tutos'|page }}">Tutos</a></li>
 
         <li class="{% if this.page.id == 'test' %} active {% endif %}"><a href="{{ 'test'|page }}">Test</a></li>
+
+        <li class="{% if this.page.id == 'blog' or this.page.id == 'blog-post' %} active {% endif %}"><a
+            href="{{ 'blog'|page }}">Blog</a></li>
+
         <li><a href="about">About</a></li>
 
         {% if not user %}
