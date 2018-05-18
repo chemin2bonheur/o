@@ -1,0 +1,6 @@
+plugin:
+    name: 'grcote7.books::lang.plugin.name'
+    description: 'grcote7.books::lang.plugin.description'
+    author: Grcote7
+    icon: oc-icon-book
+    homepage: ''

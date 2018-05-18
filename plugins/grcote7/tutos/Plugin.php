@@ -1,4 +1,4 @@
-<?php namespace GrCote7\Tutos;
+<?php namespace Grcote7\Tutos;
 
 use System\Classes\PluginBase;
 
@@ -7,7 +7,7 @@ class Plugin extends PluginBase
         /**
      * @var array Plugin dependencies
      */
-    public $require = ['Rainlab.User'];
+    public $require = ['RainLab.User'];
 
         public function pluginDetails()
     {
