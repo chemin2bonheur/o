@@ -18,7 +18,12 @@ pageNumber = "{{ :page }}"
 
 [fakeBooks]
 typeString = 0
+
+[Clicks]
 ==
+{% component 'Clicks' %}
+
+
 <h1>Books</h1>
 
 {% component 'builderList' %}
@@ -36,8 +41,12 @@ typeString = 0
 
 {% set typeString = fakeBooks.property('typeString') ? "String":"Serialized" %}
 
-Affichage: <strong>{{typeString }}</strong> (Property in the component)
+Affichage: <strong>{{ typeString }}</strong> (Property in the component)
 
 <br>
 <br>
 {{ fakeBooks.listing }}
+<br><br>
+
+( Param <strong>{{ fakeBooks.paramOki['name'] }}</strong> : URL = / <strong>{{ fakeBooks.paramOki['value'] }}</strong> )
+<br>

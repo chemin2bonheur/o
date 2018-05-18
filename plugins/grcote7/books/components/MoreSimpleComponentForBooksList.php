@@ -23,11 +23,20 @@ class MoreSimpleComponentForBooksList extends ComponentBase {
     ];
   }
 
+  public function paramOki() {
+
+    $paramOki = [
+      'value' => $this->property('okiContent'),
+      'name'  => $this->paramName('okiContent'),
+    ];
+    return $paramOki;
+  }
 
   // This array becomes available on the page as {{ component.books }}
   public function listing() {
 
-    $listing = ['First Book', 'Second Book', 'Third Book', $this->property('typeString'), $this->param('oki')];
+    $listing = ['First Book', 'Second Book', 'Third Book', $this->property('typeString'), $this->param('oki'), $this->property('okiContent')];
+
     return ($this->property('typeString')) ? implode(', ', $listing) : serialize($listing);
   }
 

@@ -19,6 +19,7 @@ class Plugin extends PluginBase {
     return [
       'Grcote7\Books\Components\Books'                           => 'Books',
       'Grcote7\Books\Components\MoreSimpleComponentForBooksList' => 'fakeBooks',
+      'Grcote7\Books\Components\Clicks'                          => 'Clicks',
     ];
   }
 
