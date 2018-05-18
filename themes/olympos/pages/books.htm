@@ -29,5 +29,15 @@ typeString = 0
 {% component 'Books' %}
 
 <hr><br>
+
 <strong>Here to see 3 fake books hardcoded, directly générate in the component class.</strong><br>
+
+<br>
+
+{% set typeString = fakeBooks.property('typeString') ? "String":"Serialized" %}
+
+Affichage: <strong>{{typeString }}</strong> (Property in the component)
+
+<br>
+<br>
 {{ fakeBooks.listing }}

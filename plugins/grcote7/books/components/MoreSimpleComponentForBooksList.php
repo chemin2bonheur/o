@@ -30,5 +30,4 @@ class MoreSimpleComponentForBooksList extends ComponentBase {
     return ($this->property('typeString')) ? implode(', ', $listing) : serialize($listing);
   }
 
-
 }
