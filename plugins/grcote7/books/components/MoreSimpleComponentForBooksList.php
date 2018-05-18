@@ -26,7 +26,8 @@ class MoreSimpleComponentForBooksList extends ComponentBase {
 
   // This array becomes available on the page as {{ component.books }}
   public function listing() {
-    $listing = ['First Book', 'Second Book', 'Third Book', $this->property('typeString')];
+
+    $listing = ['First Book', 'Second Book', 'Third Book', $this->property('typeString'), $this->param('oki')];
     return ($this->property('typeString')) ? implode(', ', $listing) : serialize($listing);
   }
 
