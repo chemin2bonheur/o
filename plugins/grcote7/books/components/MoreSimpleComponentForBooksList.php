@@ -12,8 +12,23 @@ class MoreSimpleComponentForBooksList extends ComponentBase {
     ];
   }
 
+  public function defineProperties() {
+    return [
+      'typeString' => [
+        'title'       => 'Serialized / String',
+        'description' => 'Choice of type of stringback (0 - Serialized, or 1 - Comma separated)',
+        'type'        => 'checkbox',
+        'default'     => 0
+      ]
+    ];
+  }
+
+
   // This array becomes available on the page as {{ component.books }}
   public function listing() {
-    return serialize(['First Book', 'Second Book', 'Third Book']);
+    $listing = ['First Book', 'Second Book', 'Third Book', $this->property('typeString')];
+    return ($this->property('typeString')) ? implode(', ', $listing) : serialize($listing);
   }
+
+
 }
