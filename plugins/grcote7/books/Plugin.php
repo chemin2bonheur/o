@@ -16,6 +16,10 @@ class Plugin extends PluginBase {
 
 
   public function registerComponents() {
+    return [
+      'Grcote7\Books\Components\Books'                           => 'Books',
+      'Grcote7\Books\Components\MoreSimpleComponentForBooksList' => 'fakeBooks',
+    ];
   }
 
   public function registerSettings() {

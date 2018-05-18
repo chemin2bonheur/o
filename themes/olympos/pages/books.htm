@@ -1,0 +1,32 @@
+title = "Books"
+url = "/books"
+layout = "tutos"
+description = "List of books"
+is_hidden = 0
+
+[builderList]
+modelClass = "Grcote7\Books\Models\Book"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[Books]
+[fakeBooks]
+==
+<h1>Books</h1>
+
+{% component 'builderList' %}
+
+<hr>
+<br>
+
+{% component 'Books' %}
+
+<hr><br>
+<strong>Here to see 3 fake books hardcoded, directly générate in the component class.</strong><br>
+{{ fakeBooks.listing }}
+

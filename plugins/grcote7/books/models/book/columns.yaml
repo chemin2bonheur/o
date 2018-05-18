@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: Id
+        type: number
+        sortable: true
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    published:
+        label: Published
+        type: switch
+        default: 'False'
+        sortable: true

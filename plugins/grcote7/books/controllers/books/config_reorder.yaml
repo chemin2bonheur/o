@@ -1,0 +1,4 @@
+title: Books
+modelClass: Grcote7\Books\Models\Book
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,27 @@
+fields:
+    id:
+        label: Id
+        span: auto
+        disabled: 1
+        type: text
+    title:
+        label: Title
+        span: auto
+        type: text
+    description:
+        label: 'grcote7.books::lang.plugin.description'
+        size: ''
+        span: auto
+        type: richeditor
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    published:
+        label: Published
+        span: auto
+        defaultFrom: switch1
+        type: switch

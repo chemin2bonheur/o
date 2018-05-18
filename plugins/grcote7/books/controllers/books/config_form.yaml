@@ -1,0 +1,10 @@
+name: Books
+form: $/grcote7/books/models/book/fields.yaml
+modelClass: Grcote7\Books\Models\Book
+defaultRedirect: grcote7/books/books
+create:
+    redirect: 'grcote7/books/books/update/:id'
+    redirectClose: grcote7/books/books
+update:
+    redirect: grcote7/books/books
+    redirectClose: grcote7/books/books

@@ -1,0 +1,11 @@
+{% set books = __SELF__.books %}
+
+<strong>List of books (By a complete component "Books")</strong>
+<br>
+<ul>
+  {% for book in books %}
+  <li>{{ book.id }} - {{ book.title }}</li>
+  {% endfor %}
+</ul>
+
+
