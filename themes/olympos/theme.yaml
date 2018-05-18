@@ -11,3 +11,7 @@ form:
             default: O Tutos
         site_color:
             default: tomato / cornsilk
+        link_color:
+            label: Link color
+            type: colorpicker
+            assetVar: 'link-color'
