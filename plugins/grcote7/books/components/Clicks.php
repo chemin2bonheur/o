@@ -14,25 +14,30 @@ class Clicks extends ComponentBase {
     ];
   }
 
-
   public function onRun() {
     // Réc valuer du compteur
-    $this->counter = $this->loadCounter();
+    $this->counter = $this->nf($this->loadCounter());
     // return ['#someDiv' => $this->renderPartial('component-partial.htm')];
   }
 
-  public function incrementCounter() {
-
-
+  public function onIncrementCounter() {
+    $this->page['counter'] = $this->loadCounter() + 1;
   }
 
-
   protected function loadCounter() {
-
-    $val = 123;
-    // dd($query);
+    $val = 1234;
+    // dd($val);
     return $val;
   }
 
+  protected function saveCounter($val = 777) {
+    echo('Save the new value of the counter.');
+    // dd($query);
+    return $this->nf($val);
+  }
+
+  protected function nf($n) {
+    return number_format($n, 0, ',', ' ');
+  }
 
 }

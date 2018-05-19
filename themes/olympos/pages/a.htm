@@ -1,0 +1,18 @@
+title = "A"
+url = "/a"
+layout = "tutos"
+is_hidden = 0
+
+[Clicks]
+==
+<h1>Page bouton Ajax</h1>
+
+<form
+    data-request="onIncrementCounter"
+    data-request-update="getNewCounter: '#counter'"
+    >
+
+  <button type="submit" data-attach-loading><p id="counter"> {{ Clicks.counter }} </p>
+  </button>
+
+</form>

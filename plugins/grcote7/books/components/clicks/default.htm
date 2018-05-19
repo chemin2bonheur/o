@@ -1,11 +1,8 @@
-<h1>Form Boutton</h1>
+<form
+    data-request="{{ __SELF__ }}::onIncrementcounter"
+    data-request-update="{{ __SELF__ }}::getCounter: '#counter'"
+>
 
-<h1>
-  <div id="counter"> {{ Clicks.counter}}</div>
-</h1>
-
-<form data-request="onTest" data-request-update="calcresult: '#result'">
-
-  <button type="submit">Add 1 click !</button>
+  <button type="submit" data-request="onIncrementcounter" data-attach-loading><p id="counter"> {{ Clicks.counter}} </p></button>
 
 </form>
