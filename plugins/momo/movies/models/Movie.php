@@ -27,6 +27,8 @@ class Movie extends Model
     public $table = 'momo_movies_';
 
 
+    protected $jsonable = ['actors'];
+
     /*RELATIONS */
 
     public $belongsToMany = [
@@ -44,4 +46,6 @@ class Movie extends Model
     public $attachMany = [
         'movie_gallery'=>'System\Models\File'
     ];
+
+    
 }

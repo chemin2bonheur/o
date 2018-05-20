@@ -24,13 +24,24 @@ notFoundMessage = "Record not found"
 
 <h3>Genres</h3>
     {% for genre in record.genres %}
-    {{genre.genre_title}}</br>
+    <a href="/genres/{{genre.slug}}">{{genre.genre_title}}</a></br>
     {% endfor %}
 
 
 <h3>Description</h3>
 
 {{ record.description|raw }}
+
+
+<h3>Actors</h3>
+
+{% for actor in record.actors %}
+
+    <ul>{{ actor.actor_name }}
+    {{actor.actor_age}}</ul>
+    
+
+{% endfor %}
 
 <h3>Gallery</h3>
 <ul class="gallery clearfix">

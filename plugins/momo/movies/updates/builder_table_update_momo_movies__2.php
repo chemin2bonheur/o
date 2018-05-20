@@ -3,13 +3,13 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableUpdateMomoMovies extends Migration
+class BuilderTableUpdateMomoMovies2 extends Migration
 {
     public function up()
     {
         Schema::table('momo_movies_', function($table)
         {
-            $table->string('slug')->nullable();
+            $table->text('actors')->nullable();
         });
     }
     
@@ -17,7 +17,7 @@ class BuilderTableUpdateMomoMovies extends Migration
     {
         Schema::table('momo_movies_', function($table)
         {
-            $table->dropColumn('slug');
+            $table->dropColumn('actors');
         });
     }
 }

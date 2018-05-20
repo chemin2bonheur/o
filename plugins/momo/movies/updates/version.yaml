@@ -15,3 +15,6 @@
 1.0.6:
     - 'Updated table momo_movies_movies_genres'
     - builder_table_update_momo_movies_movies_genres.php
+1.0.7:
+    - 'Updated table momo_movies_'
+    - builder_table_update_momo_movies__2.php

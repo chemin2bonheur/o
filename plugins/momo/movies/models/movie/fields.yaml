@@ -47,3 +47,21 @@ fields:
         nameFrom: genre_title
         descriptionFrom: description
         type: relation
+tabs:
+    fields:
+        actors:
+            label: Actors
+            prompt: 'Add new item'
+            span: auto
+            type: repeater
+            tab: 'Tab 1'
+            form:
+                fields:
+                    actor_name:
+                        label: 'Actor name'
+                        span: auto
+                        type: text
+                    actor_age:
+                        label: 'Actor age'
+                        span: auto
+                        type: text

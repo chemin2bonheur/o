@@ -25,4 +25,14 @@ class Genre extends Model
      * @var string The database table used by the model.
      */
     public $table = 'momo_movies_genres';
+
+
+    public $belongsToMany = [
+        'movies' =>[
+            'momo\Movies\Models\Movie',
+            'table'=>'momo_movies_movies_genres',
+            'order'=>'name'
+        ]
+    ];
+
 }

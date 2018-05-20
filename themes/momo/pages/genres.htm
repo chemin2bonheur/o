@@ -1,0 +1,26 @@
+title = "Genres"
+url = "/genres/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "momo\Movies\Models\Genre"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "genre_title"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h1>{{ attribute(record, displayColumn) }}</h1>
+
+    {% for movie in record.movies %}
+       {{movie.name}}<br/>
+
+    {% endfor %}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}
