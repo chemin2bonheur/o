@@ -7,5 +7,5 @@ Done just for code all (With use of the Builder plugin)
  3. **Model Book** (+ Form + List)
  4. CMS: Link in navbar + **page books**
  5. **Components Books and fakeBooks** (1 hyper simple (With property) and 1 complete)
- 6. **Table owners**
- 7. **Clicks** Component with a button for count of clicks on it (in AJAX)
+ 6. **Clicks** Component with a button for count of clicks on it (in AJAX)
+ 7. **Table owners**
