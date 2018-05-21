@@ -1,2 +1,18 @@
+{% set books = __SELF__.books %}
+{% set owners = __SELF__.owners %}
+
 <h1>Test</h1>
 
+<ul>
+  {% for book in books %}
+  <li>{{ book.title }} {{ book.owner_id }}</li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+<ul>
+  {% for owner in owners %}
+  <li>{{ owner.firstname }} {{ owner.lastname }}</li>
+  {% endfor %}
+</ul>

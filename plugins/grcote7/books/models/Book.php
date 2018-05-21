@@ -19,7 +19,9 @@ class Book extends Model {
    */
   public $table = 'grcote7_books_';
 
-  public $belongsTo = [
-    'owner' => ['Grcote7\Books\Models\Owner']
-  ];
+  public $belongsTo = ['owner' => 'Grcote7\Books\Models\Owner'];
+
+  public function owner() {
+    return 'dudu';
+  }
 }

@@ -18,3 +18,8 @@ columns:
         type: number
         searchable: true
         sortable: true
+    owner:
+        label: Owner
+        type: text
+        select: concat(firstname,' ',lastname)
+        relation: owner

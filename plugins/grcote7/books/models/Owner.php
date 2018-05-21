@@ -8,7 +8,10 @@ use Model;
 class Owner extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
+
+    protected $fillable = ['firstname', 'lastname'];
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
