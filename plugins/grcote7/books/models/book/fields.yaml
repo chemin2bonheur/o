@@ -25,3 +25,8 @@ fields:
         span: auto
         defaultFrom: switch1
         type: switch
+    owner:
+        label: Owner
+        span: auto
+        select: 'concat(firstname,'' '',lastname)'
+        type: relation

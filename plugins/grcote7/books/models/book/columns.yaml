@@ -13,3 +13,8 @@ columns:
         type: switch
         default: 'False'
         sortable: true
+    owner_id:
+        label: OwnerId
+        type: number
+        searchable: true
+        sortable: true

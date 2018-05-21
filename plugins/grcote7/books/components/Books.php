@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Lang;
 
 class Books extends ComponentBase {
 
-  public $fakebooks, $books;
+  public $fakebooks, $books, $aVar;
 
   public function componentDetails() {
     return [
@@ -16,9 +16,10 @@ class Books extends ComponentBase {
     ];
   }
 
-
   public function onRun() {
+    $this->aVar = 789;
     $this->books = $this->loadBooks();
+    trace_log('The books are loaded');
   }
 
   protected function loadBooks() {
@@ -26,7 +27,6 @@ class Books extends ComponentBase {
     // dd($query);
     return $query;
   }
-
 
   // This array becomes available on the page as {{ component.books }}
   public function getbooks() {

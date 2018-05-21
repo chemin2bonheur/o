@@ -1,0 +1,10 @@
+name: Owners
+form: $/grcote7/books/models/owner/fields.yaml
+modelClass: Grcote7\Books\Models\Owner
+defaultRedirect: grcote7/books/owners
+create:
+    redirect: 'grcote7/books/owners/update/:id'
+    redirectClose: grcote7/books/owners
+update:
+    redirect: grcote7/books/owners
+    redirectClose: grcote7/books/owners

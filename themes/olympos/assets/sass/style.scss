@@ -16,10 +16,19 @@ body {
   //background-color:blue;
 }
 
-h1.ui.segment.stacked {
-  font-size: 1.5em;
-  margin: 0;
-  padding: 0 20px;
+.container {
+  max-width: 100%;
+}
+
+.blockcentered {
+  width: 97%;
+  background-color: #fff;
+  margin: 20px auto -20px;
+  padding: 10px 20px;
+  border: 2px solid #b7b7b7;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
 }
 
 p#testli {

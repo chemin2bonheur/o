@@ -9,3 +9,8 @@ navigation:
         label: 'grcote7.books::lang.plugin.name'
         url: grcote7/books/books
         icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: Owners
+                url: grcote7/books/owners
+                icon: icon-user

@@ -1,0 +1,4 @@
+title: Owners
+modelClass: Grcote7\Books\Models\Owner
+toolbar:
+    buttons: reorder_toolbar
