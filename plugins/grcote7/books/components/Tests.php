@@ -19,17 +19,13 @@ class Tests extends ComponentBase {
   }
 
   public function onRun() {
+     $this->populateOwners();
 
-//    $this->populateOwners();
-
-    $this->getOwners();
+    $owners = Owner::podium(2)->get();
+    $this->getOwners($owners);
 
     exit();
-    /*
-    foreach($books as $book){
-      echo '- '.$book->title.'<br>';
-    }
-*/
+
     dd($books);
   }
 
@@ -39,14 +35,15 @@ class Tests extends ComponentBase {
    */
   protected function populateOwners() {
     Db::table('grcote7_books_owners')->truncate();
-    Owner::firstOrCreate(['firstname' => 'Lionel', 'lastname' => 'CÔTE']);
-    Owner::firstOrCreate(['firstname' => 'Lio181', 'lastname' => 'YAHOO']);
+    Owner::firstOrCreate(['firstname' => 'lioNel', 'lastname' => 'CÔte']);
+    Owner::firstOrCreate(['firstname' => 'Lio181', 'lastname' => 'Yahoo']);
+    Owner::firstOrCreate(['firstname' => 'NonInclus', 'lastname' => '']);
     Owner::firstOrCreate(['firstname' => 'Michel', 'lastname' => 'COLUCCI']);
     Owner::firstOrCreate(['firstname' => 'Pierre', 'lastname' => 'RICHARD']);
   }
 
-  protected function getOwners() {
-    $owners = Owner::all();
+  protected function getOwners($owners) {
+    // $owners = Owner::all();
     foreach ($owners as $owner) {
       echo $owner->id . ' - ' . $owner->firstname . ' ' . $owner->lastname . '<br>';
     }
