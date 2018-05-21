@@ -3,6 +3,7 @@ namespace Grcote7\Books\Components;
 
 use Cms\Classes\ComponentBase;
 use Grcote7\Books\Models\Book;
+use Illuminate\Support\Facades\Lang;
 
 class Books extends ComponentBase {
 

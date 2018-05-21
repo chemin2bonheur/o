@@ -21,16 +21,20 @@ typeString = 1
 
 [Clicks]
 ==
+<?php
+function onStart(){
+$this['pluginName'] =  Lang::get('grcote7.books::lang.plugin.name');
+}
+?>
+==
+{{test}}
 {% component 'Clicks' %}
 
-
-<h1>Books</h1>
-
+<h1>{{ pluginName }}</h1>
 {% component 'builderList' %}
 
 <hr>
 <br>
-
 {% component 'Books' %}
 
 <hr><br>

@@ -1,8 +1,9 @@
 <form
-    data-request="{{ __SELF__ }}::onIncrementcounter"
-    data-request-update="{{ __SELF__ }}::getCounter: '#counter'"
->
+    data-request="onIncrementCounter"
+    data-request-update="getNewCounter: '@#counter'"
+    >
 
-  <button type="submit" data-request="onIncrementcounter" data-attach-loading><p id="counter"> {{ Clicks.counter}} </p></button>
+  <button type="submit" data-attach-loading><p id="counter"> {{ Clicks.counter }} </p>
+  </button>
 
 </form>
