@@ -23,6 +23,16 @@ class Owner extends Model {
   public $rules = [
   ];
 
+  public function beforeCreate() {
+
+    if (empty($this->firstname) || empty($this->lastname)) {
+      return FALSE;
+    }
+
+    $this->firstname = ucfirst(strtolower($this->firstname));
+    $this->lastname = strtoupper($this->lastname);
+  }
+
   /**
    * @var string The database table used by the model.
    */
