@@ -22,19 +22,31 @@ class Tests extends ComponentBase {
 
   public function onRun() {
     // $this->populateOwners();
-//    $this->populateBooks();
+    // $this->populateBooks();
 
-    // $books = Book::find(1);
-    $this->books = Book::orderBy('title', 'asc')->get();
-    $this->owners = Owner::has('books', '<', 1)->get();
-    $this->owners = Owner::has('books')->get();
+    $books = Book::get();
+    $owners = Owner::all();
+
+//    $owners = Owner::has('books', '<', 1)->get();
+//    $owners = Owner::has('books')->get();
 
 //    dd(Owner::find(2)->books[0]->title);
 //    dd(Book::find(2)->owner->firstname);
 
-    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
+//    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
 
-// $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
+
+    $book = $books->find(3);
+
+//    $book->title = 'De la Terre à la Lune';
+//    $book->save();
+
+    $this->var = $owners->find(3)->full_name;
+
+//    dd($books);
+    dd($this->var);
+
+//    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
 
 //    $owners = Owner::podium(2)->get();
 //    $this->getOwners($owners);

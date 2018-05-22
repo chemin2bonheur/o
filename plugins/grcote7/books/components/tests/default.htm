@@ -10,30 +10,3 @@
 #}
 
 {{ var }}
-<table class="ui celled table">
-  <thead>
-  <tr>
-    <th>Title</th>
-    <th>Owner</th>
-  </tr>
-  </thead>
-  <tbody>
-  {% for book in books %}
-  <tr>
-    <td><strong>{{ book.title }}</strong></td>
-    <td>{{ book.owner.firstname }} <strong>{{ book.owner.lastname }}</strong></td>
-  </tr>
-  {% endfor %}
-</table>
-<hr>
-
-<ul>
-  {% for owner in owners %}
-  <li>
-    {{ owner.firstname }} {{ owner.lastname }}
-    ({% for book in owner.books %}
-    {{ book.title }};
-    {% endfor %})
-  </li>
-  {% endfor %}
-</ul>
