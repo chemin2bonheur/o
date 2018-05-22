@@ -9,7 +9,9 @@ class Owner extends Model {
   use \October\Rain\Database\Traits\Sluggable;
   use \October\Rain\Database\Traits\Validation;
   use \October\Rain\Database\Traits\Revisionable;
+  use \October\Rain\Database\Traits\SimpleTree;
 
+  const PARENT_ID = 'parr';
 
   protected $fillable = ['firstname', 'lastname'];
 

@@ -26,7 +26,7 @@ class Tests extends ComponentBase {
 
     $books = Book::with('owner')->get();
 
-    $owners = Owner::all();
+    $this->var = Owner::all()->toNested();
 
 //    $owners = Owner::has('books', '<', 1)->get();
 //    $owners = Owner::has('books')->get();
@@ -36,25 +36,12 @@ class Tests extends ComponentBase {
 
 //    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
 
-    $book = $books->find(3);
+//    $book = $books->find(3);
 
-    $owner = $owners->first();
-    $owner->firstname = 'lionel';
+//    $owner = $owners;
 //    $owner->save();
 
-
-    $history = Owner::find(1)->revision_history;
-
-    foreach ($history as $record) {
-      echo $record->field . ' updated ';
-      echo 'from ' . $record->old_value;
-      echo ' to ' . $record->new_value;
-      echo ' at ' . $record->updated_at .
-           '<br>';
-    }
-
-
-    $this->var = $owner->toArray();
+//    $this->var = $owners;
 //    $book->title = 'De la Terre à la Lune';
 //    $book->save();
 
@@ -62,7 +49,7 @@ class Tests extends ComponentBase {
 
 //    dd($books);
 //    dd($firstname);
-    dd($this->var);
+//    dd($this->var);
 
 //    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
 

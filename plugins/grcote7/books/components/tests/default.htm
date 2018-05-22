@@ -1,4 +1,5 @@
 {% set var = __SELF__.var %}
+{% set item = __SELF__.item %}
 {% set books = __SELF__.books %}
 {% set owners = __SELF__.owners %}
 
@@ -8,5 +9,19 @@
 {{ var_dump(var) }}
 {{ dump(var) }}
 #}
-
 {{ var }}
+
+
+{% macro renderChildren(item) %}
+{% import _self as SELF %}
+{% if item.children is not empty %}
+<ul>
+  {% for child in item.children %}
+  <li>{{ child.name }}{{ SELF.renderChildren(child) | raw }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endmacro %}
+
+{% import _self as SELF %}
+{{ SELF.renderChildren(var) | raw }}
