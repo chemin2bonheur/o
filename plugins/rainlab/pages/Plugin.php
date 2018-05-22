@@ -106,8 +106,6 @@ class Plugin extends PluginBase {
   }
 
   public function boot() {
-    trace_log('Plugin Pages activé !');
-
     Event::listen('cms.router.beforeRoute', function ($url) {
       return Controller::instance()->initCmsPage($url);
     });

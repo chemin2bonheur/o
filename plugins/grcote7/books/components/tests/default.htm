@@ -1,18 +1,39 @@
+{% set var = __SELF__.var %}
 {% set books = __SELF__.books %}
 {% set owners = __SELF__.owners %}
 
 <h1>Test</h1>
 
-<ul>
-  {% for book in books %}
-  <li>{{ book.title }} {{ book.owner_id }}</li>
-  {% endfor %}
-</ul>
+{#
+{{ var_dump(var) }}
+{{ dump(var) }}
+#}
 
+{{ var }}
+<table class="ui celled table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Owner</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for book in books %}
+  <tr>
+    <td><strong>{{ book.title }}</strong></td>
+    <td>{{ book.owner.firstname }} <strong>{{ book.owner.lastname }}</strong></td>
+  </tr>
+  {% endfor %}
+</table>
 <hr>
 
 <ul>
   {% for owner in owners %}
-  <li>{{ owner.firstname }} {{ owner.lastname }}</li>
+  <li>
+    {{ owner.firstname }} {{ owner.lastname }}
+    ({% for book in owner.books %}
+    {{ book.title }};
+    {% endfor %})
+  </li>
   {% endfor %}
 </ul>

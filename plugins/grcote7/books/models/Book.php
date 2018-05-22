@@ -8,6 +8,8 @@ use Model;
 class Book extends Model {
   use \October\Rain\Database\Traits\Validation;
 
+  protected $fillable = ['title', 'description', 'slug', 'published', 'owner_id'];
+
   /**
    * @var array Validation rules
    */
@@ -21,7 +23,4 @@ class Book extends Model {
 
   public $belongsTo = ['owner' => 'Grcote7\Books\Models\Owner'];
 
-  public function owner() {
-    return 'dudu';
-  }
 }

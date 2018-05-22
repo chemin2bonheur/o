@@ -46,4 +46,8 @@ class Owner extends Model {
     return $query->where('id', '<=', $number);
   }
 
+  public $hasMany = [
+    'books' => 'Grcote7\Books\Models\Book'
+  ];
+
 }

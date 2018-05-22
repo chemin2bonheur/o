@@ -2,10 +2,20 @@
 aVar = {{__SELF__.aVar}}<br>
 <strong>List of books (By a complete component "Books")</strong>
 <br>
-<ul>
+<table class="ui celled table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Owner</th>
+  </tr>
+  </thead>
+  <tbody>
   {% for book in books %}
-  <li>{{ book.id }} - {{ book.title }}</li>
+  <tr>
+    <td><strong>{{ book.title }}</strong></td>
+    <td>{{ book.owner.firstname }} <strong>{{ book.owner.lastname }}</strong></td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
 
 
