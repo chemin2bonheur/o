@@ -13,7 +13,7 @@ class Owner extends Model {
 
   const PARENT_ID = 'parr';
 
-  protected $fillable = ['firstname', 'lastname'];
+  protected $fillable = ['firstname', 'lastname', 'parr'];
 
   protected $slugs = [
     'slug' => ['firstname', 'lastname']

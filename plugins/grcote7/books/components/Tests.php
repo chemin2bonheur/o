@@ -21,8 +21,8 @@ class Tests extends ComponentBase {
   }
 
   public function onRun() {
-    // $this->populateOwners();
-    // $this->populateBooks();
+    // php artisan plugin:refresh Grcote7.books
+
 
     $books = Book::with('owner')->get();
 
@@ -66,58 +66,8 @@ class Tests extends ComponentBase {
 
   }
 
-
-  /**
-   * Re-initialize table owners and seeds data
-   *
-   */
-  protected function populateOwners() {
-    trace_log('Table owners re-initialized');
-    Db::table('grcote7_books_owners')->truncate();
-    Owner::firstOrCreate(['firstname' => 'lioNel', 'lastname' => 'CÔte']);
-    Owner::firstOrCreate(['firstname' => 'Lio181', 'lastname' => 'Yahoo']);
-    Owner::firstOrCreate(['firstname' => 'NonInclus', 'lastname' => '']);
-    Owner::firstOrCreate(['firstname' => 'Michel', 'lastname' => 'COLUCCI']);
-    Owner::firstOrCreate(['firstname' => 'Pierre', 'lastname' => 'RICHARD']);
-  }
-
-  public function populateBooks() {
-    trace_log('Table books re-initialized');
-    Db::table('grcote7_books_')->truncate();
-
-    $books = [
-      [
-        'title'       => '20 000 lieues sous les mers',
-        'description' => '<p>Un voyage extraordinaire...</p>',
-        'owner_id'    => 1
-      ],
-      [
-        'title'       => 'Le Monde des A',
-        'description' => '<p>SF de référence</p>',
-        'owner_id'    => 2
-      ],
-      [
-        'title'       => 'De la Terre à la lune',
-        'description' => '<p>Une autre voyage extraordinaire</p>',
-        'owner_id'    => 1
-      ],
-
-    ];
-
-    foreach ($books as $book) {
-      Book::firstOrCreate(
-        [
-          'title'       => $book['title'],
-          'description' => $book['description'],
-          'slug'        => str::slug($book['title']),
-          'published'   => 1,
-          'owner_id'    => $book['owner_id']
-        ]);
-    }
-
-  }
-
-  protected function getOwners($owners) {
+  protected
+  function getOwners($owners) {
     // $owners = Owner::all();
     foreach ($owners as $owner) {
       echo $owner->id . ' - ' . $owner->firstname . ' ' . $owner->lastname . '<br>';
