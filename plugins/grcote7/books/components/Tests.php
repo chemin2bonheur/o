@@ -25,6 +25,7 @@ class Tests extends ComponentBase {
     // $this->populateBooks();
 
     $books = Book::with('owner')->get();
+
     $owners = Owner::all();
 
 //    $owners = Owner::has('books', '<', 1)->get();
@@ -37,14 +38,20 @@ class Tests extends ComponentBase {
 
     $book = $books->find(3);
 
-    foreach ($owners as $owner) {
-      $owner->slugAttributes();
-//      $owner->save();
-      var_dump($owner->toArray());
-    }
-
-
+    $owner = $owners->first();
+    $owner->firstname = 'lionel';
 //    $owner->save();
+
+
+    $history = Owner::find(1)->revision_history;
+
+    foreach ($history as $record) {
+      echo $record->field . ' updated ';
+      echo 'from ' . $record->old_value;
+      echo ' to ' . $record->new_value;
+      echo ' at ' . $record->updated_at .
+           '<br>';
+    }
 
 
     $this->var = $owner->toArray();

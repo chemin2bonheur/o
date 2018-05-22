@@ -8,12 +8,19 @@ use Model;
 class Owner extends Model {
   use \October\Rain\Database\Traits\Sluggable;
   use \October\Rain\Database\Traits\Validation;
+  use \October\Rain\Database\Traits\Revisionable;
 
 
   protected $fillable = ['firstname', 'lastname'];
 
   protected $slugs = [
     'slug' => ['firstname', 'lastname']
+  ];
+
+  protected $revisionable = ['firstname', 'lastname'];
+
+  public $morphMany = [
+    'revision_history' => ['System\Models\Revision', 'name' => 'revisionable']
   ];
 
   /*
