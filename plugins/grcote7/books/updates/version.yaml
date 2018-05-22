@@ -9,3 +9,6 @@
 1.0.4:
     - 'Updated table grcote7_books_'
     - builder_table_update_grcote7_books_.php
+1.0.5:
+    - 'Updated table grcote7_books_owners'
+    - builder_table_update_grcote7_books_owners.php

@@ -6,10 +6,15 @@ use Model;
  * Model
  */
 class Owner extends Model {
+  use \October\Rain\Database\Traits\Sluggable;
   use \October\Rain\Database\Traits\Validation;
 
 
   protected $fillable = ['firstname', 'lastname'];
+
+  protected $slugs = [
+    'slug' => ['firstname', 'lastname']
+  ];
 
   /*
    * Disable timestamps by default.

@@ -10,6 +10,12 @@ class Book extends Model {
 
   protected $fillable = ['title', 'description', 'slug', 'published', 'owner_id'];
 
+  protected $appends = ['is_published'];
+
+  protected $casts = [
+    'published' => 'boolean'
+  ];
+
   /**
    * @var array Validation rules
    */
@@ -23,4 +29,7 @@ class Book extends Model {
 
   public $belongsTo = ['owner' => 'Grcote7\Books\Models\Owner'];
 
+  public function getIsPublishedAttribute() {
+    return $this->attributes['published'] === 1;
+  }
 }

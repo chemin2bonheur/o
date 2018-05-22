@@ -24,7 +24,7 @@ class Tests extends ComponentBase {
     // $this->populateOwners();
     // $this->populateBooks();
 
-    $books = Book::get();
+    $books = Book::with('owner')->get();
     $owners = Owner::all();
 
 //    $owners = Owner::has('books', '<', 1)->get();
@@ -35,21 +35,27 @@ class Tests extends ComponentBase {
 
 //    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
 
-
     $book = $books->find(3);
 
+    foreach ($owners as $owner) {
+      $owner->slugAttributes();
+//      $owner->save();
+      var_dump($owner->toArray());
+    }
+
+
+//    $owner->save();
+
+
+    $this->var = $owner->toArray();
 //    $book->title = 'De la Terre à la Lune';
 //    $book->save();
 
-    $owner = $owners->find(3);
-//    $this->var = $owner->full_name;
-    $firstname= $owner->firstname;
-    $owner->firstname = $firstname;
-    $owner->save();
+//    $owner = $owners->find(3);
 
 //    dd($books);
-    dd($firstname);
-//    dd($this->var);
+//    dd($firstname);
+    dd($this->var);
 
 //    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
 
