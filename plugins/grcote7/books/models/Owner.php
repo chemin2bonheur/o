@@ -29,8 +29,6 @@ class Owner extends Model {
       return FALSE;
     }
 
-    $this->firstname = ucfirst(strtolower($this->firstname));
-    $this->lastname = strtoupper($this->lastname);
   }
 
   /**
@@ -40,6 +38,14 @@ class Owner extends Model {
 
   public function getFullNameAttribute() {
     return $this->firstname . ' ' . $this->lastname;
+  }
+
+  public function setFirstNameAttribute($value) {
+    $this->attributes['firstname'] = ucfirst(strtolower($value));
+  }
+
+  public function setLastNameAttribute($value) {
+    $this->attributes['lastname'] = strtoupper($value);
   }
 
   public function scopePodium($query, $number = 3) {

@@ -41,10 +41,15 @@ class Tests extends ComponentBase {
 //    $book->title = 'De la Terre à la Lune';
 //    $book->save();
 
-    $this->var = $owners->find(3)->full_name;
+    $owner = $owners->find(3);
+//    $this->var = $owner->full_name;
+    $firstname= $owner->firstname;
+    $owner->firstname = $firstname;
+    $owner->save();
 
 //    dd($books);
-    dd($this->var);
+    dd($firstname);
+//    dd($this->var);
 
 //    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
 
