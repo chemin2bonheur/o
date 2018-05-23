@@ -1,3 +1,50 @@
+# Installation 
+
+In console, folder of your local server:
+
+```bash
+git clone https://github.com/chemin2bonheur/o.git
+
+cd o
+```
+
+Rename .env_sample in .env
+
+With your HeidiSQL, PhpMyAdmin or any other database tool:
+
+Create a database named **o**.
+
+Populate it with load/import of the **o.sql** (In folder o)
+
+( If linux system: chmod 777 -R bootstrap/, storage/ and vendor/ )
+
+Again in console:
+
+```bash
+composer update
+```
+
+----
+
+**Optionnal:**
+
+This script is configured with laravel-elixir (Auto-compilation and combination of your less ou sass/scss files and automatic live-reload of your browser when any change)
+Just, have nodejs and npm installed and, always in console:
+
+```bash
+npm update
+```
+
+And do a virtual host called o pointing in your o folder of your localhost
+
+To use this:
+
+```bash
+npm run watch
+```
+
+----
+
 <p align="center">
     <img src="https://github.com/octobercms/october/blob/master/themes/demo/assets/images/october.png?raw=true" alt="October" width="25%" height="25%" />
 </p>
