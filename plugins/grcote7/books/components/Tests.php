@@ -27,6 +27,10 @@ class Tests extends ComponentBase {
     $books = Book::with('owner')->get();
 
     $this->var = Owner::all()->toNested();
+    
+    dd($this->var->toArray());
+
+
 
 //    $owners = Owner::has('books', '<', 1)->get();
 //    $owners = Owner::has('books')->get();

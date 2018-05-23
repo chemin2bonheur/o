@@ -24,6 +24,9 @@ Again in console:
 composer update
 ```
 
+**Note**: Backend access: http://localhost/o/be
+with login/password : admin/admin
+
 ----
 
 **Optionnal:**
