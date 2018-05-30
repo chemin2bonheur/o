@@ -8,6 +8,18 @@ class Plugin extends PluginBase
     {
     }
 
+
+    public function registerFormwidgets()
+    {
+        return[
+            'momo\Movies\Formwidgets\Actorbox' => [
+                'label' => 'ActorBox field',
+                'code' => 'actorbox'
+            ]
+        ];
+    }
+
+
     public function registerSettings()
     {
     }

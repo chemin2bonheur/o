@@ -43,25 +43,11 @@ fields:
         type: fileupload
     genres:
         label: Genres
-        span: auto
         nameFrom: genre_title
         descriptionFrom: description
+        span: auto
         type: relation
-tabs:
-    fields:
-        actors:
-            label: Actors
-            prompt: 'Add new item'
-            span: auto
-            type: repeater
-            tab: 'Tab 1'
-            form:
-                fields:
-                    actor_name:
-                        label: 'Actor name'
-                        span: auto
-                        type: text
-                    actor_age:
-                        label: 'Actor age'
-                        span: auto
-                        type: text
+    actors:
+        label: Actors
+        span: left
+        type: actorbox
