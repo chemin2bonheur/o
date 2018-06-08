@@ -28,7 +28,9 @@ class Tests extends ComponentBase {
 
     $this->var = Owner::all()->toNested();
     
-    dd($this->var->toArray());
+    //echo 123145;
+
+    //dd($this->var->toArray());
 
 
 

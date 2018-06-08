@@ -299,7 +299,6 @@ class ServiceProvider extends ModuleServiceProvider
         /*
          * Register system layouts
          */
-/*
         MailManager::instance()->registerCallback(function ($manager) {
             $manager->registerMailLayouts([
                 'default' => 'system::mail.layout-default',
@@ -316,27 +315,25 @@ class ServiceProvider extends ModuleServiceProvider
                 'promotion' => 'system::mail.partial-promotion',
             ]);
         });
-*/
+
         /*
          * Override system mailer with mail settings
          */
- /*
         Event::listen('mailer.beforeRegister', function () {
             if (MailSetting::isConfigured()) {
                 MailSetting::applyConfigValues();
             }
         });
-*/
+
         /*
          * Override standard Mailer content with template
          */
-/*
         Event::listen('mailer.beforeAddContent', function ($mailer, $message, $view, $data, $raw) {
             $method = $raw === null ? 'addContentToMailer' : 'addRawContentToMailer';
             return !MailManager::instance()->$method($message, $raw ?: $view, $data);
         });
-*/
     }
+
     /*
      * Register navigation
      */
