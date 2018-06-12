@@ -23,16 +23,13 @@ class Tests extends ComponentBase {
   public function onRun() {
     // php artisan plugin:refresh Grcote7.books
 
-
-    $books = Book::with('owner')->get();
-
     $this->var = Owner::all()->toNested();
     
     //echo 123145;
 
-    //dd($this->var->toArray());
+    // phpinfo();
 
-
+    dd($this->var->toArray());
 
 //    $owners = Owner::has('books', '<', 1)->get();
 //    $owners = Owner::has('books')->get();
