@@ -25,11 +25,10 @@ class Tests extends ComponentBase {
 
     $this->var = Owner::all()->toNested();
     
-    //echo 123145;
+   // echo 1234;
+    //phpinfo();
 
-    // phpinfo();
-
-    dd($this->var->toArray());
+    //dd($this->var->toArray());
 
 //    $owners = Owner::has('books', '<', 1)->get();
 //    $owners = Owner::has('books')->get();

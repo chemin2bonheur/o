@@ -24,6 +24,7 @@ mix.browserSync({
   files: [
     "./themes/olympos/assets/sass/*.scss",
     "./plugins/grcote7/**/*.htm",
+    "./plugins/grcote7/**/*.php",
     "./themes/olympos/**/*.htm",
     "./themes/olympos/assets/js/*.js"
   ]
