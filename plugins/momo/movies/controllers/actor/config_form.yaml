@@ -1,0 +1,10 @@
+name: Actor
+form: $/momo/movies/models/actor/fields.yaml
+modelClass: momo\Movies\Models\Actor
+defaultRedirect: momo/movies/actor
+create:
+    redirect: 'momo/movies/actor/update/:id'
+    redirectClose: momo/movies/actor
+update:
+    redirect: momo/movies/actor
+    redirectClose: momo/movies/actor

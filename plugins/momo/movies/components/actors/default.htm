@@ -1,0 +1,9 @@
+{% set actors = __SELF__.actors %} <!-- il faut mettre 2 signes underscores du tiret du bas -->
+
+<ul>
+    {% for actor in actors %}
+        <li>
+            {{actor.name}} {{actor.lastname}}
+        </li>
+    {% endfor %}
+</ul>
