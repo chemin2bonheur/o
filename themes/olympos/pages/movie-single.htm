@@ -30,6 +30,7 @@ $this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
 {% endfor%}
 
 <h3>Description</h3>
+<br>
 {{ movie.description|raw }}
 
 <ul class="gallery clearfix">
