@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.mailgun.org',
+    'host' => 'smtp.gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => null,
+    'username' => 'seckndanane16@gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => null,
+    'password' => 'fatimata16',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,5 +108,9 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
+    'to' => [
+        'address' => 'seckndanane16@gmail.com',
+        'name' => 'Catch all email'
+    ],
 
 ];
