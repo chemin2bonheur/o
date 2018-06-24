@@ -25,7 +25,7 @@ class Movie extends Model {
    */
   public $table = 'grcote7_movies_';
 
-//  protected $jsonable = ['actors'];
+  protected $jsonable = ['techteam'];
 
 //  protected $fillable = ['created_at', 'published'];
 

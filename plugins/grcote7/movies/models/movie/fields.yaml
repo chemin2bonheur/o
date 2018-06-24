@@ -53,3 +53,18 @@ fields:
         span: left
         type: partial
         path: field_actor
+    techteam:
+        label: 'Tech Team'
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                tech_job:
+                    label: Job
+                    span: auto
+                    type: text
+                tech_name:
+                    label: Name
+                    span: auto
+                    type: text

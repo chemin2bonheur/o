@@ -19,6 +19,12 @@ $this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
 
 <h4>{{ movie.year }}</h4>
 
+<h3>Tech</h3>
+
+{% for job in movie.techteam %}
+  {{ job.tech_job }}: {{ job.tech_name }}</br>
+{% endfor %}
+
 <h3>Genres</h3>
 {% for genre in movie.genres %}
   <a href="/genres/{{ genre.slug }}">{{genre.genre_title}}</a><br>
