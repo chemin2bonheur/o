@@ -6,33 +6,38 @@ is_hidden = 0
 <?php
 use Grcote7\Movies\Models\Movie;
 function onStart(){
-$this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
-//dd($this['movie']);
+  $this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
+// dd($this['movie']);
 }
 ?>
 ==
 {% if movie %}
 
-<h2>{{ movie.name }}</h2>
+<h1>{{ movie.name }}</h1>
 
 <img src="{{movie.poster.thumb(200,auto) }}">
 
-<h4>{{ movie.year }}</h4>
+<h2>{{ movie.year }}</h2>
 
 <h3>Tech</h3>
 
 {% for job in movie.techteam %}
-  {{ job.tech_job }}: {{ job.tech_name }}</br>
+{{ job.tech_job }}: {{ job.tech_name }}</br>
 {% endfor %}
 
 <h3>Genres</h3>
 {% for genre in movie.genres %}
-  <a href="/genres/{{ genre.slug }}">{{genre.genre_title}}</a><br>
+<a href="/genres/{{ genre.slug }}">{{genre.genre_title}}</a><br>
 {% endfor %}
+
+<h3>Tags</h3>
+{% for tag in movie.tags %}
+{{tag.name}}<br>
+{% endfor%}
 
 <h3>Acteurs</h3>
 {% for actor in movie.actors %}
-  {{actor.name}} {{actor.lastname}}<br>
+{{actor.name}} {{actor.lastname}}<br>
 {% endfor%}
 
 <h3>Description</h3>

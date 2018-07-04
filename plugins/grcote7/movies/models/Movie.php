@@ -41,6 +41,11 @@ class Movie extends Model {
       'Grcote7\Movies\Models\Actor',
       'table' => 'grcote7_movies_actors_movies',
       'order' => 'name'
+    ],
+    'tags' => [
+      'Grcote7\Movies\Models\Tag',
+      'table' => 'grcote7_movies_tags_movies',
+      'order' => 'name'
     ]
   ];
 

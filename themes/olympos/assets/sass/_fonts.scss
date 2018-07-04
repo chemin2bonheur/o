@@ -45,25 +45,25 @@ h5,
 h6 {
   /* Change heading typefaces here */
   font-family: sans-serif;
-  margin-top: 1em;
-    padding-top: 1em;
-  margin-bottom: 0;
+  margin-top: .5em;
+  padding-top: .5em;
+  //margin-bottom: 0;
   line-height: 1.5rem;
   color: #333;
   font-weight: 700;
 }
 h1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 4.5rem;
   margin-top: 3rem;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   margin-top: 3rem;
 }
 h3 {
-  font-size: 1.414rem;
+  font-size: 1rem;
 }
 h4 {
   font-size: 0.707rem;

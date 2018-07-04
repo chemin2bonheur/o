@@ -1,0 +1,17 @@
+genres:
+  label: Genre
+  view:
+    list: $/grcote7/movies/models/genre/columns.yaml
+    toolBarButtons: add|remove
+  manage:
+    form: $/grcote7/movies/models/genre/fields.yaml
+    showCheckboxes: true
+actors:
+  label: actors
+  view:
+    list: $/grcote7/movies/models/actor/columns.yaml
+    recordUrl: grcote7/movies/actors/update/:id
+  manage:
+    form: $/grcote7/movies/models/actor/fields.yaml
+    showSearch: true
+    recordsPerPage: 10

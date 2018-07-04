@@ -1,0 +1,28 @@
+<form data-request="onSubmit" data-request-files data-request-flash>
+
+  <input type="hidden" name="_handler" value="onSave">
+
+  {{ form_token() }}
+
+  {{ form_sessionKey() }}
+
+  <label>Actor name</label>
+  <input type="text" name="name" value="aaJohn"/>
+
+  <label for="lastname">Actor last name</label>
+  <input type="text" name="lastname" value="Wayne">
+
+  <label>Actor Image</label>
+  <input type="file" name="actorimage" accept=" " image/*" data-request="onImageUpload" data-request-files
+  data-request-flash>
+
+  <div id="imageResult">No image to preview</div>
+
+  <br><br>
+
+
+
+  <button type="submit">Save Actor</button>
+
+
+</form>

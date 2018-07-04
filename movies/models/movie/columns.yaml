@@ -1,0 +1,22 @@
+columns:
+    name:
+        label: 'grcote7.movies::lang.plugin.name'
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: Year
+        type: number
+        sortable: true
+    genres:
+        label: Genres
+        type: text
+        searchable: true
+        select: genre_title
+        relation: genres
+    created_at:
+        label: 'Created at'
+        type: datetime
+    published:
+        label: Published
+        type: switch

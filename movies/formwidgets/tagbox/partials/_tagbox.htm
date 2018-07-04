@@ -1,0 +1,28 @@
+<?php
+    // $selectedValues = is_array($selectedValues) ? $selectedValues : [];
+    // $availableOptions = $useKey ? $fieldOptions : array_unique(array_merge($selectedValues, $fieldOptions));
+?>
+<!-- Tag Box -->
+
+<style type="text/css">
+  .select2-container {
+    width: 100% !important;
+    display: block;
+  }
+</style>
+
+<select class="s2tags" name="<?= $name ?>" multiple>
+  <?php foreach ($tags as $key=>$value): ?>
+  <option value="<?= $key ?>"
+  <?= in_array($key, $selectedValues) ? 'selected="selected"':''; ?>><?= $value ?></option>
+  <?php endforeach; ?>
+</select>
+
+<script type="text/javascript">
+  $(document).on('render', function () {
+    $('.s2tags').select2({
+      placeholder: 'Ajout de tags',
+      tags: true
+    })
+  });
+</script>

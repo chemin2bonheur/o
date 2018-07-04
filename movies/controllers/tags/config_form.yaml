@@ -1,0 +1,11 @@
+name: Tags
+modelClass: Grcote7\Movies\Models\Tag
+form: $/grcote7/movies/models/tag/fields.yaml
+defaultRedirect: grcote7/movies/tags
+create:
+    redirect: 'grcote7/movies/tag/update/:id'
+    redirectClose: grcote7/movies/tag
+update:
+    redirect: grcote7/movies/tag
+    redirectClose: grcote7/movies/tag
+preview: {  }

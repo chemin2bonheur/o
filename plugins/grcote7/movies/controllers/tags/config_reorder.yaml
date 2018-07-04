@@ -1,0 +1,4 @@
+title: Tags
+modelClass: Grcote7\Movies\Models\Tag
+toolbar:
+    buttons: reorder_toolbar

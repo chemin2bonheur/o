@@ -1,0 +1,12 @@
+title: Tags
+modelClass: Grcote7\Movies\Models\Tag
+list: $/grcote7/movies/models/tags/columns.yaml
+recordUrl: 'grcote7/movies/tags/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
