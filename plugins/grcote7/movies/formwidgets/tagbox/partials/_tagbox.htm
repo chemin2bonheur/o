@@ -12,7 +12,8 @@
 </style>
 
 <select class="s2tags" name="<?= $name ?>" multiple>
-  <?php foreach ($tags as $key=>$value): ?>
+  <?php
+   foreach ($tags as $key=>$value): ?>
   <option value="<?= $key ?>"
   <?= in_array($key, $selectedValues) ? 'selected="selected"':''; ?>><?= $value ?></option>
   <?php endforeach; ?>
