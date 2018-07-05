@@ -19,7 +19,7 @@ class Actors extends ComponentBase {
       'results'   => [
         'title'             => 'Number of Actors',
         'description'       => 'How many actors do you want to display?',
-        'default'           => 0,
+        'default'           => 3,
         'validationPattern' => '^[0-9]+$',
         'validationMessage' => 'Only numbers allowed'
       ],
@@ -27,15 +27,17 @@ class Actors extends ComponentBase {
         'title'       => 'Sort Actors',
         'description' => 'Sort those actors',
         'type'        => 'dropdown',
-        'default'     => 'name asc'
+        'default'     => 'lastname asc'
       ]
     ];
   }
 
   public function getSortOrderOptions() {
     return [
-      'name asc'  => 'Name (Ascending)',
-      'name desc' => 'Name (Descending)'
+      'name asc'      => 'Name (Ascending)',
+      'name desc'     => 'Name (Descending)',
+      'lastname asc'  => 'Lastname (Ascending)',
+      'lastname desc' => 'Lastname (Descending)'
     ];
   }
 
@@ -50,9 +52,14 @@ class Actors extends ComponentBase {
     if ($this->property('sortOrder') === 'name asc') {
       $query = $query->sortBy('name');
     }
-
-    if ($this->property('sortOrder') === 'name desc') {
+    else if ($this->property('sortOrder') === 'name desc') {
       $query = $query->sortByDesc('name');
+    }
+    else if ($this->property('sortOrder') === 'lastname asc') {
+      $query = $query->sortBy('lastname');
+    }
+    else {
+      $query = $query->sortByDesc('lastname');
     }
 
     if ($this->property('results') > 0) {
