@@ -16,7 +16,7 @@ return [
   |
   */
 
-  'driver'     => env('MAIL_DRIVER', 'smtp'),
+  'driver' => env('MAIL_DRIVER', 'smtp'),
 
   /*
   |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ return [
   */
 
   //    'host' => 'smtp.mailgun.org',
-  'host'       => env('MAIL_HOST', 'smtp.gmail.com'),
+  'host'   => env('MAIL_HOST', 'smtp.gmail.com'),
 
   /*
   |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ return [
   |//465
   */
 
-  'port'       => env('MAIL_PORT', 587),
+  'port' => env('MAIL_PORT', 587),
 
   /*
   |--------------------------------------------------------------------------
@@ -56,9 +56,9 @@ return [
   |
   */
 
-  'from'       => [
-    'address' => 'grcote7@gmail.com',
-    'name'    => 'Lionel COTE'
+  'from' => [
+    'address' => env('MAIL_USERNAME', 'Your email'),
+    'name'    => env('OWNER', 'Me')
   ],
 
   /*
@@ -85,7 +85,7 @@ return [
   |
   */
 
-  'username'   => env('MAIL_USERNAME', 'votre@email.com'),
+  'username' => env('MAIL_USERNAME', 'votre@email.com'),
 
 
   /*
@@ -99,7 +99,7 @@ return [
   |
   */
 
-  'password'   => env('MAIL_PASSWORD', 'VotrePass'),
+  'password' => env('MAIL_PASSWORD', 'VotrePass'),
 
   /*
   |--------------------------------------------------------------------------
@@ -113,19 +113,19 @@ return [
   */
 
   //  'sendmail'   => '/usr/sbin/sendmail -bs',
-  'sendmail'   => 'C:/laragon/bin/sendmail/sendmail.exe',
+  'sendmail' => 'C:/laragon/bin/sendmail/sendmail.exe',
 
-  'to'         => [
+  'to' => [
     'address' => env('MAIL_USERNAME', 'votre@email.com'),
-    'name'    => 'catch all emails'
+    'name'    => 'Catch all emails'
   ],
 
-
-  'stream'     => [
+  'stream' => [
     'ssl' => [
       'allow_self_signed' => TRUE,
       'verify_peer'       => FALSE,
       'verify_peer_name'  => FALSE,
     ],
   ],
+
 ];

@@ -64,11 +64,14 @@ class ContactForm extends ComponentBase {
             ];
       */
       throw new ValidationException($validator);
-    } else {
+    }
+    else {
       $vars = [
         'name'    => Input::get('name'),
         'email'   => Input::get('email'),
-        'content' => Input::get('content')
+        'content' => Input::get('content'),
+        'owner'   => env('OWNER', 'You as Owner'),
+        'origin'  => 'Form page Contact'
       ];
       Flash::success('Jobs done!');
 
@@ -76,7 +79,7 @@ class ContactForm extends ComponentBase {
 
       Mail::send('grcote7.contact::mail.message', $vars, function ($message) {
 
-        $message->to('grcote7@gmail.com', 'Lionel COTE');
+        $message->to(env('MAIL_USERNAME', 'Your email'), env('OWNER', 'Me'));
         $message->subject('New message from my contact form.');
       });
     }

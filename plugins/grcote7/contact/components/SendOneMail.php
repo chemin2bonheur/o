@@ -19,19 +19,23 @@ class SendOneMail extends ComponentBase {
 
   public function onRun() {
 
-    $this->mavar = [123, 'abc', 789];
+    $this->mavar = [123, 'abc', 789, ''];
 
     $params = [
+      'owner'   => env('OWNER', 'You'),
+      'origin'  => 'Test avec component SendOneMail',
       'name'    => 'Lionel',
       'email'   => 'expediteur@email.com',
       'content' => 'Du contenu ici....'
     ];
 
-// mail('grcote7@gmail.com', 'Sujet', 'contenu');
+    //ToDoLi replace by   env('MAIL_USERNAME', 'Your email') & env('OWNER', 'You')
 
-// Mail::rawTo('grcote7@gmail.com', 'Hello friend');
+    mail(env('MAIL_USERNAME', 'Your email'), 'Sujet', 'contenu');
 
-// Mail::sendTo('grcote7@gmail.com', 'grcote7.contact::mail.message', $params);
+    //Mail::rawTo(env('MAIL_USERNAME', 'Your email'), 'Hello friend');
+
+    //Mail::sendTo(env('MAIL_USERNAME', 'Your email'), 'grcote7.contact::mail.message', $params);
 
     $this->mavar [] = 'Script éxécuté !';
 
