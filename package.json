@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/chemin2bonheur/o#readme",
   "devDependencies": {
+    "browser-sync": "^2.24.5",
     "laravel-elixir": "^6.0.0-18",
     "laravel-elixir-livereload": "^1.1.6",
     "laravel-mix": "^0.10.0"
