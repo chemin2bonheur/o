@@ -8,7 +8,7 @@ git clone https://github.com/chemin2bonheur/o.git
 cd o
 ```
 
-Rename .env_sample in .env
+Rename .env_sample in .env and complete it with your own email parameters.
 
 With your HeidiSQL, PhpMyAdmin or any other database tool:
 
