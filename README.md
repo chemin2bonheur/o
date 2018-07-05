@@ -46,6 +46,12 @@ To use this:
 npm run watch
 ```
 
+NB.:
+
+If the synchroniation with your browser fails, you can do:
+```bash
+npm install --save-dev browser-sync
+```
 ----
 
 <p align="center">
