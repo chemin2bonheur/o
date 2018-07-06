@@ -1,0 +1,11 @@
+name: GC7_000
+description: 'Parti de 0 fichier'
+author: LC
+homepage: /
+code: gc000
+form:
+    fields:
+        site_name:
+            label: 'Site name'
+            comment: 'The website name as it should appear on the front-end'
+            default: 'Mon Site d\''Étude !'

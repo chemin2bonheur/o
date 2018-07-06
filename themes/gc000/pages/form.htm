@@ -1,0 +1,45 @@
+title = "Form"
+url = "/form"
+layout = "basic"
+description = "Exemple de formulaire avec retour de valeur"
+is_hidden = 0
+==
+<?php
+
+function onHandleForm()
+{
+    $this['lastValue'] = ucfirst(strtolower(post('value')));
+    if ($this['lastValue']=='') {
+    ?>
+<div class="container">
+    <div class="bs-example bs-example-standalone" data-example-id=dismissible-alert-js>
+        <br/>&nbsp;
+        <div class="alert alert-danger alert-dismissible fade in" role=alert>
+            <button type=button class=close data-dismiss=alert aria-label=Close><span aria-hidden=true>&times;</span>
+            </button>
+            <h4>Oups... Un oubli ;-) ?</h4>
+            <p>Merci de saisir au moins un caractère... Allez... Courage ! Lol :-).</p>
+            <p>
+            </p>
+        </div>
+    </div>
+</div>
+<?php
+}
+if ($this['lastValue']=='Dorojade') {
+return Redirect::to('/divers/zics-doro',301);
+}
+}
+
+?>
+==
+<div class="container jumbotron padding10">
+    <p>The title of this page is: <strong>{{ this.page.title }}</strong></p>
+
+    {{ form_open({ request: 'onHandleForm' }) }}
+    Please enter a string: <input type="text" name="value" placeholder="Saisir une Chaîne iCi !"/>
+    <input type="submit" value="Submit me!"/>
+    {{ form_close() }}
+
+    <p>Last submitted value: <strong>{{ lastValue }}</strong></p>
+</div>

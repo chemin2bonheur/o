@@ -1,0 +1,152 @@
+description = "Maquette App Firebase"
+==
+<?php
+function onStart(){
+    $this['snl'] = $_SERVER['HTTP_HOST'];
+    //$gc7 = Debugbar::addCollector(new DebugBar\DataCollector\MessagesCollector('gc7'));
+    //$gc7['gc7']->info ( 'Server Name: ' . $this['snl'] );
+}
+?>
+==
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% if (snl == 'p' or snl == 'pp100') %}
+        L
+        {% endif %}
+        000 | {{ this.page.title }}
+    </title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="LC">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}"/>
+    {% styles %}
+    <link href="{{ [
+    'assets/css/theme/style.css'
+    ]|theme }}" rel="stylesheet">
+    {% placeholder head %}
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        //        var _paq = _paq || [];
+        var _paq = [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//piwik.c57.fr/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 8]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript><p><img src="//piwik.c57.fr/piwik.php?idsite=8" style="border:0;" alt=""/></p></noscript>
+    <!-- End Piwik Code -->
+
+</head>
+<body>
+<!-- Header -->
+<header id="layout-header">
+
+    <!-- Nav -->
+    <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="{% if this.page.id == 'accueil' %}active{% endif %}"><a
+                        href="{{ 'accueil'|page }}">{{ this.theme.getConfigValue('name')|capitalize }}</a>
+                    </li>
+                    {% verbatim %}
+                    <li>
+                        <a target="_blank" href="/themes/gc000/a" title="Page pour tests rapides">A</a>
+                    </li>
+                    {% endverbatim %}
+                    <li class="{% if this.page.id == 'ajax' %}active{% endif %}">
+                        <a href="{{ 'ajax'|page }}">Ajax</a>
+                    </li>
+                    <li class="{% if this.page.id == 'ajaxjs' %}active{% endif %}">
+                        <a href="{{ 'ajaxjs'|page }}">AjaxJS</a>
+                    </li>
+                    <li class="{% if this.page.id == 'vuejs' %}active{% endif %}">
+                        <a href="{{ 'tools/vuejs-commits'|page }}">Vue.JS</a>
+                    </li>
+                    <li class="{% if this.page.id == 'form' %}active{% endif %}">
+                        <a href="{{ 'form'|page }}">Form</a>
+                    </li>
+                    <li class="{% if this.page.id == 'google' %}active{% endif %}">
+                        <a target="_blank" href="{{ 'google'|page }}">Google</a>
+                    </li>
+                    <li class="{% if this.page.id == 'videoss' %}active{% endif %}">
+                        <a href="{{ 'divers/videos'|page }}">Vidéos</a>
+                    </li>
+                    <li class="{% if this.page.id == 'pad' %}active{% endif %}">
+                        <a href="{{ 'tools/pad'|page }}">Pad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<!-- Content -->
+<section id="layout-content">
+    {% page %}
+</section>
+
+<!-- Footer -->
+<footer id="layout-footer">
+    {% partial "footer" %}
+</footer>
+
+<!-- Scripts -->
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config;
+    config = {
+        apiKey: "AIzaSyD0xxmU3eg6TirKG4rslFi_Tb1YI-iRsiw",
+        authDomain: "pui100-862d2.firebaseapp.com",
+        databaseURL: "https://pui100-862d2.firebaseio.com",
+        storageBucket: "pui100-862d2.appspot.com"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script src="{{ [
+'assets/javascript/jquery.js',
+'assets/vendor/bootstrap/js/transition.js',
+'assets/vendor/bootstrap/js/alert.js',
+'assets/vendor/bootstrap/js/button.js',
+'assets/vendor/bootstrap/js/carousel.js',
+'assets/vendor/bootstrap/js/collapse.js',
+'assets/vendor/bootstrap/js/dropdown.js',
+'assets/vendor/bootstrap/js/modal.js',
+'assets/vendor/bootstrap/js/tooltip.js',
+'assets/vendor/bootstrap/js/popover.js',
+'assets/vendor/bootstrap/js/scrollspy.js',
+'assets/vendor/bootstrap/js/tab.js',
+'assets/vendor/bootstrap/js/affix.js',
+'assets/javascript/app.js'
+]|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+</body>
+</html>

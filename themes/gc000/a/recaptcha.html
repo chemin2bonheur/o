@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Tes du reCAPTCHA2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-size: 18px;
+            background-color: #5179d0;
+        }
+
+        #captcha {
+            margin: 30px 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="newsletter" class="modal">
+    <div class="modal-content">
+        <h5 class="center">Pour vous abonner (ou désabonner) à notre lettre d'information :</h5>
+        <div class="row">
+            <form id="newsform" class="col s12" action="mail.php" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Votre adresse mail" id="email" type="email" name="email" class="validate"
+                               required>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="action" type="radio" value="subscribe" id="subscribe" checked>
+                        <label for="subscribe">S'abonner</label>
+                        <input name="action" type="radio" value="unsubscribe" id="unsubscribe">
+                        <label for="unsubscribe">Se désabonner</label>
+                    </div>
+                    <div id="captcha" class="input-field col s12 center">
+                        <div class="g-recaptcha" data-sitekey="6LdUpSUUAAAAAKAYgzgCJl_JjpIm7rkPTKFdzOpI"></div>
+                        <div id="error" class="left red-text text-darken-2" style="display: none">
+                            Veuillez cliquer sur le Captcha, merci.
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light right" type="submit">Envoyer
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="erreurmodal" class="modal">
+    <div class="modal-content">
+        <h5 class="center">Erreur dans la procédure d'abonnement</h5>
+        <p class="center-align">Nous sommes désolés mais une erreur inattendue est survenue lors de votre demande
+            d'abonnement. Veuillez s'il vous plait renouveller la procédure dans quelques minutes.</p>
+        <p class="center-align">Merci.</p>
+    </div>
+</div>
+
+<div id="subscribemodal" class="modal">
+    <div class="modal-content">
+        <h5 class="center">Procédure d'abonnement achevée</h5>
+        <p class="center-align">Votre demande a bien été prise en compte.</p>
+        <p class="center-align">Vous allez recevoir un e-mail de vérification dans un instant. Il contient un lien sur
+            lequel vous devez cliquer afin de confirmer votre inscription.</p>
+        <p class="center-align">Merci.</p>
+    </div>
+</div>
+
+<div id="unsubscribemodal" class="modal">
+    <div class="modal-content">
+        <h5 class="center">Procédure de désabonnement achevée</h5>
+        <p class="center-align">Votre demande a bien été prise en compte.</p>
+        <p class="center-align">Nous sommes désolés de vous voir partir.</p>
+        <p class="center-align">Merci.</p>
+    </div>
+</div>
+
+<div id="intro" class="section scrollspy no-pad-bot center orange-text">
+    <div class="container">
+        <h1 class="header">Exemple d'utilisation du reCAPTCHA2</h1>
+        <div class="row center">
+            <p><a id="modalcommand" href="#" class="btn"><i class="material-icons right">email</i>La lettre
+                d'information</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(function () {
+
+        $('#newsletter').modal()
+        $('#subscribemodal').modal()
+        $('#unsubscribemodal').modal()
+        $('#erreurmodal').modal()
+
+        $('#newsform').submit(function (event) {
+            event.preventDefault()
+            $.post(
+                $(this).attr('action'),
+                $(this).serialize()
+                )
+                .done(function (data) {
+                    if (data == 200) {
+                        $('#newsform').modal('close')
+                        if ($('input[name=action]:checked', '#newsform').val() == 'subscribe') {
+                            $('#subscribemodal').modal('open')
+                        } else {
+                            $('#unsubscribemodal').modal('open')
+                        }
+                    } else if (data == 'nocaptcha') {
+                        $('#error').show('slow')
+                    } else {
+                        $('#newsletter').modal('close')
+                        $('#erreurmodal').modal('open')
+                    }
+                })
+        })
+
+        $('#modalcommand').click(function (event) {
+            event.preventDefault()
+            $('#newsletter').modal('open')
+            $('#error').hide()
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1088 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clas",
+				"class\t(User.php)"
+			],
+			[
+				"blue",
+				"blueviolet\t(mdb.js)"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"M",
+				"Models"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/laragon/www/do/tuto/premier_pgm.php",
+			"settings":
+			{
+				"buffer_size": 1907,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/laragon/www/do/tuto/classes/Terrien.php",
+			"settings":
+			{
+				"buffer_size": 21,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/laragon/www/do/tuto/classes/User.php",
+			"settings":
+			{
+				"buffer_size": 1279,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "body {\n\tfont-size:1em;\n\tcolor: maroon;\n\tfont-family: Comic Sans MS, arial;\n\tbackground: cornsilk;\n}\n\na {\n\ttext-decoration: none;\n\t\n\t        \n}\n\n",
+			"file": "/C/laragon/www/do/css/style.css",
+			"file_size": 145,
+			"file_write_time": 131524616262782526,
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
+			"settings":
+			{
+				"buffer_size": 13826,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "pa",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"remopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inpa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"inspa",
+				"File History: Open recently closed file… (All Projects)"
+			],
+			[
+				"settingus",
+				"Preferences: File History Settings - User"
+			],
+			[
+				"setti",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"pase",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"tab",
+				"Move Tab: To last position"
+			],
+			[
+				"Package Control: di",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"histo",
+				"File History: Open README"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"octo",
+				"Set Syntax: October Twig"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins pac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ins pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 508.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"node -v"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/do",
+		"/C/laragon/www/do/css",
+		"/C/laragon/www/do/tuto",
+		"/C/laragon/www/do/tuto/classes"
+	],
+	"file_history":
+	[
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/EmmetOneLine/Default (Windows).sublime-keymap",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Emmet Style Reflector/messages/install.txt",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Emmet Style Reflector/messages.json",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Emmet Style Reflector/package-metadata.json",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/extra/httpd-vhosts.conf",
+		"/C/laragon/etc/apache2/sites-enabled/auto.p.conf",
+		"/C/laragon/www/p/fr/themes/gc7/pages/home.htm",
+		"/C/laragon/www/p/fr/themes/gc7/layouts/default.htm",
+		"/C/laragon/www/p/fr/.htaccess",
+		"/C/laragon/www/wlo/plugins/grcote7/movies/components/uuu.less",
+		"/C/laragon/www/wlo/plugins/grcote7/movies/components/actors/default.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/components/uuu.php",
+		"/C/laragon/www/wlo/plugins/grcote7/movies/components/ActorForm.php",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/LESS/README.md",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/User/FileHistory.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/laragon/www/o/uuu.php",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/File History/README.md",
+		"/C/laragon/www/wlo/.env",
+		"/C/laragon/www/wlo/config/database.php",
+		"/C/laragon/www/do/agc7/mdb.php",
+		"/C/laragon/www/do/index.php",
+		"/C/laragon/www/do/agc7/assets/js/app.js",
+		"/C/laragon/www/do/agc7/assets/css/gc7.css",
+		"/C/laragon/www/do/agc7/index.php",
+		"/C/laragon/www/do/agc7/assets/css/mdb.css",
+		"/C/laragon/www/do/agc7/assets/js/mdb.js",
+		"/C/laragon/www/do/agc7/exemples/index.php",
+		"/C/laragon/www/do/agc7/assets/js/mdb.min.js",
+		"/C/laragon/www/do/agc7/assets/css/mdb.min.css",
+		"/C/laragon/www/do/agc7/assets/css/mdb_sav.min.css",
+		"/C/laragon/www/do/agc7/assets/js/bootstrap.css",
+		"/C/laragon/www/do/agc7/assets/js/popper.min.js",
+		"/C/laragon/www/do/agc7/content/installation/base.php",
+		"/C/laragon/www/do/agc7/content/installation/appGC7.php",
+		"/C/laragon/www/do/agc7/content/installation/details/git.html",
+		"/C/laragon/www/do/css/style.css",
+		"/C/Users/Li/Downloads/MDB Free/README.txt",
+		"/C/Users/Li/Downloads/MDB Free/sass/mdb.scss",
+		"/C/Users/Li/Downloads/MDB Free/css/style.css",
+		"/C/Users/Li/Downloads/MDB Free/css/mdb.css",
+		"/C/Users/Li/Downloads/MDB Free/css/bootstrap.css",
+		"/C/Users/Li/Downloads/MDB Free/js/popper.min.js",
+		"/C/laragon/www/do/agc7/content/installation/_avt.php",
+		"/C/laragon/www/do/agc7/installation.php",
+		"/C/laragon/www/do/agc7/content/installation/octobercms.php",
+		"/C/laragon/www/do/agc7/content/semantic/tabs.php",
+		"/C/laragon/www/wl/themes/olympos/pages/installation.htm",
+		"/C/laragon/www/do/agc7/content/semantic/menu.html",
+		"/C/laragon/www/do/agc7/exemples.php",
+		"/C/laragon/www/do/agc7/assets/css/semantic.min.css",
+		"/C/laragon/www/do/a/content/test_semantic.html",
+		"/C/laragon/www/do/a/installation.php",
+		"/C/laragon/www/do/a/index.php",
+		"/C/laragon/www/do/a/content/octobercms.php",
+		"/C/laragon/www/wlo/config/cms.php",
+		"/C/laragon/www/wl/node_modules/semantic-ui-css/package.js",
+		"/C/laragon/www/wl/themes/olympos/content/installation/base.htm",
+		"/C/laragon/www/wl/themes/olympos/content/installation/octobercms.htm",
+		"/C/laragon/www/wl/themes/olympos/content/installation/appGC7.htm",
+		"/C/laragon/www/wl/themes/olympos/assets/js/app.js",
+		"/C/Users/Li/Documents/ban/ban.html",
+		"/C/laragon/www/wl/themes/olympos/assets/sass/_globals.scss",
+		"/C/laragon/www/wl/themes/olympos/pages/homepage.htm",
+		"/C/Users/Li/Documents/Sans titre 1.png",
+		"/C/laragon/www/wl/themes/olympos/partials/installation/base.htm",
+		"/C/laragon/www/wl/themes/olympos/layouts/default.htm",
+		"/C/laragon/www/wl/.gitignore",
+		"/C/laragon/www/wl/plugins/grcote7/tutos/components/Objects.php",
+		"/C/laragon/www/wl/themes/olympos/pages/poo.htm",
+		"/C/laragon/www/wl/themes/olympos/assets/js/semantic.js",
+		"/C/laragon/www/wlo/index.php",
+		"/C/laragon/www/wl/index.php",
+		"/C/laragon/www/wl/plugins/grcote7/tutos/components/objects/default.htm",
+		"/C/laragon/www/wl/config/app.php",
+		"/C/laragon/www/wl/themes/olympos/pages/contact.htm",
+		"/C/laragon/etc/apache2/sites-enabled/auto.wl-294d4835aad8630e5a452ac2dbaf90b6ad84237c-294d4835aad8630e5a452ac2dbaf90b6ad84237c.conf",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/original/extra/httpd-vhosts.conf",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/extra/httpd-default.conf",
+		"/C/laragon/etc/apache2/sites-enabled/00-default.conf",
+		"/C/laragon/www/wl/themes/olympos/assets/mix-manifest.json",
+		"/C/laragon/www/do/tuto/premiers_objets.php",
+		"/C/laragon/www/wl/plugins/grcote7/tutos/classes/Person.php",
+		"/C/laragon/www/wl/aaa.lio",
+		"/C/laragon/www/wl/.env",
+		"/C/laragon/www/wl/themes/olympos/pages/o.htm",
+		"/C/laragon/bin/sendmail/output/mail-20171011-055646.636.txt",
+		"/C/laragon/www/wl/plugins/grcote7/tutos/Plugin.php",
+		"/C/laragon/www/wl/plugins/october/demo/Plugin.php",
+		"/C/laragon/www/wl/plugins/october/demo/components/todo/default.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/components/Actors.php",
+		"/C/laragon/www/wl/plugins/grcote7/tutos/lang/fr/lang.php",
+		"/C/laragon/www/wl/plugins/grcote7/tuto/Plugin.php",
+		"/C/laragon/www/wl/plugins/grcote7/tuto/lang/fr/lang.php",
+		"/C/laragon/www/wl/plugins/grcote7/objets/components/bases/default.htm",
+		"/C/laragon/www/wl/plugins/grcote7/objets/Plugin.php",
+		"/C/laragon/www/wl/themes/olympos/pages/add-actors.htm",
+		"/C/laragon/www/wl/resources/views/uuu.php",
+		"/C/laragon/www/wl/themes/olympos/content/static-pages/about-about-us.htm",
+		"/C/laragon/www/wl/modules/system/providers.php",
+		"/C/laragon/www/o/plugins/bedard/debugbar/vendor/maximebf/debugbar/src/DebugBar/DebugBar.php",
+		"/C/laragon/www/wl/themes/olympos/content/static-pages/about.htm",
+		"/C/laragon/www/wl/config/cms.php",
+		"/C/Users/Li/AppData/Local/LiveReload/Logs/LiveReload_2017_10_10_205806.txt",
+		"/C/Users/Li/AppData/Local/LiveReload/Logs/LiveReload_2017_10_05_163658.txt",
+		"/C/laragon/www/do/tuto/premier_pgm.php",
+		"/C/laragon/www/wl/plugins/grcote7/movies/components/ActorForm.php",
+		"/C/laragon/www/o/themes/gc000/pages/ooo.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/components/actorform/default.htm",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/laragon/www/do/.gitignore",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Compare Side-By-Side/SBSCompare.sublime-settings",
+		"/C/laragon/www/wlo/composer.json",
+		"/C/laragon/www/wl/composer.json",
+		"/C/laragon/etc/apache2/sites-enabled/auto.wlo.conf",
+		"/C/laragon/www/wl/plugins/grcote7/movies/models/Actor.php",
+		"/C/laragon/www/wlo/package.json",
+		"/C/laragon/www/o/_ide_helper.php",
+		"/C/laragon/www/wl/plugins/grcote7/movies/controllers/actors/create.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/controllers/actors/preview.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/controllers/actors/update.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/controllers/genres/create.htm"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 97.0,
+		"where_history":
+		[
+			"C:\\laragon\\www\\wl",
+			"C:\\laragon\\www\\o",
+			"C:\\laragon\\www\\wl"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"character",
+			"characterCounter",
+			"char-count",
+			"min",
+			"semantic",
+			"font",
+			"robo",
+			"1",
+			"themes/default",
+			"url",
+			"fonts/icon",
+			"themes/default",
+			"third",
+			"firstname",
+			"extensions.php",
+			">';\n",
+			"combo",
+			"menu",
+			"bulleted",
+			"semantic",
+			"Searching",
+			"semantic",
+			"css",
+			"route",
+			"dist",
+			"icons.woff2",
+			"icon",
+			"semantic.min.css",
+			"button",
+			"%;\n",
+			"dist",
+			"js",
+			"all",
+			"logwlwlwlgs",
+			"p100",
+			"Alias",
+			"p100",
+			"ErrorLog /var/log/apache2/vhosts-error.log",
+			"ErrorLog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../..",
+			"",
+			"appgc7",
+			"prenom",
+			"EncryptionServiceProvider"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/laragon/www/do/tuto/premier_pgm.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										33,
+										34
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16,
+										17
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/laragon/www/do/tuto/classes/Terrien.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/laragon/www/do/tuto/classes/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										366,
+										367
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										20,
+										21
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/laragon/www/do/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							],
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										141,
+										142
+									],
+									"2":
+									[
+										141,
+										142
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										103,
+										104
+									],
+									"2":
+									[
+										103,
+										104
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monocyanide ColorScheme - Black.tmTheme",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/RestructuredText/reStructuredText.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1200.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "conf.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\laragon\\www\\p\\fr\\ac7\\conf\\ST3\\conf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,15 @@
+columns:
+    title:
+        label: 'grcote7.library::lang.book.title'
+        type: text
+        searchable: true
+        sortable: true
+    author:
+        label: 'grcote7.library::lang.book.author'
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: 'grcote7.library::lang.book.year'
+        type: text
+        searchable: true

@@ -1,0 +1,18 @@
+title = "Canal"
+url = "/forum/canal/:slug"
+layout = "basic"
+is_hidden = 0
+
+[forumChannel]
+slug = "{{ :slug }}"
+memberPage = "forum/membres"
+topicPage = "forum/sujets"
+
+[viewBag]
+localeUrl[en] = "/canal"
+==
+<div class="container">
+    <h1><a href="/forum">Forum</a></h1>
+    <h2>Liste des sujets</h2>
+    {% component 'forumChannel' %}
+</div>

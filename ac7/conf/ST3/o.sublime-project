@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": "/opt/lampp/htdocs/w/sg5/pui100_com"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/sg1/c57/october"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/sg1/c57/l5"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/sg1/c57/000-fr"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/wl"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/do"
+		},
+		{
+			"path": "/opt/lampp/htdocs/w/sg1/c57/laravel"
+		}
+	]
+}

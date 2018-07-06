@@ -1,0 +1,12 @@
+description = "Affichage du résultat"
+==
+{% if result %}
+<div class="lead top10">
+    <span style="font-size:1.1em">{{ nadenp }} = </span> <span
+    class="label label-success" style="font-size:1.1em">{{ result }}</span>
+</div>
+{% else %}
+<span class="text-muted">
+        <b>Mets ton nombre dans la case et clique sur le <b></b>bouton <em>Décomposer</em></b> (ou <i><b>touche ENTRÉE</b></i>) pour vérifier ta décomposition.
+    </span>
+{% endif %}

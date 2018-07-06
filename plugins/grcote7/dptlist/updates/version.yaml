@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table grcote7_dptlist_dpts'
+    - builder_table_create_grcote7_dptlist_dpts.php
+1.0.3:
+    - 'Updated table grcote7_dptlist_dpts'
+    - builder_table_update_grcote7_dptlist_dpts.php

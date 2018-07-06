@@ -1,0 +1,22 @@
+url='/ooo'
+layout='basic'
+==
+<?php
+use Rainlab\User\Models\User;
+
+function onStart(){
+	$this['users']=User::get();
+	$user = $this['users'][0];
+	$user->username='GrCOTE7';
+	// $user->save();
+	$this['users']=User::get();
+	// echo 'Username: '.$this['users'][0]->username;
+}
+?>
+==
+<div class="container" style="margin-top: 20px">
+	{% for user in users %}
+		<strong>{{ user.name }}</strong> a pour pseudo <strong>{{ user.username }}</strong>.
+		<!-- {{user}} -->
+	{% endfor %}
+</div>

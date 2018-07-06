@@ -1,0 +1,47 @@
+<div class="panel-body">
+    <label>Voici une liste</label>
+    'Tortelinis','Pennes','Nouilles','Spaghettis'
+    <!--{% partial "scoop" items=items %}-->
+</div>
+
+<form
+    data-request="{{ __SELF__ }}::onSortList"
+    data-request-update="'{{ __SELF__ }}::scoop': '#result'"
+    data-request-success="$('#input-item').val('')">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h3 class="panel-title">Composant: Déclenchez l'Action !</h3>
+        </div>
+
+        <div class="panel-body" id="actionTrier">
+            <div class="input-group">
+                <label>Trier la liste</label>
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn btn-primary">Maintenant !</button>
+                </span>
+            </div>
+        </div>
+
+        <div class="panel-body" id="resultat">
+            <label>Voici la liste triée</label>
+            <div class="scoop" id="result">
+            </div>
+        </div>
+    </div>
+</form>
+{% put scripts %}
+<script>
+    $(document).ready(function () {
+//        $('button').click();
+        $('#resultat').hide();
+
+        $(document).ajaxSuccess(function (event, xhr, settings) {
+            $('.panel-title').hide();
+            $('#actionTrier').hide();
+            $('#resultat').show();
+        })
+    })
+</script>
+{% endput %}

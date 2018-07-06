@@ -1,0 +1,19 @@
+title = "Sujets"
+url = "/forum/sujets/:slug"
+layout = "basic"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/sujets"
+
+[forumTopic]
+slug = "{{ :slug }}"
+postsPerPage = 20
+memberPage = "forum/membres"
+channelPage = "forum/canal"
+==
+<div class="container">
+    <h1><a href="/forum">Forum</a></h1>
+    <h2>Liste des messages</h2>
+    {% component 'forumTopic' %}
+</div>

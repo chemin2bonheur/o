@@ -1,0 +1,18 @@
+title = "T03"
+url = "/t/03"
+layout = "basic"
+is_hidden = 0
+
+[builderList ListeDpts]
+modelClass = "Grcote7\Dptlist\Models\Dpt"
+scope = "-"
+displayColumn = "nom"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div class="container">
+    <h1>Liste des départements</h1>
+    {% component 'ListeDpts' %}
+</div>

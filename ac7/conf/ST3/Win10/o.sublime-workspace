@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"M",
+				"Models"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/laragon/www/wl/storage/logs/system.log",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/laragon/bin/sendmail/debug.log",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/laragon/bin/sendmail/error.log",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "inspa",
+		"selected_items":
+		[
+			[
+				"inspa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins pac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ins pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"node -v"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/o",
+		"/C/laragon/www/o/ac7",
+		"/C/laragon/www/o/ac7/conf",
+		"/C/laragon/www/wl",
+		"/C/laragon/www/wl/plugins",
+		"/C/laragon/www/wl/plugins/grcote7",
+		"/C/laragon/www/wl/themes",
+		"/C/laragon/www/wl/themes/olympos"
+	],
+	"file_history":
+	[
+		"/C/laragon/www/o/ac7/conf/div",
+		"/C/laragon/www/wl/plugins/grcote7/movies/components/filtermovies/default.htm",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/plugins/watchlearn/movies/components/FilterMovies.php",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/pages/filtermovies.htm",
+		"/C/laragon/www/wl/themes/olympos/partials/header.htm",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_mixins.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_sidebar.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_susy.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_variables.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/style.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_header.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_homepage.scss",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-39/themes/olympos/assets/sass/_globals.scss",
+		"/C/laragon/www/o/themes/gc000/partials/admin/users.htm",
+		"/C/laragon/www/wl/package.json",
+		"/C/wamp/bin/apache/apache2.4.27/conf/original/extra/httpd-vhosts.conf",
+		"/C/laragon/www/wl/storage/app/uploads/public/59c/fc9/530/thumb_30_100x100_0_0_crop.png",
+		"/C/laragon/www/wl/storage/app/uploads/public/59d/0c7/73e/thumb_30_100x100_0_0_crop.png",
+		"/C/laragon/www/wl/storage/app/uploads/public/59d/0c7/73e/59d0c773ec20c046455936.png",
+		"/C/laragon/bin/sendmail/output/mail-20170930-035206.677.txt",
+		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-vhosts.conf",
+		"/C/laragon/www/wl/storage/app/uploads/public/59c/fc9/530/59cfc95308f64945024375.png",
+		"/C/wamp/bin/apache/apache2.4.27/conf/httpd.conf",
+		"/C/wamp/alias/wl.conf",
+		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-dav.conf",
+		"/C/wamp/alias/phpsysinfo.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/laragon/www/wl/plugins/grcote7/contact/components/contactform/default.htm",
+		"/C/wamp/www/wl/vendor/october/rain/src/Support/helpers.php",
+		"/C/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
+		"/C/laragon/www/wl/themes/olympos/pages/films.htm",
+		"/C/laragon/www/wl/plugins/grcote7/contact/components/ContactForm.php",
+		"/C/laragon/www/wl/plugins/rainlab/blog/components/Post.php",
+		"/C/laragon/www/wl/plugins/grcote7/contact/components/contactform/messages.htm",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-22/plugins/watchlearn/contact/components/contactform/messages.htm",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-22/plugins/watchlearn/contact/components/ContactForm.php",
+		"/C/laragon/www/oc-filelocker-plugin/README.md",
+		"/C/laragon/www/wl/plugins/grcote7/oc-filelocker-plugin/config/config.php",
+		"/C/laragon/www/wl/plugins/grcote7/oc-filelocker-plugin/lang/en/lang.php",
+		"/C/laragon/bin/sendmail/output/mail-20170918-154802.518.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170917-144436.669.txt",
+		"/C/sendmail/sendmail.ini",
+		"/C/sendmail/error.log",
+		"/C/laragon/bin/sendmail/sendmail.ini",
+		"/C/laragon/bin/sendmail/output/mail-20170916-191607.724.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170916-191715.790.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170916-192543.743.txt",
+		"/C/laragon/etc/apache2/mod_php.conf",
+		"/C/laragon/bin/sendmail/output/mail-20170914-214440.545.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170914-171313.862.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170914-150539.546.txt",
+		"/C/laragon/bin/sendmail/output/mail-20170914-150542.825.txt",
+		"/C/laragon/www/wl/vendor/laravel/framework/src/Illuminate/Mail/Transport/MailgunTransport.php",
+		"/C/laragon/www/watchlearn/movies/models/actor/fields.yaml",
+		"/C/laragon/www/watchlearn/movies/controllers/Movies.php",
+		"/C/laragon/www/watchlearn/movies/controllers/Actors.php",
+		"/C/laragon/www/wl/themes/olympos/layouts/default.htm",
+		"/C/laragon/www/wl/plugins/grcote7/movies/models/Movie.php",
+		"/C/laragon/www/Making-Websites-With-October-CMS-13/plugins/watchlearn/movies/Plugin.php",
+		"/C/laragon/www/Making-Websites-With-October-CMS-13/themes/olympos/assets/sass/_globals.scss",
+		"/C/laragon/www/wl - Copie/storage/framework/cache/9b/cf/9bcfdb940c88f716321be2b7a57119f7",
+		"/C/laragon/www/wl/themes/olympos/partials/footer.htm",
+		"/C/laragon/www/wl/themes/olympos/assets/compiled/css/style.css",
+		"/C/laragon/www/wl/themes/olympos/pages/homepage.htm",
+		"/C/laragon/www/wl/config/cms.php",
+		"/C/laragon/www/wl/config/database.php",
+		"/C/laragon/www/p/fr/plugins/anandpatel/wysiwygeditors/formwidgets/editor/assets/ckeditor/ckeditor.js",
+		"/C/laragon/www/o/ac7/conf/vhosts/win10/httpd-vhosts.conf",
+		"/C/laragon/www/wl/index.php",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/extra/httpd-vhosts.conf",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/httpd.conf",
+		"/C/Users/Li/Downloads/Making-Websites-With-October-CMS-04/README.md",
+		"/C/laragon/etc/apache2/sites-enabled/auto.p.conf",
+		"/C/laragon/etc/apache2/sites-enabled/auto.p100.conf",
+		"/C/laragon/www/p100/.gitignore",
+		"/C/laragon/www/p100/fr/ac7/t/indexo.php",
+		"/C/laragon/bin/apache/httpd-2.4.25-win64-VC14/conf/charset.conv",
+		"/etc/hosts",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/AutoBackups/README.md",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/etc/NetworkManager/dnsmasq.d/dnsmasq-p.conf",
+		"/opt/lampp/etc/extra/httpd-vhosts.conf",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/div",
+		"/etc/php/7.0/cli/php.ini",
+		"/opt/lampp/apache2/conf/httpd.conf",
+		"/opt/lampp/etc/locales.conf",
+		"/opt/lampp/etc/httpd.conf",
+		"/opt/lampp/etc/original/extra/httpd-vhosts.conf",
+		"/opt/lampp/etc/original/httpd.conf",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/index.php",
+		"/opt/lampp/etc/xampp/selinux",
+		"/opt/lampp/apache2/scripts/ctl.sh",
+		"/opt/lampp/docs/dummy-host.example.com/index.php",
+		"/opt/lampp/logs/dummy-host.example.com-error_log",
+		"/opt/lampp/logs/dummy-host.example.com-access_log",
+		"/opt/lampp/logs/error_log",
+		"/opt/lampp/apache2/README.txt",
+		"/opt/lampp/include/http_vhost.h",
+		"/opt/lampp/etc/extra/httpd-ssl.conf",
+		"/opt/lampp/etc/extra/httpd-default.conf",
+		"/opt/lampp/etc/extra/httpd-xampp.conf",
+		"/opt/lampp/etc/extra/proxy-html.conf",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/vhosts-access.log",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/vhosts-error.log",
+		"/opt/lampp/htdocs/w/sg5/immo7_net/config/database.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/index.html",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env",
+		"/opt/lampp/htdocs/w/sg5/immo7_net/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/composer.json",
+		"/opt/lampp/htdocs/w/sg1/c2b/alpha_chemin2bonheur_com/.htaccess",
+		"/opt/lampp/htdocs/w/sg1/c2b/chemin2bonheur_com/index.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/hosts",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/httpd.conf",
+		"/home/cote/.ssh/id_rsa.pub",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/framework/config.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/cms/disabled.json",
+		"/opt/lampp/htdocs/w/sg1/october/index.php",
+		"/opt/lampp/htdocs/w/sg1/october/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/logs/system.log",
+		"/etc/rc.local"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"logwlwlwlgs",
+			"p100",
+			"Alias",
+			"p100",
+			"ErrorLog /var/log/apache2/vhosts-error.log",
+			"ErrorLog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/laragon/www/wl/storage/logs/system.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai - Spacegray (SL).tmTheme",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/laragon/bin/sendmail/debug.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/laragon/bin/sendmail/error.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "o.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\laragon\\www\\p\\fr\\ac7\\conf\\ST3\\w.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

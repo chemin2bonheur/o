@@ -1,0 +1,81 @@
+title = "DNP"
+url = "/dnp"
+layout = "basic"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    $this->addCss('assets/css/theme/maVar.min.css');
+}
+
+function onTest() {
+$nadenp = post('nadenp'); // Nombre A Decomposer En Nombre Premier
+$nf = function ($n, $d=0){
+return number_format($n, $d, ',',' ');
+};
+
+$decompose = function($n) {
+if (!$n || $n < 2) {
+return [$nf($n)];
+}
+
+$f = [];
+for ($i = 2; $i <= $n; $i++) {
+while (($n % $i) === 0) {
+array_push($f, number_format($i, 0, ',',' '));
+$n /= $i;
+}
+}
+
+return implode(' x ',$f);
+
+};
+
+$this['nadenp'] = $nf($nadenp);
+$this['result'] = $decompose($nadenp);
+}
+?>
+==
+<!--$result=$nf($nadenp) . ' = ' . implode(' x ', $decomp($nadenp);-->
+<!--#$result=789456123;-->
+
+<div class="container pc97co" id="dnp">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Décomposeur en nombres premiers (Usage d'AJAX)</h3>
+        </div>
+        <!--data-request-confirm="Sûr ?"-->
+        <!--data-request-success="alert('Yay!')"-->
+        <div class="panel-body">
+            <form class="form-inline"
+                  data-request="onTest"
+                  data-request-update="decompresult: '@#resultdecomp', commentresult: '#commentresult'">
+                <input type="text" class="form-control" name="nadenp" style="width:250px; margin-right: 10px;"
+                       placeholder=" Ton nombre ici " value="777">
+
+                <button type="submit" class="btn btn btn-primary">Décomposer</button>
+            </form>
+        </div>
+
+        <div class="panel-footer" id="resultdecomp">
+            {% partial "decompresult" %}
+        </div>
+
+        <!--<div id="commentresult">-->
+        <!--{% partial "commentresult" %}-->
+        <!--</div>-->
+    </div>
+
+</div>
+
+{% put scripts %}
+
+<script>
+
+    $(document).ready(function () {
+        $('button').click();
+    })
+
+</script>
+{% endput %}

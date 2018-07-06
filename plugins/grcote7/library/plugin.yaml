@@ -1,0 +1,22 @@
+plugin:
+    name: 'grcote7.library::lang.plugin.name'
+    description: 'grcote7.library::lang.plugin.description'
+    author: GrCOTE7
+    icon: oc-icon-book
+    homepage: ''
+permissions:
+    grcote7.library.manage_book:
+        tab: 'grcote7.library::lang.plugin.name'
+        label: 'grcote7.library::lang.book.manage_books'
+navigation:
+    library:
+        label: Library
+        url: grcote7/library/books
+        icon: icon-book
+        permissions:
+            - grcote7.library.manage_book
+        sideMenu:
+            books:
+                label: Books
+                url: grcote7/library/books
+                icon: icon-bookmark

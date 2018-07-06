@@ -1,0 +1,67 @@
+title = "TÀF"
+url = "/taf"
+layout = "basic"
+is_hidden = 0
+
+[demoTodo]
+max = "{{ 3 }}"
+==
+<div class="container">
+    <h3>{{demoTodo.name}}</h3>
+
+    <p>oOo{{ dump(this.property) }}oOo</p>
+
+
+    {#<p>Ici: {{demoTodo.nfLi(54789)}}</p>
+    <p>{% for caractere, properties in demoTodo.getPropertyNames %}
+
+    <h2>Caractéristiques de <b>{{caractere}}</b>:</h2>
+    {% for key, property in properties %}
+    <li class="list-group-item">
+        {{key|capitalize}} : <b>{{ property }}</b>
+    </li>
+    {% endfor %}
+    {% endfor %}
+    </p>
+
+    <p>
+        La valeur par defaut est {{demoTodo.defineProperties.max.default}}<br/>
+        <!-- La valeur paramétrée est <b>{{demoTodo.methodeLionel()}}</b> -->
+    </p>
+
+    #}
+    {{dump(this.param)}}
+    <br/>
+
+    {% component 'demoTodo' %}
+</div>
+
+<div class="container">
+        <h1>TAF (Usage plugins)</h1>
+        <p>Plugin 'demoTodo'</p>
+</div>
+
+<div class="container">
+    <p>1 ligne de code HTMl !</p>
+</div>
+
+{#
+
+Dans le plugin (demo/component/Todo.ph) :ng-include src="ng-include src="
+    /**
+     * @return array
+     */
+    public function getPropertyNames() {
+        return $this->defineProperties();
+    }
+
+
+    function methodeLionel() {
+        return ($this->property('max'));
+    }
+
+    function nfLi($value) {
+        return number_format($value, 2, ',', ' ');
+    }
+
+#}

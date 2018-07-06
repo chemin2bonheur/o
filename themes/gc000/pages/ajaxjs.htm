@@ -1,0 +1,83 @@
+title = "AjaxJS"
+url = "/ajaxjs"
+layout = "basic"
+description = "Ajax avec JS API"
+is_hidden = 0
+meta_title = "Titre AjaxJS"
+meta_description = "Ajax Test2"
+==
+<?php
+function onHandleForm()
+{
+    /* Something server-side code */
+    return [
+        'totalUsers' => 2303,
+'totalProjects' => 937,
+'(Exemple de données initialisées en début de code dans page ajaxjs)',
+'(Mais affichées qu\'à l\'issue de la requête Ajax)'
+];
+}
+?>
+==
+<div class="container">
+    <div class="row">
+        <div>
+            <h1>Ajax 100% JS (API)</h1>
+            <p>Usage Ajax avec Javascript API (Plus puissant)</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Simple Ajax</h3>
+        </div>
+        <!--data-request-confirm="Sûr ?"-->
+        <!--data-request-success="alert('Yay!')"-->
+        <div class="panel-body">
+            <form
+                onsubmit="$.oc.stripeLoadIndicator.show(event);
+                    $(this).request('onHandleForm', {
+                    success: function(data) {
+                             console.log(data);
+                             $('#commentresult').html('Okay... Posé après réponse de la requête Ajax (En Jquery)');
+                             $.oc.stripeLoadIndicator.hide();
+                             $('button').hide();
+                             $('#resultcalc').hide();
+                    }
+    }); return false;">
+                <button type="submit" class="btn btn btn-primary">Action !</button>
+            </form>
+        </div>
+        <div class="panel-footer" id="resultcalc">
+            Clic the Action button...
+        </div>
+        <div class="panel-footer" id="commentresult">
+        </div>
+
+        <div class="container log"></div>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <!--<p>1 ligne de code HTMl !</p>-->
+</div>
+<!--<script src="http://pp100/000/combine/da5a7963913a1b4c2c30a952ad64d160-1463001860"></script>-->
+{% put scripts %}
+<script>
+    $(document).ready(function () {
+        $('#commentresult').html('Oki, \'posé\' par Jquery (En fin de chargement de la page)');
+        console.log('Oki: ' + '2 + 3 = ' + (2 + 3));
+
+        $(document).ajaxSuccess(function (event, xhr, settings) {
+            $('.log').html('<h6>Réponse de la requête Ajax (effectuée avec succès) dans cette page (' + settings.url + '):<br>' + xhr.responseText + '</h6>');
+            console.log('Ajax updated!');
+        })
+
+    });
+</script>
+{% endput %}

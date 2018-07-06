@@ -1,0 +1,42 @@
+title = "Accueil"
+url = "/"
+layout = "basic"
+is_hidden = 0
+==
+<?php
+function onStart(){
+$this->addCss('assets/css/maVar.min.css');
+$this['maVar'] = 778;
+
+$this['sitename']=strtoupper(Config::get("cms.activeTheme",''));
+
+//{% stopwatch "foo" %}
+//{{ debug('maVar = ' ~ maVar) }}
+//{% endstopwatch %}
+
+}
+?>
+==
+<div class="container">
+
+    <h1>Bienvenue dans {{ this.theme.site_name }}</h1>
+    <p><i>(Bases HTML5/CSS3 - SSh - BASH - Git (Ungit-GitHub-GitLab) - JavaScript - JQuery - PHP (POO) - Laravel -
+        OctoberCMS - Google 's Apps)</i></p>
+    <p class="noDeco">Page de base</p>
+    <a href="taf">TAF (Plugin demoTodo)</a>
+
+    <div class="container">
+
+        <h2 class="maVar">maVar = {{ (maVar==779) ? 'Oui':'Non' }} {{', maVar vaut ' ~ maVar }}</h2>
+
+        {{ 'Le titre de la page est: ' ~ this.page.id }}
+
+    </div>
+    {% content 'essaiContent.htm' sitename=sitename%}
+    <br/>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Nom du thème: {{sitename}}
+        </div>
+    </div>
+</div>

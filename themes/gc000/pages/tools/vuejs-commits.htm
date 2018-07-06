@@ -1,0 +1,158 @@
+title = "Tools Vue.JS"
+url = "/tools/vuejs-commits"
+layout = "basic"
+is_hidden = 0
+==
+{% put head %}
+
+<style>
+    #demo {
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f66;
+    }
+
+    li.spaced {
+        line-height: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .author, .date {
+        font-weight: bold;
+    }
+
+    .spaceli {
+        margin-right: 20px;
+    }
+</style>
+
+<script src="{{ [ 'assets/gc7/js/vue.js' ]|theme }}"></script>
+
+{% endput %}
+
+<div class="container" id="demo">
+    <div class="row">
+        <h1>Latest Vue.js Commits (<a target="_blank" title="Ouvrir GitHub"
+                                      href="https://github.com/GrCOTE7/OctoberCMS000">GitHub</a>)
+        </h1>
+        <p><i>To Do GC7: Same for GitLab</i></p>
+
+        <label v-for="branch in branches" class="spaceli">
+
+            <input type="radio"
+                   name="branch"
+                   :id="branch"
+                   :value="branch"
+                   v-model="currentBranch">
+
+            <label :for="branch">
+                {% verbatim %} {{branch}} {% endverbatim %}
+            </label>
+
+        </label>
+        <p>vuejs/vue@{% verbatim %}{{currentBranch}}{% endverbatim %}</p>
+        <ul>
+            <li v-for="record in commits" class="spaced">
+                <a :href="record.html_url" target="_blank" class="commit">{% verbatim %}{{record.sha.slice(0, 7)}}{%
+                    endverbatim %}</a>
+                - <span class="message">{% verbatim %}{{record.commit.message|truncate}}{% endverbatim %}</span><br>
+                by <span class="author">{% verbatim %}{{record.commit.author.name}}{% endverbatim %}</span>
+                at <span class="date">{% verbatim %}{{record.commit.author.date|formatDate}}{% endverbatim %}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% put scripts %}
+<script>
+    $(document).ready(function () {
+
+        /**
+         * Created by cote on 15/05/2016.
+         */
+        var apiURL = 'https://api.github.com/repos/GrCOTE7/OctoberCMS000/commits?per_page=7&sha='
+//var apiURL = 'https://api.github.com/repos/vuejs/vue/commits?per_page=3&sha='
+        var isPhantom = navigator.userAgent.indexOf('PhantomJS') > -1
+
+        /**
+         * Test mocks
+         */
+
+        var mocks = {
+            master: [{
+                sha: '111111111111',
+                commit: {message: 'one', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}
+            }, {
+                sha: '111111111111',
+                commit: {message: 'hi', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}
+            }, {sha: '111111111111', commit: {message: 'hi', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}}],
+            dev: [{
+                sha: '222222222222',
+                commit: {message: 'two', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}
+            }, {
+                sha: '111111111111',
+                commit: {message: 'hi', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}
+            }, {sha: '111111111111', commit: {message: 'hi', author: {name: 'Evan', date: '2014-10-15T13:52:58Z'}}}]
+        }
+
+        function mockData() {
+            this.commits = mocks[this.currentBranch]
+        }
+
+        /**
+         * Actual demo
+         */
+
+        var demo = new Vue({
+
+            el: '#demo',
+
+            data: {
+                branches: ['master', 'gc000'],
+                currentBranch: 'gc000',
+                commits: null
+            },
+
+            created: function () {
+                this.fetchData()
+            },
+
+            watch: {
+                currentBranch: 'fetchData'
+            },
+
+            filters: {
+                truncate: function (v) {
+                    var newline = v.indexOf('\n')
+                    return newline > 0 ? v.slice(0, newline) : v
+                },
+                formatDate: function (v) {
+                    return v.replace(/T|Z/g, ' ')
+                }
+            },
+
+            methods: {
+                fetchData: function () {
+                    // CasperJS fails at cross-domain XHR even with
+                    // --web-security=no, have to mock data here.
+                    if (isPhantom) {
+                        return mockData.call(this)
+                    }
+                    var xhr = new XMLHttpRequest()
+                    var self = this
+                    xhr.open('GET', apiURL + self.currentBranch)
+                    xhr.onload = function () {
+                        self.commits = JSON.parse(xhr.responseText)
+                        console.log(self.commits[0].html_url)
+                    }
+                    xhr.send()
+                }
+            }
+        })
+
+    })
+</script>
+{% endput %}

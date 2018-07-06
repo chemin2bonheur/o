@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: 'grcote7.library::lang.book.title'
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'grcote7.library::lang.book.slug'
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    author:
+        label: 'grcote7.library::lang.book.author'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    year:
+        label: 'grcote7.library::lang.book.year'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    short_description:
+        label: 'grcote7.library::lang.book.short_description'
+        span: full
+        size: large
+        type: richeditor

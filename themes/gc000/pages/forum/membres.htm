@@ -1,0 +1,19 @@
+title = "Membres"
+url = "/forum/membres/:slug"
+layout = "basic"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/membres"
+
+[forumMember]
+slug = "{{ :slug }}"
+viewMode = "view"
+channelPage = "forum/membres"
+topicPage = "forum/sujets"
+==
+<div class="container">
+    <h1><a href="/forum">Forum</a></h1>
+    <h2>Liste des membres</h2>
+    {% component 'forumMember' %}
+</div>

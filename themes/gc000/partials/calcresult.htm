@@ -1,0 +1,12 @@
+description = "Affichage du résultat"
+==
+{% if result %}
+<div class="lead">
+    {{ value1 }} {{ operation }} {{ value2 }} <span style="font-size:1.1em">{{ equa }}</span> <span
+        class="label label-success">{{ result }}</span>
+</div>
+{% else %}
+    <span class="text-muted">
+        <b>Change value(s)</b> and<b>/</b>or <b>operator</b> then <b>click the <em>Calculate</em> button</b> to find the answer.
+    </span>
+{% endif %}

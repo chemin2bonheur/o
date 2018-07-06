@@ -1,0 +1,652 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/laragon/www/p100/fr/ac7/t/indexo.php",
+			"settings":
+			{
+<<<<<<< HEAD
+<<<<<<< dev
+				"buffer_size": 994,
+=======
+				"buffer_size": 955,
+>>>>>>> Up conf ST3
+=======
+				"buffer_size": 955,
+>>>>>>> origin/master
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/laragon/www/p100/.gitignore",
+			"settings":
+			{
+				"buffer_size": 1847,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins pac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ins pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 622.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"node -v"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/p100",
+		"/C/laragon/www/p100/fr"
+	],
+	"file_history":
+	[
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/AutoBackups/README.md",
+		"/C/Users/Li/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/etc/NetworkManager/dnsmasq.d/dnsmasq-p.conf",
+		"/opt/lampp/etc/extra/httpd-vhosts.conf",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/div",
+		"/etc/php/7.0/cli/php.ini",
+		"/etc/hosts",
+		"/opt/lampp/apache2/conf/httpd.conf",
+		"/opt/lampp/etc/locales.conf",
+		"/opt/lampp/etc/httpd.conf",
+		"/opt/lampp/etc/original/extra/httpd-vhosts.conf",
+		"/opt/lampp/etc/original/httpd.conf",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/index.php",
+		"/opt/lampp/etc/xampp/selinux",
+		"/opt/lampp/apache2/scripts/ctl.sh",
+		"/opt/lampp/docs/dummy-host.example.com/index.php",
+		"/opt/lampp/logs/dummy-host.example.com-error_log",
+		"/opt/lampp/logs/dummy-host.example.com-access_log",
+		"/opt/lampp/logs/error_log",
+		"/opt/lampp/apache2/README.txt",
+		"/opt/lampp/include/http_vhost.h",
+		"/opt/lampp/etc/extra/httpd-ssl.conf",
+		"/opt/lampp/etc/extra/httpd-default.conf",
+		"/opt/lampp/etc/extra/httpd-xampp.conf",
+		"/opt/lampp/etc/extra/proxy-html.conf",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/vhosts-access.log",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/vhosts-error.log",
+		"/opt/lampp/htdocs/w/sg5/immo7_net/config/database.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/index.html",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env",
+		"/opt/lampp/htdocs/w/sg5/immo7_net/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/composer.json",
+		"/opt/lampp/htdocs/w/sg1/c2b/alpha_chemin2bonheur_com/.htaccess",
+		"/opt/lampp/htdocs/w/sg1/c2b/chemin2bonheur_com/index.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/hosts",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/httpd.conf",
+		"/home/cote/.ssh/id_rsa.pub",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/framework/config.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/cms/disabled.json",
+		"/opt/lampp/htdocs/w/sg1/october/index.php",
+		"/opt/lampp/htdocs/w/sg1/october/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/logs/system.log",
+		"/etc/rc.local"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"p100",
+			"Alias",
+			"p100",
+			"ErrorLog /var/log/apache2/vhosts-error.log",
+			"ErrorLog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/laragon/www/p100/fr/ac7/t/indexo.php",
+					"semi_transient": false,
+					"settings":
+					{
+<<<<<<< HEAD
+<<<<<<< dev
+						"buffer_size": 994,
+=======
+						"buffer_size": 955,
+>>>>>>> Up conf ST3
+=======
+						"buffer_size": 955,
+>>>>>>> origin/master
+						"regions":
+						{
+						},
+						"selection":
+						[
+<<<<<<< HEAD
+<<<<<<< dev
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										989,
+										993
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1,
+										5
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+=======
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										324,
+										325
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										290,
+										291
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+=======
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										324,
+										325
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										290,
+										291
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+>>>>>>> origin/master
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+<<<<<<< HEAD
+>>>>>>> Up conf ST3
+=======
+>>>>>>> origin/master
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+<<<<<<< HEAD
+<<<<<<< dev
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+=======
+>>>>>>> Up conf ST3
+=======
+>>>>>>> origin/master
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+<<<<<<< HEAD
+<<<<<<< dev
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+=======
+=======
+>>>>>>> origin/master
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+<<<<<<< HEAD
+>>>>>>> Up conf ST3
+=======
+>>>>>>> origin/master
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+<<<<<<< HEAD
+<<<<<<< dev
+								"bh_default_content"
+=======
+=======
+>>>>>>> origin/master
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+<<<<<<< HEAD
+>>>>>>> Up conf ST3
+=======
+>>>>>>> origin/master
+							],
+							"color_scheme": "Packages/User/SublimeLinter/All Hallow's Eve (SL).tmTheme",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/laragon/www/p100/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								270,
+								270
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Seti_UI/icons/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "conf.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/ST3/o.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

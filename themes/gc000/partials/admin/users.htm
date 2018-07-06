@@ -1,0 +1,33 @@
+description = "Liste des users"
+==
+<?php
+function onStart(){
+   // $this->addCss('assets/css/pages/users.css');
+
+$this['data']=123;
+
+/*
+echo '
+<pre>';
+    print_r($this["users"]);
+ echo '</pre>';
+*/
+
+}
+?>
+==
+<div class="container pc97co">
+    <div class="row">
+
+        <h1>Hello</h1>
+
+        <ul class="post-list"><h3>Liste des users</h3>
+            {% for user in users %}
+            <li><strong>{{ user.login }}</strong></li>
+            {% endfor %}
+        </ul>
+
+        <p class="rouge">{{ data }}</p>
+
+    </div>
+</div>

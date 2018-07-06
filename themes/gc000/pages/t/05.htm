@@ -1,0 +1,24 @@
+title = "T05"
+url = "/t/05"
+layout = "basic"
+description = "Composant simpleContact"
+is_hidden = 0
+
+[simpleContact]
+nameTitle = "Full Name"
+emailTitle = "Email"
+phoneTitle = "Phone"
+subjectTitle = "Subject"
+messageTitle = "Message"
+buttonText = "Submit"
+displayPhone = 1
+==
+<div class="container">
+
+    <h1>Test Plugin contact</h1>
+
+    {% component 'simpleContact' %}
+
+    <hr/>
+
+</div>

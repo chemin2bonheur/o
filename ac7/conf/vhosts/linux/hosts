@@ -1,0 +1,114 @@
+127.0.0.1	localhost
+127.0.1.1	cote-Aspire-7750ZG
+127.0.0.1 localhost cote-Aspire-7750ZG lionel@sg1.cote7.com
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+
+127.0.0.1	pma
+
+# Accueil ori Xampp
+127.0.0.1	l
+
+# Mes tutos
+# bash/js/jq/bootstrap/poo/uikit
+127.0.0.1	t
+
+# OS
+127.0.0.1	smf
+127.0.0.1	cv
+127.0.0.1	ocms
+
+
+
+# sg#x + t/
+127.0.0.1	w
+
+
+
+127.0.0.1 	p
+# Mon Site Pour Etude (OCMS)
+# p100 devra tout récupérer
+
+
+
+
+
+# SG1		c2b - c57fr - HA - SV   144.217.92.216
+
+
+127.0.0.1	c2b
+# Alpha + portail  + prelancement + public
+
+127.0.0.1	c57
+127.0.0.1	la #laravel
+127.0.0.1	l5
+127.0.0.1	infyomlabs
+127.0.0.1	voyager
+127.0.0.1 vuejs
+127.0.0.1	bestmomo
+127.0.0.1	o
+127.0.0.1	asgardcms
+127.0.0.1	c8
+127.0.0.1	pk
+
+127.0.0.1   p100be
+
+127.0.0.1	ha
+
+127.0.0.1	asv
+127.0.0.1	tsv
+127.0.0.1	ssv
+
+
+
+
+
+# SG2		c5 			164.132.224.214
+
+127.0.0.1	c5
+127.0.0.1	c5f
+127.0.0.1	nrj
+127.0.0.1   pp100
+
+
+
+
+
+# SG3		-   	 164.132.230.55
+
+127.0.0.1   cda
+127.0.0.1   cm
+127.0.0.1	ub
+
+
+
+
+
+# SG4		c7 		 137.74.173.246
+
+127.0.0.1   c7
+127.0.0.1   be
+127.0.0.1   bu
+
+
+
+
+
+# SG5		ass 	213.32.17.244
+
+127.0.0.1	ass
+127.0.0.1	fassecofr
+127.0.0.1	sg3assf
+127.0.0.1	assf
+127.0.0.1	assbu
+127.0.0.1	assbe
+127.0.0.1	asssond
+127.0.0.1	asst
+127.0.0.1	i

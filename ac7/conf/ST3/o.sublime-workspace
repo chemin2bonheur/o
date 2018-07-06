@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"e",
+				"echo\techo \"…\""
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/opt/lampp/htdocs/w/sg1/c57/bestmomo/.env",
+			"settings":
+			{
+				"buffer_size": 536,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/w/sg1/c57/bestmomo/.gitignore",
+			"settings":
+			{
+				"buffer_size": 1026,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 244.0,
+		"last_filter": "remot",
+		"selected_items":
+		[
+			[
+				"remot",
+				"Remote: Connect to Session"
+			],
+			[
+				"ins pa",
+				"Package Control: Install Package"
+			],
+			[
+				"inspa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/etc/hosts",
+		"/opt/lampp/apache2/conf/httpd.conf",
+		"/opt/lampp/htdocs/w/sg1/sg1_cote7_com/index.php",
+		"/opt/lampp/htdocs/w/sg1/sg1_cote7_com/.well-known/acme-challenge/0A6ifageNbqHLstMDagVnCQKLP4gO_XBr4mVG2mCeHE",
+		"/etc/ttt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/pages/home.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/pages/verification/invitation.htm",
+		"/media/cote/2TO/a_C7/sav_exSG7/a/130504-bdd/localhost.sql",
+		"/opt/lampp/xampp",
+		"/opt/lampp/htdocs/w/do/agc7/content/installation/appGC7.php",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/contact/components/ContactForm.php",
+		"/home/cote/.config/sublime-text-3/Packages/auto-save/README.md",
+		"/opt/lampp/htdocs/w/do/tuto/cours.php",
+		"/opt/lampp/htdocs/w/wl/storage/logs/system.log",
+		"/opt/lampp/htdocs/w/wl/webpack.mix.js",
+		"/opt/lampp/htdocs/w/wl/themes/olympos/assets/sass/_globals.scss",
+		"/opt/lampp/htdocs/w/PHP/index.php",
+		"/opt/lampp/htdocs/w/wl/themes/olympos/pages/films.htm",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/contact/components/contactform/default.htm",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/profile/updates/add_new_fields.php",
+		"/opt/lampp/htdocs/w/wl/storage/framework/cache/18/7c/187c841adeb1f030242cfcdd9ab40e77",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/contact/views/mail/message.htm",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/movies/views/mail/message.htm",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/movies/plugin/views/mail/message.htm",
+		"/opt/lampp/htdocs/w/wl/config/app.php",
+		"/opt/lampp/htdocs/w/wl/config/cms.php",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/contact/Plugin.php",
+		"/opt/lampp/htdocs/w/wl/themes/olympos/layouts/default.htm",
+		"/opt/lampp/htdocs/w/wl/config/mail.php",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/movies/components/Actors.php",
+		"/opt/lampp/htdocs/w/wl/plugins/grcote7/contact/components/contactForm/default.htm",
+		"/opt/lampp/htdocs/w/wl/config/services.php",
+		"/media/cote/HD500/wl/vendor/composer/autoload_real.php",
+		"/media/cote/HD500/wl/vendor/autoload.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/savBdD/admin_p100_gc7_420.sql",
+		"/opt/lampp/htdocs/w/sg1/c57/october/composer.json",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/composer.json",
+		"/opt/lampp/htdocs/w/sg1/c57/october/modules/system/ServiceProvider.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/modules/system/providers.php",
+		"/opt/lampp/htdocs/w/sg1/c57/000-fr/.env.c57.fr",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/config/cms.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env_ori",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/.gitignore",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/.htaccess",
+		"/opt/lampp/htdocs/w/sg1/c57/000-fr/.env.local",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/.htaccess",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/indexo.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/partials/site/nav.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/partials/site/head.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/gc7_inc/functions_2017.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/full-video-carousel/index.html",
+		"/opt/lampp/htdocs/w/sg1/c57/october/themes/gc000/layouts/basic.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/.htaccess",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/css/style.min.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/less/style.less",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/vendor/october/rain/src/Parse/Bracket.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/pages/home.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/assets/css/style.min.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/full-video-carousel/sass/free/_badge.scss",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/assets/css/style.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/storage/logs/system.log",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/css/stylep101.css",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/logs/system.log",
+		"/home/cote/o/plugins/grcote7/dpt/components/Dpt.php",
+		"/home/cote/o/plugins/grcote7/dptlist/components/Dpts.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/sass/README.txt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/node_modules/less/bin/lessc",
+		"/usr/bin/less",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/sass/stylep101.scss",
+		"/opt/lampp/htdocs/w/uuu",
+		"/opt/lampp/htdocs/w/sg1/c57/october/plugins/anandpatel/wysiwygeditors/lang/fr/lang.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/sys/a/index.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/framework/services.json",
+		"/opt/lampp/htdocs/w/sg1/c57/l5/.env",
+		"/home/cote/o/ac7/conf/savBdD/admin_c57_october.sql",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/hosts",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/httpd.conf",
+		"/opt/lampp/htdocs/w/sg1/october/index.php",
+		"/opt/lampp/htdocs/w/sg1/october/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/div",
+		"/etc/rc.local",
+		"/home/cote/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"/opt/lampp/htdocs/w/sg5/pui100_com"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"popper.min.map",
+			"Alias",
+			"Name p",
+			"c57",
+			"do"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/opt/lampp/htdocs/w/sg1/c57/bestmomo/.env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/opt/lampp/htdocs/w/sg1/c57/bestmomo/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								973,
+								973
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/Shell Script (Git).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "o.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/o/ac7/conf/ST3/conf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,11 @@
+list: $/grcote7/library/models/book/columns.yaml
+modelClass: Grcote7\Library\Models\Book
+title: Books
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'grcote7/library/books/update/:id'

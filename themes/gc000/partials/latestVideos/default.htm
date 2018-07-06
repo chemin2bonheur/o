@@ -1,0 +1,12 @@
+description = "Liste des vidéos"
+
+[viewBag]
+==
+{% set videos = __SELF__.videos %}
+{% for video in videos %}
+  <span class="blocVideo">
+    <a target="_blank" href="{{ video.link }}" title="{{ video.title }}">
+    <img src="{{ video.thumbnail }}" alt="{{ video.title }}">
+  </a>
+  </span>
+{% endfor %}

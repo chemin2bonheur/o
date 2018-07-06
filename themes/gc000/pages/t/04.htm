@@ -1,0 +1,25 @@
+title = "T04"
+url = "/t/04"
+layout = "basic"
+description = "Test composant weather - Tuto oc #1"
+is_hidden = 0
+
+[weather]
+country = "us"
+state = "ny"
+city = "New York"
+units = "metric"
+==
+function onStart(){
+// $this['city'] = $city;
+}
+==
+{% styles %}
+
+<div class="container">
+
+    <h1>Température à <b>{{ city }}</b></h1>
+
+    {% component 'weather' %}
+
+</div>

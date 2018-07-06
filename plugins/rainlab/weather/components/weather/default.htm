@@ -1,0 +1,15 @@
+<div class="weather-widget">
+{% if weatherInfo.message %}
+    <p class="error">{{ weatherInfo.message }}</p>
+{% else %}
+    <div class="container icon icon-{{ weatherInfo.weather[0].icon }}">
+    <hr>
+    	<p>Valeur de l'icone: <b>{{ weatherInfo.weather[0].icon }}</b></p>
+
+        <h3>{{ weatherInfo.name }}</h3>
+        <p class="temp">{{ weatherInfo.main.temp }} &#176;</p>
+        <p class="description">{{ weatherInfo.weather[0].main }}</p>
+    </div>
+{% endif %}
+</div>
+ToDoLi ajouté.

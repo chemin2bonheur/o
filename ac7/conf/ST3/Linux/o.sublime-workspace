@@ -1,0 +1,297 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"e",
+				"echo\techo \"…\""
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/t/03.htm",
+			"settings":
+			{
+				"buffer_size": 371,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/opt/lampp/htdocs/w/sg5/pui100_com",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/demo/components",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/components",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/components/dpt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/controllers",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/controllers/dpt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/lang",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/lang/fr",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/models",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/models/dpt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/dptlist/updates",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/plugins/grcote7/library",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/content/static-pages",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/base",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/blog",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/divers",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/t",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/partials",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/partials/admin",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/partials/latestVideos",
+		"/opt/lampp/htdocs/w/sg1/c57/october/modules",
+		"/opt/lampp/htdocs/w/sg1/c57/october/modules/system"
+	],
+	"file_history":
+	[
+		"/opt/lampp/htdocs/w/sg1/c57/october/composer.json",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/composer.json",
+		"/opt/lampp/htdocs/w/sg1/c57/october/modules/system/ServiceProvider.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/modules/system/providers.php",
+		"/opt/lampp/htdocs/w/sg1/c57/000-fr/.env.c57.fr",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/config/cms.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env_ori",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/.gitignore",
+		"/opt/lampp/htdocs/w/sg1/c57/october/.env",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/.htaccess",
+		"/opt/lampp/htdocs/w/sg1/c57/000-fr/.env.local",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/.htaccess",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/indexo.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/pages/home.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/partials/site/nav.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/partials/site/head.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/gc7_inc/functions_2017.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/full-video-carousel/index.html",
+		"/opt/lampp/htdocs/w/sg1/c57/october/themes/gc000/layouts/basic.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/.htaccess",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/css/style.min.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/assets/less/style.less",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/vendor/october/rain/src/Parse/Bracket.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/pages/home.htm",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/assets/css/style.min.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/ac7/t/full-video-carousel/sass/free/_badge.scss",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7/assets/css/style.css",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/storage/logs/system.log",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/css/stylep101.css",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/logs/system.log",
+		"/home/cote/o/plugins/grcote7/dpt/components/Dpt.php",
+		"/home/cote/o/plugins/grcote7/dptlist/components/Dpts.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/sass/README.txt",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/node_modules/less/bin/lessc",
+		"/usr/bin/less",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc7-mdb/assets/sass/stylep101.scss",
+		"/opt/lampp/htdocs/w/uuu",
+		"/opt/lampp/htdocs/w/sg1/c57/october/plugins/anandpatel/wysiwygeditors/lang/fr/lang.php",
+		"/opt/lampp/htdocs/w/sg5/pui100_com/sys/a/index.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/storage/framework/services.json",
+		"/opt/lampp/htdocs/w/sg1/c57/l5/.env",
+		"/home/cote/o/ac7/conf/savBdD/admin_c57_october.sql",
+		"/etc/hosts",
+		"/opt/lampp/apache2/conf/httpd.conf",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/hosts",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/vhosts/httpd.conf",
+		"/opt/lampp/htdocs/w/sg1/october/index.php",
+		"/opt/lampp/htdocs/w/sg1/october/config/app.php",
+		"/opt/lampp/htdocs/w/sg1/c57/october/ac7/conf/div",
+		"/etc/rc.local",
+		"/home/cote/.ssh/id_rsa.pub"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/opt/lampp/htdocs/w/sg5/pui100_com/fr/themes/gc000/pages/t/03.htm",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "o.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/o/ac7/conf/ST3/conf.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -6,6 +6,11 @@
 
     RewriteEngine On
 
+    #RewriteRule ^(a|b)($|/) - [L,NC]
+    RewriteRule ^c7/ - [L,NC]
+    RewriteRule ^themes/gc000/a/* - [L,NC]
+    RewriteRule ^googlef10c92*.* - [L,NC]
+    
     ##
     ## You may need to uncomment the following line for some hosting environments,
     ## if you have installed to a subdirectory, enter the name here also.

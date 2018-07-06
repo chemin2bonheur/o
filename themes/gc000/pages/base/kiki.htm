@@ -1,0 +1,27 @@
+title = "Kiki"
+url = "/kiki"
+layout = "firebase"
+description = "Tests divers"
+is_hidden = 0
+==
+<?php
+function onStart(){
+    $this->addCss('assets/css/pages/users.min.css');
+
+$this["users"]= Db::table('backend_users')->get();
+// dd($this["users"][0]->login);
+// dd($this['users']->email);
+//$this['users']=['Pierre', 'Paul', 'Jacques'];
+//$moi = $this['users'][2]; dd($moi);
+}
+?>
+==
+{% styles %}
+
+{% partial "admin/users" users=users%}
+
+<p class="adroite">&copy; 2016-{{now | date("Y")}} - CAJ Valenciennes</p>
+
+<script language="javascript">
+
+</script>

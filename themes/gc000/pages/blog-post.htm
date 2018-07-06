@@ -1,0 +1,17 @@
+title = "Blog post"
+url = "/blog-post/:slug"
+layout = "basic"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/blog-post"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "Kiki"
+==
+<div class="container">
+  
+  {% component 'blogPost' %}
+
+</div>

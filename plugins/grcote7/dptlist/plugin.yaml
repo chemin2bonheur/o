@@ -1,0 +1,6 @@
+plugin:
+    name: 'grcote7.dptlist::lang.plugin.name'
+    description: 'grcote7.dptlist::lang.plugin.description'
+    author: GrCOTE7
+    icon: oc-icon-list-ol
+    homepage: ''

@@ -1,0 +1,58 @@
+
+Installation PHP7 avec toutes les librairies:
+
+sudo apt-get install php-mbstring
+
+Ajout pour gitkraken / linux 64
+sudo apt-get install curl libcurl3
+
+
+
+DNS des vhosts en local avec sous-domaines:
+
+1 / Créer dans /etc/hosts
+
+# Pui100.com et ss-dmns
+127.0.0.1	p100
+127.0.0.1	*.p100
+
+
+2 / Dans /opt/lampp/apache2/conf/http.conf
+
+
+<VirtualHost *:80>
+ServerName p100
+ServerAlias *.p100
+DocumentRoot "/opt/lampp/htdocs/w/sg5/pui100_com/"
+UseCanonicalName off
+    <Directory "/opt/lampp/htdocs/w/sg5/pui100_com">
+        Options FollowSymLinks
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+
+3 / apt install dnsmasq
+
+Dans /etc
+sudo chown -R cote:cote NetworkManager
+
+Dans /etc/NetworkManager/dnsmasq.d
+
+Créer fichier dnsmasq-p100.conf
+
+Et y inscrire:
+
+address=/p100/127.0.0.1
+
+service network-manager restart
+
+
+
+Tuto rapide Markdown:
+
+http://commonmark.org/help/tutorial/
+

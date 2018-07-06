@@ -1,0 +1,142 @@
+title = "Ajax"
+url = "/ajax"
+layout = "basic"
+description = "2 exemples utilisant Ajax"
+meta_title = "Titre Ajax"
+meta_description = "Ajax Test"
+is_hidden = 0
+
+[demoTodo]
+max = 3
+==
+<?php
+function onStart(){
+    //$this->addCss('assets/css/maVar.min.css');
+$this['maVar'] = 777;
+}
+function onTest()
+{
+$value1 = post('value1');
+$value2 = post('value2');
+$operation = $this['operation'] =  post('operation');
+
+$exact=1;
+
+switch ($operation) {
+case '+' :
+$result = $value1 + $value2;
+break;
+case '-' :
+$result = $value1 - $value2;
+break;
+case 'x' :
+$result = $value1 * $value2;
+break;
+default :
+$result = $value1 / $value2;
+$exact  =(number_format($result,2) == $result);
+break;
+}
+
+$a=function($v){
+$dec = (count(explode('.', $v)) - 1 ? $n = 1 : 0);
+return number_format($v,$dec*2, ',', ' ');
+};
+$this['value1'] = $a($value1);
+$this['value2'] = $a($value2);
+
+$this['equa'] = ($exact) ? '=':'~';
+$this['arrTxt'] = (!$exact) ? 'but not':'and very';
+$this['result'] = $a($result);
+
+
+}
+?>
+==
+<!--<h2 class="maVar">{{maVar}}</h2>-->
+<div class="container">
+    <div class="row">
+        <div>
+            <h1>Calcul</h1>
+            <p>Usage Ajax basique<br/>
+                (Pour "Calcul', sans plugin)</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Calculator</h3>
+        </div>
+        <!--data-request-confirm="Sûr ?"-->
+        <!--data-request-success="alert('Yay!')"-->
+        <div class="panel-body">
+            <form class="form-inline"
+                  data-request="onTest"
+                  data-request-update="calcresult: '@#resultcalc', commentresult: '#commentresult'">
+                <input type="text" class="form-control" value="3" name="value1" style="width:100px">
+                <select class="form-control" name="operation" style="width: 70px; padding-left:25px">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>x</option>
+                    <option selected>/</option>
+                </select>
+                <input type="text" class="form-control" value="7" name="value2" style="width:100px">
+                <button type="submit" class="btn btn btn-primary">Calculate</button>
+            </form>
+        </div>
+        <div class="panel-footer" id="resultcalc">
+            {% partial "calcresult" %}
+        </div>
+        <div id="commentresult">
+            {% partial "commentresult" %}
+        </div>
+    </div>
+
+</div>
+
+<div class="container log"></div>
+
+<div class="container">
+    {% component 'demoTodo' %}
+</div>
+
+<div class="container">
+    <!--<p>1 ligne de code HTMl !</p>-->
+</div>
+
+{% put scripts %}
+<script>
+    $(document).ready(function () {
+
+        $('button').click();
+
+
+        $('#commentresult').on('change', function () {
+            console.log('Comment updated!');
+
+        });
+
+        $log = $('.log');
+
+
+        $(document).ajaxSuccess(function (event, xhr, settings) {
+
+            $log.text('Dernière réponses Ajax sur la page:');
+
+            if (settings.url == "http://october/ajax") {
+                $log.append("<hr>" + xhr.responseText + "<hr>");
+            }
+
+            $log.append('<p>Fin de cette réponse.<br>URL actuelle : ' + settings.url + '</p>');
+
+        });
+
+
+    })
+
+
+</script>
+{% endput %}

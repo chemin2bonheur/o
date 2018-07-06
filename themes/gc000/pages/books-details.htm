@@ -1,0 +1,23 @@
+title = "Books Details"
+url = "/books/:slug"
+layout = "basic"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Grcote7\Library\Models\Book"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+<div class="container">
+{% if record %}
+   <h1> {{ attribute(record, displayColumn) }} ({{ record.year}}) </h1>
+    {{ record.short_description}}
+{% else %}
+    {{ notFoundMessage|raw }}
+{% endif %}
+</div>

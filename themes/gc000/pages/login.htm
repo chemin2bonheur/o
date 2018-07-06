@@ -1,0 +1,17 @@
+title = "Login"
+url = "/login"
+layout = "basic"
+is_hidden = 0
+
+[account]
+redirect = "forum/home"
+paramCode = "code"
+forceSecure = 0
+
+[viewBag]
+localeUrl[en] = "/login"
+==
+<div class="container">
+    <h1>Compte - Inscription & login</h1>
+    {% component 'account' %}
+</div>

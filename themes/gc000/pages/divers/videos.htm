@@ -1,0 +1,36 @@
+title = "Vidéos"
+url = "/divers/videos"
+layout = "basic"
+description = "Chaîne YouTube"
+is_hidden = 0
+
+[latestVideos]
+channel_id = "UC7GG1khckOWRMuhVqXDadgQ"
+max_items = 12
+thumb_resolution = "medium"
+==
+<?php
+function onStart(){
+    //Debugbar::disable();
+}
+?>
+==
+{#{{ debug(latestVideos) }}#}
+{#<br/>&nbsp;#}
+<div class="container" style="text-align: center">
+    <h1>Vidéos issues de la <a target="_blank" title=" Voir la caine YouTube... "
+                               href="https://www.youtube.com/user/Lcote7/videos?shelf_id=0&view=0&sort=dd">chaîne
+        YouTube</a></h1>
+
+    {% component 'latestVideos' %}
+
+</div>
+
+{#{{ debug(maVar, var1, var2) }}#}
+
+{#
+Explication de JS pour contrôler vidéos Youtube
+<iframe id="ytplayer" type="text/html" width="640" height="390"
+        src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+        frameborder="0"/>
+#}

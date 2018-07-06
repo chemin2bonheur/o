@@ -1,0 +1,74 @@
+title = "CSS"
+url = "/tools/css"
+layout = "basic"
+description = "Tests CSS"
+is_hidden = 0
+==
+<style>
+    body {
+        background-color: cornsilk;
+    }
+
+    main {
+        border: px solid lawngreen;
+        font-size: 20px;
+        font-family: "Trebuchet MS";
+        padding: 10px 30px;
+        margin: 0;
+        background-color: yellow;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+    }
+
+    p {
+        padding: 10px 16px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+    }
+
+    .p1 {
+        border: 2px solid red;
+        background-color: skyblue;
+        margin: 10px auto;   
+    }
+
+    .p2 {
+        float: left;
+        display: inline;
+        border: 2px solid black;
+        background-color: white;
+        width:  40%;
+        margin: auto 10px 10px;   
+    }
+
+    .p3 {
+        float: right;
+        display: inline;
+        border: 2px solid blue;
+        background-color: orangered;
+        width:  40%;
+        margin: 10px 10px auto;   
+    }
+
+    .mt20 {
+        padding: 20px 32px;
+        margin: 20px auto;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+
+    hr {
+        border:1px solid grey;
+    }
+
+</style>
+
+<section class="vignetteVideo">
+    <div class="container mt20">
+        <p class="p1">Image Vidéo<br/><?= $p1 ?></p>
+        <p class="p2">Bouton Telechargement</p>
+        <p class="p3">Légende</p>
+    </div>
+</section>
