@@ -13,10 +13,12 @@ class AddNewFields extends Migration {
   }
 
   public function down() {
-    $tabvle->dropDown([
-                        'facebook',
-                        'bio'
-                      ]);
+    $table->dropDown([
+                       'facebook',
+                       'bio'
+                     ]);
   }
 
 }
+
+// php artisan plugin:refresh grcote7.profile

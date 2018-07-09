@@ -6,9 +6,9 @@ fields:
         type: number
     firstname:
         label: Firstname
-        span: auto
+        span: left
         type: text
     lastname:
         label: Lastname
-        span: auto
+        span: right
         type: text
