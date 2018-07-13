@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return[
-            'momo\Movies\Components\Actors' => 'actors'
+            'momo\Movies\Components\Actors' => 'actors',
+            'momo\Movies\Components\ActorForm' => 'actorform'
         ];
         
     }
