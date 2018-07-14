@@ -1,0 +1,6 @@
+plugin:
+    name: momo
+    description: 'momo.contact::lang.plugin.description'
+    author: contact
+    icon: oc-icon-adjust
+    homepage: ''
