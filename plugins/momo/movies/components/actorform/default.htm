@@ -1,4 +1,4 @@
-<form data-request="contactform::onSend" class="contact-form">
+<form data-request="onSave" class="contact-form">
     <label>Actor name</label>
     <input type="text" name="name">
 
@@ -6,4 +6,10 @@
     <input type="text" name="lastname">
 
     <button type="submit">Save actor</button>
+
+    {% flash success %}
+
+        <p>{{ message }}</p>
+
+    {% endflash %}
 </form>

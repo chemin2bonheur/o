@@ -1,4 +1,0 @@
-title: Genres
-modelClass: Grcote7\Movies\Models\Genre
-toolbar:
-    buttons: reorder_toolbar
