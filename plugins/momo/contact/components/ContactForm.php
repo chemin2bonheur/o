@@ -39,7 +39,15 @@ Class ContactForm extends ComponentBase{
 
 
         if($validator -> fails()){
-            return Redirect::back()->withErrors($validator);
+            
+            return ['#result'=>$this->renderPartial('contactform::messages', [
+
+                'errorMsgs' => $validator -> messages()->all(),
+                'fieldMsgs' => $validator -> messages()
+            ])];
+
+
+
         }else{
 
             $vars = ['name' => input::get('name'), 'email' => input::get('email'), 'content' => input::get('content')];
