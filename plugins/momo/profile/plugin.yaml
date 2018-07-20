@@ -1,0 +1,6 @@
+plugin:
+    name: 'momo.profile::lang.plugin.name'
+    description: 'momo.profile::lang.plugin.description'
+    author: momo
+    icon: oc-icon-adjust
+    homepage: ''
