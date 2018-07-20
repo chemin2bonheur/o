@@ -1,3 +1,8 @@
+
+# ATTENTION: projet non maintenu, mais suivi dans ce dépôt:
+
+https://github.com/c57fr/c57
+
 # Installation 
 
 In console, folder of your local server:
