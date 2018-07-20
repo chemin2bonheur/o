@@ -15,12 +15,13 @@ class AddNewFields extends Migration
         });
     }
 
-    public function down()
-    {
-        $table->dropDown([
-            'facebook',
-            'bio'
-        ]);
-    }
+    public function down() {
+        Schema::table('users', function ($table) {
+          $table->dropColumn([
+                               'facebook',
+                               'bio'
+                             ]);
+        });
+      }
 
 }
